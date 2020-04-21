@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>변수와 상수(Constants and Variables) | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Swift
+var
+let
+Constants
+Variables
+
+위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.
+
+1.변수와 상수(Constants and Variables)
+">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="변수와 상수(Constants and Variables)"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/10/swift/swift-varlet/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/swift/변수와 상수(Constants and Variables)</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-10</span>
+				<span class="label label-primary">Swift</span>
+<span class="label label-info">var</span>
+<span class="label label-info">let</span>
+<span class="label label-info">Constants</span>
+<span class="label label-info">Variables</span>
+<blockquote>
+<p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.</p>
+</blockquote>
+<h1>1.변수와 상수(Constants and Variables)</h1>
+<p>상수와 변수는 현재 어떤 데이터에 대한 상태값, 속성 정보 등을 담고 있는 컨테이너이다.</p>
+<ul>
+<li>상수 (Constants) : 한 번 설정되면 값 변경 불가</li>
+<li>변수 (Variables) : 설정한 값을 변경 가능</li>
+</ul>
+<h2 id="1-1-변수와-상수의-선언-Declare-constans-or-variables">1.1.변수와 상수의 선언(Declare constans or variables)</h2>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> maximumNumberOfLoginAttempts = <span class="number">10</span></span><br><span class="line"><span class="keyword">var</span> currentLoginAttempt = <span class="number">0</span></span><br><span class="line">currentLoginAttempt = <span class="number">1</span></span><br><span class="line"><span class="comment">// maximumNumberOfLoginAttempts 🙅‍♂️</span></span><br></pre></td></tr></table></figure>
+<p>위의 코드블럭에서 변수는 <code>var</code>로 선언한 <code>currentLoginAttempt</code> 이고 상수는 <code>let</code>으로 선언한 <code>maximumNumberOfLoginAttempts</code>이다 위에서 확인할 수 있듯이 변수인 currentLoginAttempt는 3번째 라인에서 1로 변경하였지만 상수인 maximumNumberOfLoginAttempts은 상수이기때문에 변경을 시도할 시 다음과 같은 에러를 반환한다.</p>
+<div class="alert alert-danger"><i class="fa fa-bug"></i>  Constants and Variables.xcplaygroundpage:12:1: note: change 'let' to 'var' to make it mutable
+let maximumNumberOfLoginAttempts = 10</div>
+<p><br>
+변수나 상수명는 소문자로 시작하는 🐫표기법 lowerCamelCase를 사용하는데, Swift에서 변수나 상수명은 가독성이 좋아진다면 변수명이 조금 길더라도 길게 작성하는것이 좋다.</p>
+<h2 id="1-2-여러-상수-또는-변수-선언-Declare-multiple-constants-or-variables">1.2.여러 상수 또는 변수 선언(Declare multiple constants or variables)</h2>
+<p>상수와 변수는 한라인에 여러개의 상수와 변수를 선언할 수 있는데 아래와 같은 방법으로 선언한다.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">0.0</span>, y = <span class="number">0.0</span>, z = <span class="number">0.0</span></span><br><span class="line">x = <span class="number">1</span></span><br><span class="line">y = <span class="number">2</span></span><br><span class="line">z = <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>이렇게 선언하게 되면, 변수 <code>x, y, z</code>를 한번에 선언할 수 있다.</p>
+<h2 id="1-3-이름-짓기-Naming">1.3.이름 짓기(Naming)</h2>
+<p>변수나 상수의 이름은 영어 외에도 유니코드나 문자를 포함한 대부분의 문자를 사용해 네이밍이 가능하다.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> π = <span class="number">3.14159</span></span><br><span class="line"><span class="keyword">let</span> 你好 = <span class="string">"你好世界"</span></span><br><span class="line"><span class="keyword">let</span> 🐶🐮 = <span class="string">"dogcow"</span></span><br><span class="line"><span class="keyword">let</span> 한글 = <span class="string">"세종대왕"</span></span><br><span class="line"><span class="keyword">let</span> `<span class="keyword">let</span>` = <span class="number">1</span>   </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(π)</span><br><span class="line"><span class="built_in">print</span>(你好)</span><br><span class="line"><span class="built_in">print</span>(한글)</span><br><span class="line"><span class="built_in">print</span>(🐶🐮)</span><br><span class="line"><span class="built_in">print</span>(`<span class="keyword">let</span>`)</span><br><span class="line"></span><br><span class="line">🙅‍♂️</span><br><span class="line"><span class="comment">// e.g.</span></span><br><span class="line"><span class="comment">// let 한글 = "ㄱ"</span></span><br><span class="line"><span class="comment">// let 공 백 = "X"</span></span><br><span class="line"><span class="comment">// let √ = "root"</span></span><br><span class="line"><span class="comment">// let → = "arrow"</span></span><br><span class="line"><span class="comment">// let 369게임 = "12짝45짝..."</span></span><br></pre></td></tr></table></figure>
+<p>변수로 사용할 수없는 이름은 같은 스코프 번위 내에서 중복되는 이름과 공백문자를 포함한 변수이거나 수학기호를 포함하거나 숫자로 시작하는 이름이 변수로 사용할 수 없는 이름인데, 수학기호인 π는 특수한 경우로 사용이 가능하고 Swift 에서 사용되는 키워드일 경우 backquote(`)로 감싸면 사용이 가능하다.</p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/11/swift/swift-DataType2/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next disabled"><a>next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

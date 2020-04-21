@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>알람 시계 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Algolithm
+백준온라인저지
+Swift
+2884번
+1.문제 2884번
+1.1.알람 시계
+
+
+
+시간제한
+메모리 제한
+
+
+
+
+1초
+128 MB
+
+
+
+1.2.문제
+상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 ">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="알람 시계"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/15/algorithm/algorithm-q2884/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/Algorithm/알람 시계</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-15</span>
+				<span class="label label-primary">Algolithm</span>
+<span class="label label-primary">백준온라인저지</span>
+<span class="label label-primary">Swift</span>
+<span class="label label-info">2884번</span>
+<h1>1.문제 2884번</h1>
+<h2 id="1-1-알람-시계">1.1.알람 시계</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">시간제한</th>
+<th style="text-align:center">메모리 제한</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1초</td>
+<td style="text-align:center">128 MB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-2-문제">1.2.문제</h3>
+<p>상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.</p>
+<p>상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.</p>
+<p>이런 상근이를 불쌍하게 보던, 창영이는 자신이 사용하는 방법을 추천해 주었다.</p>
+<p>바로 &quot;45분 일찍 알람 설정하기&quot;이다.</p>
+<p>이 방법은 단순하다. 원래 설정되어 있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 어차피 알람 소리를 들으면, 알람을 끄고 조금 더 잘 것이기 때문이다. 이 방법을 사용하면, 매일 아침 더 잤다는 기분을 느낄 수 있고, 학교도 지각하지 않게 된다.</p>
+<p>현재 상근이가 설정한 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.</p>
+<h3 id="1-3-입력">1.3.입력</h3>
+<p>첫째 줄에 두 정수 H와 M이 주어진다. (0 ≤ H ≤ 23, 0 ≤ M ≤ 59) 그리고 이것은 현재 상근이가 설정한 놓은 알람 시간 H시 M분을 의미한다.</p>
+<p>입력 시간은 24시간 표현을 사용한다. 24시간 표현에서 하루의 시작은 0:0(자정)이고, 끝은 23:59(다음날 자정 1분 전)이다. 시간을 나타낼 때, 불필요한 0은 사용하지 않는다.</p>
+<h3 id="1-4-출력">1.4.출력</h3>
+<p>첫째 줄에 상근이가 창영이의 방법을 사용할 때, 설정해야 하는 알람 시간을 출력한다. (입력과 같은 형태로 출력하면 된다.)</p>
+<h3 id="1-5-제한"><s>1.5.제한</s></h3>
+<h3 id="1-6-예제입력">1.6.예제입력</h3>
+<p><em>입력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">10</span> <span class="number">10</span></span><br></pre></td></tr></table></figure>
+<p><em>입력 2번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span> <span class="number">30</span></span><br></pre></td></tr></table></figure>
+<p><em>입력 3번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">23</span> <span class="number">40</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-7-예제출력">1.7.예제출력</h3>
+<p><em>출력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span> <span class="number">25</span></span><br></pre></td></tr></table></figure>
+<p><em>출력 2번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">23</span> <span class="number">45</span></span><br></pre></td></tr></table></figure>
+<p><em>출력 3번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">22</span> <span class="number">55</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-8-풀이">1.8.풀이</h3>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> firstNum = <span class="type">Int</span>(<span class="built_in">readLine</span>()!)!</span><br><span class="line"><span class="keyword">var</span> secondNum = <span class="type">Int</span>(<span class="built_in">readLine</span>()!)!</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(firstNum &gt; <span class="number">0</span> &amp;&amp; secondNum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">1</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>(firstNum &lt; <span class="number">0</span> &amp;&amp; secondNum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">2</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>(firstNum &lt; <span class="number">0</span> &amp;&amp; secondNum &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">3</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>(firstNum &gt; <span class="number">0</span> &amp;&amp; secondNum &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">4</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"값에 0이 올 수 없습니다."</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+			
+			
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/15/Algorithm/Algorithm-Q2753/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/15/Algorithm/Algorithm-Q9498/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

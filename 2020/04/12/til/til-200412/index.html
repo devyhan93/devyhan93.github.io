@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>200412 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Til
+func
+학습내용 / 회고
+이름과 나이를 입력 받아 자신을 소개하는 글을 출력하는 함수
+12345func introduce(name: String, age: Int)&amp;#123;    print(&#34;안녕하세요 저의 이름은 \(name)이고, 나이는 \(age)살 입">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="200412"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/12/til/til-200412/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/til/200412</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-12</span>
+				<span class="label label-primary">Til</span>
+<span class="label label-info">func</span>
+<h2 id="학습내용-회고">학습내용 / 회고</h2>
+<h4 id="이름과-나이를-입력-받아-자신을-소개하는-글을-출력하는-함수">이름과 나이를 입력 받아 자신을 소개하는 글을 출력하는 함수</h4>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">introduce</span><span class="params">(name: String, age: Int)</span></span>&#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"안녕하세요 저의 이름은 \(name)이고, 나이는 \(age)살 입니다."</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">introduce(name: <span class="string">"조요한"</span>, age: <span class="number">28</span>)</span><br></pre></td></tr></table></figure>
+<p><em>Result</em></p>
+<div class="alert alert-success"><i class="fa fa-lightbulb-o"></i>  안녕하세요 저의 이름은 조요한이고, 나이는 28살 입니다.</div>
+<h4 id="정수를-하나-입력받아-2의-배수-여부를-반환하는-함수">정수를 하나 입력받아 2의 배수 여부를 반환하는 함수</h4>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">multipleOfTwo</span><span class="params">(checkNumber: Int)</span></span> &#123;</span><br><span class="line">    <span class="keyword">if</span> checkNumber % <span class="number">2</span> == <span class="number">0</span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"\(checkNumber)는 2의 배수가 맞습니다."</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"\(checkNumber)는 2의 배수가 아닙니다."</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">multipleOfTwo(checkNumber: <span class="number">10</span>)</span><br><span class="line"><span class="comment">// multipleOfTwo(checkNumber: 7)</span></span><br></pre></td></tr></table></figure>
+<p><em>Result</em></p>
+<div class="alert alert-success"><i class="fa fa-lightbulb-o"></i>  10는 2의 배수가 맞습니다.</div>
+<div class="alert alert-danger"><i class="fa fa-bug"></i>  7는 2의 배수가 아닙니다.</div>
+<h4 id="정수를-두-개-입력-받아-곱한-결과를-반환하는-함수-파라미터-하나의-기본-값은-10">정수를 두 개 입력 받아 곱한 결과를 반환하는 함수 (파라미터 하나의 기본 값은 10)</h4>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">multiplyNumber</span><span class="params">(inputNumber firstNum: Int, secondNum: Int = <span class="number">10</span>)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    firstNum * secondNum</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">multiplyNumber(inputNumber: <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p><em>Result</em></p>
+<div class="alert alert-success"><i class="fa fa-lightbulb-o"></i>  20</div>
+<blockquote>
+<p>스위프트의 함수에서 매개변수에 기본값을 지정할 수 있다. 매개변수가 전달되지 않으면 기본값을 사용하는데 매개변수 기본값이 있는 함수는 중복 정의한 것처럼 사용할 수 있다.</p>
+</blockquote>
+<h4 id="4과목의-시험-점수를-입력받아-평균-점수를-반환하는-함수">4과목의 시험 점수를 입력받아 평균 점수를 반환하는 함수</h4>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">averageSocre</span><span class="params">(<span class="number">_</span> firstScore: Int,<span class="number">_</span> secondScore: Int,<span class="number">_</span> thirdScore: Int,<span class="number">_</span> fourthScore: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> total = <span class="number">0</span></span><br><span class="line">    total = firstScore + secondScore + thirdScore + fourthScore</span><br><span class="line">    <span class="keyword">return</span> total/<span class="number">4</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">averageScore(<span class="number">10</span>, <span class="number">40</span>, <span class="number">70</span>, <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+<p><em>Result</em></p>
+<div class="alert alert-success"><i class="fa fa-lightbulb-o"></i>  55</div>
+<h4 id="점수를-입력받아-학점을-반환하는-함수-만들기-90점-이상-A-80점-이상-B-70점-이상-C-그-이하-F">점수를 입력받아 학점을 반환하는 함수 만들기 (90점 이상 A, 80점 이상 B, 70점 이상 C, 그 이하 F)</h4>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">grades</span><span class="params">(<span class="number">_</span> inputNumber: Int)</span></span> &#123;</span><br><span class="line">    <span class="keyword">switch</span> inputNumber &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">90</span>...<span class="number">100</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"A학점 입니다."</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="number">80</span>..&lt;<span class="number">90</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"B학점 입니다."</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="number">70</span>..&lt;<span class="number">80</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"C학점 입니다."</span>)</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"F학점 입니다."</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">grades(<span class="number">100</span>)</span><br><span class="line">grades(<span class="number">80</span>)</span><br><span class="line">grades(<span class="number">77</span>)</span><br><span class="line">grades(<span class="number">68</span>)</span><br></pre></td></tr></table></figure>
+<p><em>Result</em></p>
+<div class="alert alert-success"><i class="fa fa-lightbulb-o"></i>  A학점 입니다.
+B학점 입니다.
+C학점 입니다.
+F학점 입니다.</div>
+<h4 id="가변-인자-파라미터를-이용해-점수를-여러-개-입력받아-평균-점수에-대한-학점을-반환하는-함수-90점-이상-A-80점-이상-B-70점-이상-C-그-이하-F">가변 인자 파라미터를 이용해 점수를 여러 개 입력받아 평균 점수에 대한 학점을 반환하는 함수 (90점 이상 A, 80점 이상 B, 70점 이상 C, 그 이하 F)</h4>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">grades</span><span class="params">(<span class="number">_</span> scoreNumber: Double...)</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> total = <span class="number">0.0</span></span><br><span class="line">    <span class="keyword">for</span> number <span class="keyword">in</span> scoreNumber &#123;</span><br><span class="line">        total += number</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> averageScore = total / <span class="type">Double</span>(scoreNumber.<span class="built_in">count</span>)</span><br><span class="line">    <span class="keyword">switch</span> averageScore &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">90</span>...<span class="number">100</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"A학점 입니다."</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="number">80</span>..&lt;<span class="number">90</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"B학점 입니다."</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="number">70</span>..&lt;<span class="number">80</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"C학점 입니다."</span>)</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"F학점 입니다."</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">grades(<span class="number">83</span>, <span class="number">50</span>, <span class="number">77</span>, <span class="number">97</span>)</span><br></pre></td></tr></table></figure>
+<p><em>Result</em></p>
+<div class="alert alert-success"><i class="fa fa-lightbulb-o"></i>  C학점 입니다.</div>
+<blockquote>
+<p>매개변수로 몇 개의 값이 들어올지 모를 때 가변 매개변수를 활용할 수 있다. 가변 매개변수는 0개이상의 값을 받아올 수 있으며, 가변 매개변수로 들어온 인자 값은 배열처럼 사용할 수 있다.</p>
+</blockquote>
+<h2 id="내일-해야할-일">내일 해야할 일</h2>
+<ul>
+<li>1일 1커밋(이상) 하기</li>
+<li>Til 작성하기</li>
+<li>포스트 업로드하기</li>
+<li>Git 연습해보기</li>
+</ul>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/13/til/til-200413/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/11/til/til-200411/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

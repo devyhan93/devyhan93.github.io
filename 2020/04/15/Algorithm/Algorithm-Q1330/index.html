@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>두 수 비교하기 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Algolithm
+백준온라인저지
+Swift
+1330번
+1.문제 1330번
+1.1.두 수 비교하기
+
+
+
+시간제한
+메모리 제한
+
+
+
+
+1초
+512 MB
+
+
+
+1.2.문제
+두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성하시오.
+1.3.입력
+첫째 줄에 A">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="두 수 비교하기"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/15/algorithm/algorithm-q1330/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/Algorithm/두 수 비교하기</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-15</span>
+				<span class="label label-primary">Algolithm</span>
+<span class="label label-primary">백준온라인저지</span>
+<span class="label label-primary">Swift</span>
+<span class="label label-info">1330번</span>
+<h1>1.문제 1330번</h1>
+<h2 id="1-1-두-수-비교하기">1.1.두 수 비교하기</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">시간제한</th>
+<th style="text-align:center">메모리 제한</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1초</td>
+<td style="text-align:center">512 MB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-2-문제">1.2.문제</h3>
+<p>두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성하시오.</p>
+<h3 id="1-3-입력">1.3.입력</h3>
+<p>첫째 줄에 A와 B가 주어진다. A와 B는 공백 한 칸으로 구분되어져 있다.</p>
+<h3 id="1-4-출력">1.4.출력</h3>
+<p>첫째 줄에 다음 세 가지 중 하나를 출력한다.</p>
+<ul>
+<li>A가 B보다 큰 경우에는 '&gt;'를 출력한다.</li>
+<li>A가 B보다 작은 경우에는 '&lt;'를 출력한다.</li>
+<li>A와 B가 같은 경우에는 '=='를 출력한다.</li>
+</ul>
+<h3 id="1-5-제한">1.5.제한</h3>
+<p>-10,000 ≤ A, B ≤ 10,000</p>
+<h3 id="1-6-예제입력">1.6.예제입력</h3>
+<p><em>입력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p><em>입력 2번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">10</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p><em>입력 3번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span> <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-7-예제출력">1.7.예제출력</h3>
+<p><em>출력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;</span><br></pre></td></tr></table></figure>
+<p><em>출력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p><em>출력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">==</span><br></pre></td></tr></table></figure>
+<h3 id="1-8-풀이">1.8.풀이</h3>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = <span class="built_in">readLine</span>() <span class="comment">// "1 2"</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> number = num &#123;</span><br><span class="line">    <span class="keyword">let</span> array = number.components(separatedBy: <span class="string">" "</span>)</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">let</span> <span class="type">A</span> = <span class="type">Int</span>(array[<span class="number">0</span>])!</span><br><span class="line">    <span class="keyword">let</span> <span class="type">B</span> = <span class="type">Int</span>(array[<span class="number">1</span>])!</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> <span class="type">A</span>&gt;<span class="type">B</span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"&gt;"</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> <span class="type">A</span>&lt;<span class="type">B</span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"&lt;"</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"=="</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+			
+			
+			
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/17/Algorithm/Algorithm-Q2739/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/15/Algorithm/Algorithm-Q14681/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

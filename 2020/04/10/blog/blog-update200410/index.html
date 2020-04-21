@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>블로그 검색결과 기능추가 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Blog
+update
+blog
+Hexo
+custom
+1.검색결과 기능추가
+
+내가 지금 포스팅하고 있는 Hexo블로그의 테마에서 검색결과 리스트의 타이틀에서 어느 카테고리 있는지 확인하기 위해서는 결과가 나오는 타이틀의 링크를 타고 들어가서 확인할 수 있었는데 이 번거로">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="블로그 검색결과 기능추가"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/10/blog/blog-update200410/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/blog/블로그 검색결과 기능추가</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-10</span>
+				<span class="label label-primary">Blog</span>
+<span class="label label-info">update</span>
+<span class="label label-info">blog</span>
+<span class="label label-info">Hexo</span>
+<span class="label label-info">custom</span>
+<h1>1.검색결과 기능추가</h1>
+<blockquote>
+<p>내가 지금 포스팅하고 있는 Hexo블로그의 테마에서 검색결과 리스트의 타이틀에서 어느 카테고리 있는지 확인하기 위해서는 결과가 나오는 타이틀의 링크를 타고 들어가서 확인할 수 있었는데 이 번거로움을 제거하기 위해 검색 결과에서 어느 카테고리에 있는지 보여주기 위해 시작하였다.</p>
+</blockquote>
+<h2 id="1-1-수정-전">1.1.수정 전</h2>
+<p>이것이 수정하기 전의 나의 검색결과이다. 키워드를 검색하여 타이틀을 보여주는 공간에 Swift라는 디렉토리 안에 있는 swift파일 이라는것을 표현해주기 위해서 커스텀한 작업 내용이다.</p>
+ <img width="922" alt="image" src="https://user-images.githubusercontent.com/45344633/78952840-cfd93300-7b11-11ea-9233-21350acac8df.png">
+<h2 id="1-2-수정-과정">1.2.수정 과정</h2>
+<p>수정한 코드의 부분인 search.js의 일부이다.</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> searchFunc = <span class="function"><span class="keyword">function</span>(<span class="params">path, search_id, content_id</span>) </span>&#123;</span><br><span class="line"><span class="meta">   'use strict'</span>;</span><br><span class="line">   $.ajax(&#123;</span><br><span class="line">       url: path,</span><br><span class="line">       dataType: <span class="string">"xml"</span>,</span><br><span class="line">       success: <span class="function"><span class="keyword">function</span>(<span class="params"> xmlResponse </span>) </span>&#123;</span><br><span class="line">           <span class="comment">// get the contents from search data</span></span><br><span class="line">           <span class="keyword">var</span> datas = $( <span class="string">"entry"</span>, xmlResponse ).map(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">               <span class="keyword">return</span> &#123;</span><br><span class="line">                   categories: $( <span class="string">"categories"</span>, <span class="keyword">this</span> ).text(),</span><br><span class="line">                   title: $( <span class="string">"title"</span>, <span class="keyword">this</span> ).text(),</span><br><span class="line">                   content: $(<span class="string">"content"</span>,<span class="keyword">this</span>).text(),</span><br><span class="line">                   url: $( <span class="string">"url"</span> , <span class="keyword">this</span>).text()</span><br><span class="line">               &#125;;</span><br><span class="line">           &#125;).get();</span><br></pre></td></tr></table></figure>
+<p>이곳에서 10번째 줄의 <code>categories: $( &quot;categories&quot;, this ).text()</code>를 추가하였는데, Hexo포스트의 상단에 적어주는</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 200410</span><br><span class="line">date: 2020-04-10</span><br><span class="line">categories: Til</span><br><span class="line">toc: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>이 구조에서 categoroies안에 있는 텍스트를 받아오는 내용인것 같다.</p>
+<p>그 다음 작업은</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// perform local searching</span></span><br><span class="line">datas.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> isMatch = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">var</span> content_index = [];</span><br><span class="line">    <span class="keyword">if</span> (!data.title || data.title.trim() === <span class="string">''</span>) &#123;</span><br><span class="line">        data.title = <span class="string">"Untitled"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> data_categories = data.categories.trim();</span><br><span class="line">    <span class="keyword">var</span> data_title = data.title.trim().toLowerCase(); </span><br><span class="line">    <span class="keyword">var</span> data_content = data.content.trim().replace(<span class="regexp">/&lt;[^&gt;]+&gt;/g</span>,<span class="string">""</span>).toLowerCase();</span><br><span class="line">    <span class="keyword">var</span> data_url = data.url;</span><br><span class="line">    <span class="keyword">var</span> index_title = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">var</span> index_content = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">var</span> first_occur = <span class="number">-1</span>;</span><br><span class="line">    <span class="comment">// only match artiles with not empty contents</span></span><br></pre></td></tr></table></figure>
+<p>코드블럭 8번째 라인에 있는 <code>data_categories</code>변수를 생성하고 읽어온 <code>categories</code>의 데이터를  <code>trim()</code>함수를 활용해 공백을 제거하여 텍스를 변수에 저장하였다.</p>
+<p>변수를 생성하고 <code>console.log()</code>를 활용하여 잘 받아오는지 확인해 보았다.</p>
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/45344633/78953001-61e13b80-7b12-11ea-9a1a-432162e96e9e.png">
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// show search results</span></span><br><span class="line"><span class="keyword">if</span> (isMatch) &#123;</span><br><span class="line">    str += <span class="string">"&lt;li&gt;&lt;h4&gt;"</span>+ data_categories +<span class="string">" / &lt;a href='"</span>+ data_url +<span class="string">"' class='search-result-title'&gt;"</span>+ data_title +<span class="string">"&lt;/a&gt;&lt;/h4&gt;"</span>;</span><br><span class="line">    <span class="keyword">var</span> content = data.content.trim().replace(<span class="regexp">/&lt;[^&gt;]+&gt;/g</span>,<span class="string">""</span>);</span><br></pre></td></tr></table></figure>
+<p>코드블럭 3번째 라인에 있는 Html테그를 출력하는 곳에 내가 받아온 값을 저장한 변수인 <code>data_categories</code>를 붙여주어 완성하였다.</p>
+<h2 id="1-3-수정-후">1.3.수정 후</h2>
+<img width="928" alt="image" src="https://user-images.githubusercontent.com/45344633/78952711-6c4f0580-7b11-11ea-825d-162253ad1e2d.png">
+<p>이제 검색 결과에 어느 카테고리 있는지 링크를 눌러 이동해서 확인하기 전에 보여준다 !</p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+			
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/10/blog/blog-update200411/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

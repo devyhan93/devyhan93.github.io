@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>200416 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Til
+학습내용 / 회고
+
+옵셔널, 열거형 학습 및 문제 풀이
+
+옵셔널 타입의 문자열 파라미터 3개를 입력받은 뒤, 옵셔널을 추출하여 Unwrapped 된 하나의 문자열로 합쳐서 반환하는 함수만들기
+함수 combineString 예시
+123func combineStri">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="200416"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/16/til/til-200416/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/til/200416</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-16</span>
+				<span class="label label-primary">Til</span>
+<h2 id="학습내용-회고">학습내용 / 회고</h2>
+<ul>
+<li>옵셔널, 열거형 학습 및 문제 풀이</li>
+</ul>
+<p><strong>옵셔널 타입의 문자열 파라미터 3개를 입력받은 뒤, 옵셔널을 추출하여 Unwrapped 된 하나의 문자열로 합쳐서 반환하는 함수만들기</strong><br>
+<em>함수 combineString 예시</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">combineString</span><span class="params">(str1: String?, str2: String?, str3: String?)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line">   code</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>입력 예시 및 결과</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">combineString1(str1: <span class="string">"AB"</span>, str2: <span class="string">"CD"</span>, str3: <span class="string">"EF"</span>) <span class="comment">//   "ABCDEF"</span></span><br><span class="line">combineString1(str1: <span class="string">"AB"</span>, str2: <span class="literal">nil</span>, str3: <span class="string">"EF"</span>)  <span class="comment">//   "ABEF"</span></span><br></pre></td></tr></table></figure>
+<p><em>코드 작성</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">combineString</span><span class="params">(str1: String?, str2: String?, str3: String?)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> str1 = str1 ?? <span class="string">""</span></span><br><span class="line">    <span class="built_in">print</span>(str1)</span><br><span class="line">    <span class="keyword">let</span> str2 = str2 ?? <span class="string">""</span></span><br><span class="line">    <span class="built_in">print</span>(str2)</span><br><span class="line">    <span class="keyword">let</span> str3 = str3 ?? <span class="string">""</span></span><br><span class="line">    <span class="built_in">print</span>(str3)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> resultString: <span class="type">String</span> = str1 + str2 + str3</span><br><span class="line">    <span class="keyword">return</span> resultString</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 바인딩 하려는 값이 한개라도 없으면 해당 블록 내부의 명령문은 실행되지 않는다.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// combineString(str1: "AB", str2: "CD", str3: "EF")   // "ABCDEF"</span></span><br><span class="line">combineString(str1: <span class="string">"AB"</span>, str2: <span class="literal">nil</span>, str3: <span class="string">"EF"</span>) <span class="comment">// "ABEF"</span></span><br></pre></td></tr></table></figure>
+<p>먼저 Optional값 일 수 있는 <code>옵셔널 문자열타입</code>의 파라미터가 3개인 함수를 정의해주고 각 프로퍼티의 옵셔널 바인딩을해준다. 여기서 <code>let str1 = str1 ?? &quot;&quot;</code>의 의미는 <code>str1파라미터의 값이 nil이라면</code>, ??를 기준으로 오른쪽에있는 공백문자 “” 를 할당하라는 의미이다. 값이 있다면 옵셔널 바인딩이 되어 일반 String타입이 되므로 문자열끼리 더해줘 <code>resultString</code>에 추가해서 반환해주면 된다.</p>
+<p>*<em>사칙연산(+, -, <em>, /)을 가진 enum 타입 Arithmetic과 2개의 자연수를 입력 파라미터로 받아 (파라미터 총 3개) 해당 연산의 결과를 반환하는 함수 구현</em></em></p>
+<p><em>열거형 Arithmetic 예시</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Arithmetic</span> </span>&#123;</span><br><span class="line">  <span class="keyword">case</span> addition, subtraction, multiplication, division</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>코드 작성</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Arithmetic</span> </span>&#123;</span><br><span class="line">  <span class="keyword">case</span> addition, subtraction, multiplication, division</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">operationResult</span><span class="params">(firstNum: Int, secondNum: Int, operationSymbol: Arithmetic )</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="keyword">switch</span> operationSymbol &#123;</span><br><span class="line">    <span class="keyword">case</span> .addition:</span><br><span class="line">        <span class="keyword">return</span> firstNum + secondNum</span><br><span class="line">    <span class="keyword">case</span> .subtraction:</span><br><span class="line">        <span class="keyword">return</span> firstNum - secondNum</span><br><span class="line">    <span class="keyword">case</span> .multiplication:</span><br><span class="line">        <span class="keyword">return</span> firstNum * secondNum</span><br><span class="line">    <span class="keyword">case</span> .division:</span><br><span class="line">        <span class="keyword">return</span> firstNum / secondNum</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">operationResult(firstNum: <span class="number">3</span>, secondNum: <span class="number">4</span>, operationSymbol: <span class="type">Arithmetic</span>.subtraction)</span><br></pre></td></tr></table></figure>
+<p>열거형 <code>Arithmetic</code>을 선언해준 후에 연산 결과를 반환할 파라미터가 3개인 함수 <code>operationResult</code>를 정의하고 연산을 진행할 숫자를 받는 파라미터 2개를 정수형, 연산기호를 받는 파라미터를 열거형에서 받는다는것을 지정해준후에 열거형을 입력받는 switch 구문을 통하여 Aritmetic의 값마다 연산을 다르게 해주는 조건을 만들어준후 결과를 반환해준다.</p>
+<h2 id="해야할-일">해야할 일</h2>
+<ul>
+<li>[X] 1일 1커밋(이상) 하기</li>
+<li>[X] Til 작성하기</li>
+<li>[ ] Enum, Optional 포스트 쓰기</li>
+</ul>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/17/til/til-200417/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/15/til/til-200415/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

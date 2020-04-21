@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>접근제어(Access Control) | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Swift
+AccessControl
+
+위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.
+
+1.접근제어(Acess Control)
+접근제어는 개체지향 프로그래밍 패러다임에서 은닉">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="접근제어(Access Control)"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/21/swift/swift-accesscontrol/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/swift/접근제어(Access Control)</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-21</span>
+				<span class="label label-primary">Swift</span>
+<span class="label label-info">AccessControl</span>
+<blockquote>
+<p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.</p>
+</blockquote>
+<h1>1.접근제어(Acess Control)</h1>
+<p>접근제어는 개체지향 프로그래밍 패러다임에서 은닉화를 구현하기위한 핵심 기능으로 다른 모듈의 코드 또는 다른 소스 파일 등으로부터 접근 제한 및 세부 구현 내용을 숨기고 접근할 수 있는 인터페이스 지정이 가능하다.</p>
+<h2 id="1-1-모듈과-소스파일">1.1.모듈과 소스파일</h2>
+<p>스위프트의 접근제어는 모듈과 소스파일을 기반으로 설계됨.</p>
+<h3 id="1-1-1-모듈-Module">1.1.1.모듈(Module)</h3>
+<p><img src="https://user-images.githubusercontent.com/45344633/79858895-1597d480-840b-11ea-9085-bb00d5a17510.png" alt="image"></p>
+<ul>
+<li>import 를 통해 다른 모듈로부터 불러들일 수 있는 하나의 코드 배포 단위</li>
+<li>Library / Framework / Application 등</li>
+</ul>
+<h3 id="1-1-2-소스파일-Source-File">1.1.2.소스파일(Source File)</h3>
+<p><img src="https://user-images.githubusercontent.com/45344633/79859153-88a14b00-840b-11ea-8e8d-36d292720289.png" alt="image"></p>
+<ul>
+<li>모듈 내에 포함된 각각의 Swift 소스 코드 파일</li>
+</ul>
+<h2 id="1-2-접근-수준-Access-Level">1.2.접근 수준(Access Level)</h2>
+<p>접근수준 키워드를 통해 접근제어를 할 수 있는데 접근수준을 명시할 수 있는 키워드는 <code>open, public, internal, fileperivate, private</code>다섯가지다.</p>
+<p><img src="https://user-images.githubusercontent.com/45344633/79860016-e71af900-840c-11ea-9b52-1a35a02db30c.png" alt="image"></p>
+<table>
+<thead>
+<tr>
+<th>접근수준</th>
+<th>키워드</th>
+<th>범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>개방 접근수준</td>
+<td>open</td>
+<td>모듈 외부까지</td>
+</tr>
+<tr>
+<td>공개 접근수준</td>
+<td>public</td>
+<td>모듈 외부까지</td>
+</tr>
+<tr>
+<td>내부 접근수준</td>
+<td>internal</td>
+<td>모듈 내부</td>
+</tr>
+<tr>
+<td>파일외부비공개 접근수준</td>
+<td>fileprivate</td>
+<td>파일 내부</td>
+</tr>
+<tr>
+<td>비공개 접근수준</td>
+<td>private</td>
+<td>기능 정의 내부</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-2-1-공개-접근수준-Public">1.2.1.공개 접근수준(Public)</h3>
+<p>public키워드 접근수준이 지정이된 요소는 어디든 쓰일 수 있고 주로 프레임워크에서 외부와 연결될 인터페이스를 구현하는데 많이 쓰인다.</p>
+<p><em>스위프트의 기본요소는 모두 공개접근수준으로 구현되있다고 생각하면 된다</em></p>
+<h3 id="1-2-2-개방-접근수준-Open">1.2.2.개방 접근수준(Open)</h3>
+<p>open키워드로 지정할 수 있는 개방 접근수준은 공개접근수준 이상으로 높은 접근수준이고 <code>클래스와 클래스의 멤버에만 사용할 수 있다</code>.</p>
+<p><em>공개 접근수준과 차이점</em></p>
+<ul>
+<li>open을 제외한 다른 접근수준의 클래스는 그 클래스가 정의된 모듈 안에서 상속할 수 있다.</li>
+<li>open을 제외한 다른 모든 접근수준의 클래스 멤버는 해당 멤버가 정의된 모듈 안에서 재정의할 수 있다.</li>
+<li>open의 클래스는 그 클래스가 정의된 모듈 밖의 다른 모듈에서도 상속할 수 있다.</li>
+<li>open의 클래스 멤버는 해당 멤버가 정의도니 모듈 밖의 다른 모듈에서 재정의할 수 있다.</li>
+</ul>
+<h3 id="1-2-3-내부-접근수준-internal">1.2.3.내부 접근수준(internal)</h3>
+<p>internal은 모든 요소에 암묵적으로 지정하는 기본 접근수준이다. 우리가 접근제어를 따로 지정해주지 않으면 우리가 사용하는 클래스 앞에 붙어있다고 생각하면 된다.</p>
+<h3 id="1-2-4-파일외부비공개-접근수준-fileprivate">1.2.4.파일외부비공개 접근수준(fileprivate)</h3>
+<p>fileprivate 접근수준으로 지정된 요소는 <code>소스파일 내부에서만 사용할 수 있다</code>.</p>
+<h3 id="1-2-5-비공개-접근수준-Private">1.2.5.비공개 접근수준(Private)</h3>
+<p>private 접근수준은 가장 한정적인 범위로 지정된 요소는 그 기능을 <code>구현된 범위 안에서만 사용할 수 있다</code>.</p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/17/swift/swift-Function/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

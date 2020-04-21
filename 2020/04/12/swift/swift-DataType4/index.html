@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>데이터 타입(Data Type) 열거형 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Swift
+DataType
+Array
+Dictionary
+Set
+
+위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.
+
+1.열거형(enum)
+열거형은 연관성이 있는 항목을 묶어서">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="데이터 타입(Data Type) 열거형"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/12/swift/swift-datatype4/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/swift/데이터 타입(Data Type) 열거형</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-12</span>
+				<span class="label label-primary">Swift</span>
+<span class="label label-info">DataType</span>
+<span class="label label-info">Array</span>
+<span class="label label-info">Dictionary</span>
+<span class="label label-info">Set</span>
+<blockquote>
+<p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.</p>
+</blockquote>
+<h1>1.열거형(enum)</h1>
+<p>열거형은 연관성이 있는 <code>항목을 묶어서 표현할 수 있는 타입</code>니다. 열거형은 배열이나 딕셔너리 같은 타입과 다르게 프로그래머가 정의해준 항목 값 외에는 추가나 수정이 불가능하다. 이런 특성 때문에 딱 정해진 값만 열거형 값에 속할 수 있다.</p>
+<p><em>열거형으로 묶을 수 있는 항목</em></p>
+<table>
+<thead>
+<tr>
+<th>카테고리</th>
+<th>분류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>방위</td>
+<td>동, 서, 남, 북</td>
+</tr>
+<tr>
+<td>학생</td>
+<td>초등학생, 중학생, 고등학생, 대학생, 대학원생</td>
+</tr>
+<tr>
+<td>지역</td>
+<td>강원도, 경기도, 경상도, 전라도, 제주도, 충청도</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-1-열거형-선언">1.1.열거형 선언</h2>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">CompassPoint</span> </span>&#123;</span><br><span class="line">  <span class="keyword">case</span> north</span><br><span class="line">  <span class="keyword">case</span> south</span><br><span class="line">  <span class="keyword">case</span> east</span><br><span class="line">  <span class="keyword">case</span> west</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>열거형의 타입 이름은 PascalCase(UpperCamelCase)로 표기하고, 각각의 case는 lowerCamelCase로 표기한다. CompassPoint라는 이름을 가진 열거형은 north, south, east, west라는 항목이 있는데 각 항목은 그 자체가 고유의 값이며 항목이 많아지게 된다면 한줄에 표현하는것도 가능하다.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">CompassPoint</span> </span>&#123;</span><br><span class="line">    <span class="keyword">case</span> north, south, east, west</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>열거형을 사용하기위해 변수를 생성하고 값을 할당하는 방법은 다음과 같다.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> compassNorth: <span class="type">CompassPoint</span> = <span class="type">CompassPoint</span>.north</span><br><span class="line"><span class="keyword">var</span> compassNorth: <span class="type">CompassPoint</span> = .north</span><br><span class="line"></span><br><span class="line">compassNorth = .north</span><br></pre></td></tr></table></figure>
+<p>1번라인과 2번라인은 값이 같은 다른 표현방법 이다. <code>compassNorth</code>라는 변수를 만들고 CompassPoint라는 앞에서 생성한 열거형타입을 타입으로 지정한 후 CompassPoint에서 north case를 변수에 넣어준다.</p>
+<h2 id="1-2-원시-값-Raw-Value">1.2.원시 값(Raw Value)</h2>
+<p>열거형의 각 항목은 자체로 하느의 값이지만 항목의 <code>원시 값</code>도 가질 수 있다. 특정 타입으로 지정된 값을 지정해줄 수 있는데 열거형의 이름 오른쪽에 타입을 명시해주면 된다. 하지만 원시 값은 해당 열거형에서 반드시 고유한 값이여야 한다.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">WeekdayName</span>: <span class="title">String</span> </span>&#123;</span><br><span class="line">  <span class="keyword">case</span> sunday = <span class="string">"일요일"</span>, monday = <span class="string">"월요일"</span>, tuesday = <span class="string">"화요일"</span>, wednesday = <span class="string">"수요일"</span>, thursday = <span class="string">"목요일"</span>, friday = <span class="string">"금요일"</span>, saturday = <span class="string">"토요일"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">WeekdayName</span>.monday          <span class="comment">// monday</span></span><br><span class="line"><span class="type">WeekdayName</span>.monday.rawValue <span class="comment">// 월요일</span></span><br></pre></td></tr></table></figure>
+<p>WeekdayName을 문자열 타입을 지정해주고, 각 요일 케이스마다 문자열을 넣어주었다 <code>WeekdayName.monday</code>만 작성할시 추가해준 원시값인 월요일이 나오는것이아니라 WeekdayName의 case인 monday가 나오는것을 확인 할 수 있고, <code>WeekdayName.monday.rawValue</code>인 rawValue프로퍼티를 사용하였을 때에는 추가로 작성한 <code>&quot;월요일&quot;</code>이 출력되는것을 확인할 수 있다.</p>
+<h3 id="1-2-1-원시-값-일부-지정-및-자동처리">1.2.1.원시 값 일부 지정 및 자동처리</h3>
+<p>원시값에 일부 case만 원시값을 지정해줬다면 각 항목의 이름을 그대로 원시 값으로 가지게 되고, 정수 타입이라면 첫 항목을 기준으로 0부터 1씩 늘어난 값을 가지게 된다.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">WeekdayNameAgain</span>: <span class="title">String</span> </span>&#123;</span><br><span class="line">  <span class="keyword">case</span> sunday, monday = <span class="string">"mon"</span>, tuesday = <span class="string">"tue"</span>, wednesday, thursday, friday, saturday</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">WeekdayNameAgain</span>.tuesday            <span class="comment">// tuesday</span></span><br><span class="line"><span class="type">WeekdayNameAgain</span>.tuesday.rawValue   <span class="comment">// "tue"</span></span><br><span class="line"></span><br><span class="line"><span class="type">WeekdayNameAgain</span>.wednesday          <span class="comment">// wednesday</span></span><br><span class="line"><span class="type">WeekdayNameAgain</span>.wednesday.rawValue <span class="comment">// "wednesday"</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">PlanetIntRaw</span>: <span class="title">Int</span> </span>&#123;</span><br><span class="line">  <span class="keyword">case</span> mercury = <span class="number">1</span>, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">PlanetIntRaw</span>.venus                  <span class="comment">// venus</span></span><br><span class="line"><span class="type">PlanetIntRaw</span>.venus.rawValue         <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="type">PlanetIntRaw</span>(rawValue: <span class="number">5</span>)           <span class="comment">// jupiter</span></span><br><span class="line"><span class="type">PlanetIntRaw</span>(rawValue: <span class="number">7</span>)           <span class="comment">// uranus</span></span><br></pre></td></tr></table></figure>
+<p>열거형 <code>WeekdayNameAgain</code>은 원시값이 monday, tuesday에 지정해줬기 때문에 지정한 값들을 <code>rawValue</code>로 확인을 하게 되면 지정한 원시값이 출력되지만, 지정하지 않은 열거형 케이스의 원시값을 확인해보면 지정한 케이스가 문자열로 출력되는것을 확인할 수 있다. <code>PlanetIntRaw</code>의 경우 <code>mercury</code>케이스에 숫자 1 을 원시값으로 지정해주었기 때문에 0부터 시작하는것이 아닌 1 부터 시작하여 나열되게 된다</p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/12/swift/swift-DataType3/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/11/swift/swift-DataType/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

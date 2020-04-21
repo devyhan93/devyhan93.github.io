@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>사분면 고르기 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Algolithm
+백준온라인저지
+Swift
+14681번
+1.문제 14681번
+1.1.사분면 고르기
+
+
+
+시간제한
+메모리 제한
+
+
+
+
+1초
+512 MB
+
+
+
+1.2.문제
+흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="사분면 고르기"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/15/algorithm/algorithm-q14681/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/Algorithm/사분면 고르기</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-15</span>
+				<span class="label label-primary">Algolithm</span>
+<span class="label label-primary">백준온라인저지</span>
+<span class="label label-primary">Swift</span>
+<span class="label label-info">14681번</span>
+<h1>1.문제 14681번</h1>
+<h2 id="1-1-사분면-고르기">1.1.사분면 고르기</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">시간제한</th>
+<th style="text-align:center">메모리 제한</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1초</td>
+<td style="text-align:center">512 MB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-2-문제">1.2.문제</h3>
+<p>흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. <code>Quadrant n</code>은 <code>제n사분면</code>이라는 뜻이다.</p>
+<img width="276" alt="1" src="https://user-images.githubusercontent.com/45344633/77875511-3e550000-728b-11ea-958f-60c60ee91403.png">
+<p>예를 들어, 좌표가 (12, 5)인 점 A는 x좌표와 y좌표가 모두 양수이므로 제1사분면에 속한다. 점 B는 x좌표가 음수이고 y좌표가 양수이므로 제2사분면에 속한다.</p>
+<p>점의 좌표를 입력받아 그 점이 어느 사분면에 속하는지 알아내는 프로그램을 작성하시오. 단, x좌표와 y좌표는 모두 양수나 음수라고 가정한다.</p>
+<h3 id="1-3-입력">1.3.입력</h3>
+<p>첫 줄에는 정수 x가 주어진다. (−1000 ≤ x ≤ 1000; x ≠ 0) 다음 줄에는 정수 y가 주어진다. (−1000 ≤ y ≤ 1000; y ≠ 0)</p>
+<h3 id="1-4-출력">1.4.출력</h3>
+<p>점 (x, y)의 사분면 번호(1, 2, 3, 4 중 하나)를 출력한다.</p>
+<h3 id="1-5-제한"><s>1.5.제한</s></h3>
+<h3 id="1-6-예제입력">1.6.예제입력</h3>
+<p><em>입력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">12</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p><em>입력 2번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span></span><br><span class="line">-<span class="number">13</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-7-예제출력">1.7.예제출력</h3>
+<p><em>출력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p><em>출력 1번</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-8-풀이">1.8.풀이</h3>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> firstNum = <span class="type">Int</span>(<span class="built_in">readLine</span>()!)!</span><br><span class="line"><span class="keyword">var</span> secondNum = <span class="type">Int</span>(<span class="built_in">readLine</span>()!)!</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(firstNum &gt; <span class="number">0</span> &amp;&amp; secondNum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">1</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>(firstNum &lt; <span class="number">0</span> &amp;&amp; secondNum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">2</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>(firstNum &lt; <span class="number">0</span> &amp;&amp; secondNum &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">3</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>(firstNum &gt; <span class="number">0</span> &amp;&amp; secondNum &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">4</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"값에 0이 올 수 없습니다."</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+			
+			
+			
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/15/Algorithm/Algorithm-Q1330/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/15/Algorithm/Algorithm-Q2753/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

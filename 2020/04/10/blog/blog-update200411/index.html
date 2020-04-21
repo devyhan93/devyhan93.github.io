@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>포스트 헤더 수정 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Blog
+update
+Hexo
+custom
+1.포스트 헤더 수정하기
+
+블로그의 각각의 포스트 상단을 보면 경로처럼 표현된 타이틀이 있다. 이것이 현재는 Wiki ~/현재포스트 이런방식으로 표현되고 있는데 여기에 현재 포스트의 카테고리 까지 보여주면 좋을 것 같아 Wik">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="포스트 헤더 수정"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/10/blog/blog-update200411/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/blog/포스트 헤더 수정</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-10</span>
+				<span class="label label-primary">Blog</span>
+<span class="label label-info">update</span>
+<span class="label label-info">Hexo</span>
+<span class="label label-info">custom</span>
+<h1>1.포스트 헤더 수정하기</h1>
+<blockquote>
+<p>블로그의 각각의 포스트 상단을 보면 경로처럼 표현된 타이틀이 있다. 이것이 현재는 <code>Wiki ~/현재포스트</code> 이런방식으로 표현되고 있는데 여기에 현재 포스트의 카테고리 까지 보여주면 좋을 것 같아 <code>Wiki ~/현재디렉토리/현재포스트</code>이 방식으로 바꾸어 보려고 한다.</p>
+</blockquote>
+<h2 id="1-1-수정-전">1.1.수정 전</h2>
+<p>이것이 수정하기 전의 모습이다. 텍스트가 현재 포스트(<code>Wiki ~/현재포스트</code>)만 표현되고 있는것을 확인할 수 있다.</p>
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/45344633/79037974-9e935c80-7c10-11ea-9c73-192655f99d68.png">
+<h2 id="1-2-수정-과정">1.2.수정 과정</h2>
+<p>수정한 코드의 부분인 article.js의 일부이다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"page-header"</span>&gt;		</span><br><span class="line">    &lt;h1&gt;</span><br><span class="line">        &lt;a <span class="class"><span class="keyword">class</span></span>=<span class="string">"brand"</span> href=<span class="string">"&lt;%= config.root %&gt;"</span>&gt;</span><br><span class="line">            &lt;%= config.title %&gt;</span><br><span class="line">        &lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">            /</span> &lt;%= page.title %&gt;</span><br><span class="line">    &lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure>
+<p>3번째 라인의 <code>&lt;%= config.title %&gt;</code>은 hexo의 <code>_config.yml</code>파일의 title을 보여준다. 현재 나는 Wiki로 설정되어있어 타이틀이 Wiki로 보이게 되는데 그 위에 붙을 내용인 <code>/ &lt;%= page.title %&gt;</code>은 현재 포스트의 타이틀을 보여준다 나는 <code>/</code>앞에 현재 포스트의 카테고리를 보여주려고 하기 때문에,</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"page-header"</span>&gt;		</span><br><span class="line">    &lt;h1&gt;</span><br><span class="line">        &lt;a <span class="class"><span class="keyword">class</span></span>=<span class="string">"brand"</span> href=<span class="string">"&lt;%= config.root %&gt;"</span>&gt;</span><br><span class="line">            &lt;%= config.title %&gt;</span><br><span class="line">        &lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">        &lt;% var currentCategory =  url_for(path).split('/</span><span class="string">')[4] %&gt;		</span></span><br><span class="line"><span class="string">        &lt;span class="capitalizeFirst"&gt;~/&lt;%= currentCategory %&gt;/&lt;%= page.title %&gt;&lt;/span&gt;</span></span><br><span class="line"><span class="string">    &lt;/h1&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<p>타이틀(Wiki)<code>&lt;%= config.title %&gt;</code>뒤에 카테고리를 붙여 주었는데 이 방법은 <code>currentCategory</code>라는 변수에 현재의 url을 <code>/</code>로 나누어 배열에 저장하고 5번째의 배열에 있는 정보인 카테고리에 있는 텍스트를 담아서 보여주게 된다. 그리고 그 뒤에 현재의 포스트를 가르키는 <code>/ &lt;%= page.title %&gt;</code>를 붙여 주었다.</p>
+<h2 id="1-3-수정-후">1.3.수정 후</h2>
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/45344633/79038338-7822f080-7c13-11ea-9ed2-347b1cb860a6.png">
+<p>이제 상단의 경로를 보면 현재의 포스트가 어느 카테고리에 있는지 알 수 있게 되었다.</p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/04/10/blog/blog-update200410/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next disabled"><a>next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+
