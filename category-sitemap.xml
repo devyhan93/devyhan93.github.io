@@ -9,7 +9,14 @@
 
     <url>
         <loc>https://devyhan93.github.io/categories/Todo-Til/</loc>
-        <lastmod>2020-04-22T04:21:37.691Z</lastmod>
+        <lastmod>2020-04-22T05:03:26.535Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/categories/Foundation/</loc>
+        <lastmod>2020-04-22T05:03:00.371Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

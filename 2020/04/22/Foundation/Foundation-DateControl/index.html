@@ -1,0 +1,554 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>데이터 포맷의 형식(Date Format Symbol) | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Foundation
+Swift
+DateFormatSymbol
+1.데이터 포맷의 형식(Date Format Symbol)
+데이터 포맷의 심벌은 필드를 기준으로 년(Year), 월(Month), 주(week), 일(Day), 요일(Weekday), 시기(Period), 시">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="데이터 포맷의 형식(Date Format Symbol)"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/22/foundation/foundation-datecontrol/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/Foundation/데이터 포맷의 형식(Date Format Symbol)</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-22</span>
+				<span class="label label-primary">Foundation</span>
+<span class="label label-primary">Swift</span>
+<span class="label label-info">DateFormatSymbol</span>
+<h1>1.데이터 포맷의 형식(Date Format Symbol)</h1>
+<p><strong>데이터 포맷의 심벌은 필드를 기준으로 년(Year), 월(Month), 주(week), 일(Day), 요일(Weekday), 시기(Period), 시간(Hour), 분(Minute), 초(Second), 지역(Zone)이 있다. 각 필드들의 심벌과 결과 의미를 알아보자.</strong></p>
+<h2 id="1-1-년-Year">1.1.년(Year)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yy</td>
+<td>16</td>
+<td>두 자리로 연도를 표시</td>
+</tr>
+<tr>
+<td>yyyy</td>
+<td>2016</td>
+<td>네 자리로 연도를 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-2-월-Month">1.2.월(Month)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>5</td>
+<td>한 자리로 월을 표시</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>05</td>
+<td>두 자리로 월을 표시</td>
+</tr>
+<tr>
+<td>MMM</td>
+<td>Mar</td>
+<td>Jan ~ December까지 3글자만 영문으로 월을 표시</td>
+</tr>
+<tr>
+<td>MMMM</td>
+<td>March</td>
+<td>Jan ~ December까지 전체를 영문으로 월을 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-3-주-Week">1.3.주(Week)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w</td>
+<td>6</td>
+<td>1 ~ 52까지 연간 주 순서(week of year)를 표시</td>
+</tr>
+<tr>
+<td>ww</td>
+<td>13</td>
+<td>01 ~ 52까지 연간 주 순서(week of year)를 표시</td>
+</tr>
+<tr>
+<td>W</td>
+<td>5</td>
+<td>1 ~ 6까지 월간 주 순서(week of month)를 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-4-일-Day">1.4.일(Day)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>d</td>
+<td>8</td>
+<td>1 ~ 31까지 일을 표시</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>08</td>
+<td>01 ~ 31까지 일을 표시</td>
+</tr>
+<tr>
+<td>D</td>
+<td>35</td>
+<td>1 ~ 365까지 연간 일 순서(day of year)를 표시</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>35</td>
+<td>01 ~ 365까지 연간 일 순서(day of year)를 표시</td>
+</tr>
+<tr>
+<td>DDD</td>
+<td>035</td>
+<td>001 ~ 365까지 연간 일 순서(day of year)를 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-5-요일-Weekday">1.5.요일(Weekday)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E, EE, EEE</td>
+<td>Mon</td>
+<td>Sun ~ Sat까지 3글자 요일 표시</td>
+</tr>
+<tr>
+<td>EEEE</td>
+<td>Monday</td>
+<td>Sunday ~ Saturday까지 요일 전체 이름 표시</td>
+</tr>
+<tr>
+<td>EEEEE</td>
+<td>M</td>
+<td>한 글자 약어 요일 표시</td>
+</tr>
+<tr>
+<td>e</td>
+<td>4</td>
+<td>1 ~ 7까지 주간 날짜 순서 표시</td>
+</tr>
+<tr>
+<td>ee</td>
+<td>04</td>
+<td>01 ~ 07까지 주간 날짜 순서 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-6-시기-Period">1.6.시기(Period)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>PM</td>
+<td>AM/PM 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-7-시간-Hour">1.7.시간(Hour)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h</td>
+<td>3</td>
+<td>1 ~ 12까지 시각을 표시</td>
+</tr>
+<tr>
+<td>hh</td>
+<td>03</td>
+<td>01 ~ 12까지 시각을 표시</td>
+</tr>
+<tr>
+<td>H</td>
+<td>15</td>
+<td>1 ~ 24까지 24시간 시각을 표시</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>15</td>
+<td>01 ~ 24까지 24시간 시각을 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-8-분-Minute">1.8.분(Minute)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>m</td>
+<td>36</td>
+<td>0 ~ 59까지 분을 표시</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>36</td>
+<td>00 ~ 59까지 분을 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-9-초-Second">1.9.초(Second)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>44</td>
+<td>0 ~ 59까지 초를 표시</td>
+</tr>
+<tr>
+<td>ss</td>
+<td>44</td>
+<td>00 ~ 59까지 초를 표시</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-10-지역-Zone">1.10.지역(Zone)</h2>
+<table>
+<thead>
+<tr>
+<th>심벌</th>
+<th>결과</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>z</td>
+<td>GMT+09:00</td>
+<td>타임존 표시</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>+0900</td>
+<td>GMT 시간차 표시</td>
+</tr>
+</tbody>
+</table>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next disabled"><a>next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+
