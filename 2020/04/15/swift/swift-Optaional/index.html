@@ -3,28 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>함수(Function) | Devwiki</title>
+  <title>옵셔널(Optional) | Devwiki</title>
   <meta name="author" content="devyhan93">
   
   <meta name="description" content="Swift
-Function
+Optionals
 
 위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.
 
-1.함수(Function)
-함수는 프로그램을 이루는 주된 요소중 하나이다. 작업의 가장 작은 단">
+1.옵셔널(Optional)">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="함수(Function)"/>
+  <meta property="og:title" content="옵셔널(Optional)"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
     <meta property="og:image" content=""/>
   
 
-  <link rel="canonical" href="https://devyhan93.github.io/2020/04/17/swift/swift-function/"/>
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/15/swift/swift-optaional/"/>
 
   
     <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
@@ -65,7 +64,7 @@ Function
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/swift/함수(Function)</span>
+		<span class="capitalizeFirst">~/swift/옵셔널(Optional)</span>
 	</h1>
 </div>		
 
@@ -90,35 +89,13 @@ Function
 	  		<!-- content -->
 			<div class="item-contents">
 				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
-				<span class="date" style="float: right;" id="title-date">2020-04-17</span>
+				<span class="date" style="float: right;" id="title-date">2020-04-15</span>
 				<span class="label label-primary">Swift</span>
-<span class="label label-info">Function</span>
+<span class="label label-info">Optionals</span>
 <blockquote>
 <p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B9421379018" target="_blank" rel="noopener">스위프트프로그래밍 3판</a> 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.</p>
 </blockquote>
-<h1>1.함수(Function)</h1>
-<p>함수는 프로그램을 이루는 주된 요소중 하나이다. 작업의 가장 작은 단위이자 작은 프로그램이며 <code>하나의 프로그램은 하나의 큰 함수다</code>.</p>
-<h2 id="1-1-함수와-메서드">1.1.함수와 메서드</h2>
-<p>함수와 메서드(method)는 기본적으로 같다. <code>상황이나 위치에 따라서 다른 용어</code>로 부르는 것 뿐이다.</p>
-<ul>
-<li><strong>메서드로 불리는 상황</strong>
-<ul>
-<li>구조체, 클래스, 열거형 등 특정 타입에 연관되어 사용하는 함수</li>
-</ul>
-</li>
-<li><strong>함수로 불리는 상황</strong>
-<ul>
-<li>모듈 전체에서 전역적으로 사용할 수 있는 함수</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-2-함수의-정의와-호출">1.2.함수의 정의와 호출</h2>
-<p>함수는 자유도가 높은 문법중 하나로 <code>함수의이름</code>, <code>매개변수(파라미터, Parameter)</code>, <code>반환타입</code>등을 사용하여 함수를 정의한다.</p>
-<p><em>함수 기본형태</em></p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> 함수 이름<span class="params">(매개변수 ...)</span></span> -&gt; 반환 타입 &#123;</span><br><span class="line">  실행 구문</span><br><span class="line">  <span class="keyword">return</span> 반환 값</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><em>return키워드를 생략한 매개변수가 여러개인 함수</em></p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">addTwoNum</span><span class="params">(firstNum: Int, secondNum: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">  firstNum + secondNum</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">addTwoNum(firstNum: <span class="number">5</span>, secondNum: <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-<p>함수의 내부 코드가 한줄이면 return키워드를 생략할 수 있다. 이 코드에서의 매개변수는 firstNum, secondNum이고 전달인자(Argument)는 실제 전달되는 값인 5와 2이다.</p>
+<h1>1.옵셔널(Optional)</h1>
 	  
 			</div>
 			<div>
@@ -151,7 +128,6 @@ Function
 	
 		
 			
-			
 		
 	
 		
@@ -171,7 +147,6 @@ Function
 		
 			
 			
-			
 		
 	
 		
@@ -184,18 +159,6 @@ Function
 	
 		
 	
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
 		
 	
 		
@@ -206,10 +169,12 @@ Function
 	
 		
 			
-		
-	
+			
+			
 		
 			
+		
+	
 		
 	
 		
@@ -229,6 +194,18 @@ Function
 		
 	
 		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
 	
 		
 			
@@ -246,11 +223,11 @@ Function
 	
 	
 	
-		<li class="prev"><a href="/2020/04/21/swift/swift-AccessControl/" class="alignleft prev">👈 prev</a></li>
+		<li class="prev"><a href="/2020/04/17/swift/swift-Function/" class="alignleft prev">👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/15/swift/swift-Optaional/" class="alignright next">next 👉</a></li>
+		<li class="next"><a href="/2020/04/13/swift/swift-FlowControll/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>

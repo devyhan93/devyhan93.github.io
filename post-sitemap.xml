@@ -8,6 +8,86 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/</loc>
+        <lastmod>2020-04-22T05:13:41.696Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/11/swift/swift-DataType/</loc>
+        <lastmod>2020-04-22T05:13:36.001Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/11/swift/swift-DataType2/</loc>
+        <lastmod>2020-04-22T05:13:30.615Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/12/swift/swift-DataType3/</loc>
+        <lastmod>2020-04-22T05:13:26.072Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/12/swift/swift-DataType4/</loc>
+        <lastmod>2020-04-22T05:13:22.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/13/swift/swift-FlowControll/</loc>
+        <lastmod>2020-04-22T05:13:18.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/13/swift/swift-FlowControll2/</loc>
+        <lastmod>2020-04-22T05:13:14.267Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</loc>
+        <lastmod>2020-04-22T05:13:10.281Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/15/swift/swift-Optaional/</loc>
+        <lastmod>2020-04-22T05:13:07.052Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/10/swift/swift-varlet/</loc>
+        <lastmod>2020-04-22T05:13:05.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/2020/04/22/til/til-200422/</loc>
         <lastmod>2020-04-22T05:03:26.535Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,80 +104,8 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/10/swift/swift-varlet/</loc>
-        <lastmod>2020-04-21T22:20:58.091Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</loc>
-        <lastmod>2020-04-21T12:24:17.043Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://devyhan93.github.io/2020/04/21/til/til-200421/</loc>
         <lastmod>2020-04-21T11:37:27.812Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/</loc>
-        <lastmod>2020-04-21T11:34:41.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/13/swift/swift-FlowControll2/</loc>
-        <lastmod>2020-04-21T10:55:20.901Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/13/swift/swift-FlowControll/</loc>
-        <lastmod>2020-04-21T10:55:13.986Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/12/swift/swift-DataType4/</loc>
-        <lastmod>2020-04-21T10:55:07.309Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/12/swift/swift-DataType3/</loc>
-        <lastmod>2020-04-21T10:55:00.769Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/11/swift/swift-DataType2/</loc>
-        <lastmod>2020-04-21T10:54:52.691Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/11/swift/swift-DataType/</loc>
-        <lastmod>2020-04-21T10:54:45.157Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
