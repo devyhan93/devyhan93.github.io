@@ -9,9 +9,10 @@
   <meta name="description" content="Swift
 Function
 
-위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다. 포스트에 문제가 있을거나 피드백은 댓글 달아주시면 작성자가 빠르게확인 할 수 있습니다.
+위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.
 
-1.함수">
+1.함수(Function)
+함수는 프로그램을 이루는 주된 요소중 하나이다. 작업의 가장 작은 단">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -93,7 +94,7 @@ Function
 				<span class="label label-primary">Swift</span>
 <span class="label label-info">Function</span>
 <blockquote>
-<p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B9421379018" target="_blank" rel="noopener">스위프트프로그래밍 3판</a> 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다. 포스트에 문제가 있을거나 피드백은 댓글 달아주시면 작성자가 빠르게확인 할 수 있습니다.</p>
+<p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다.</p>
 </blockquote>
 <h1>1.함수(Function)</h1>
 <p>함수는 프로그램을 이루는 주된 요소중 하나이다. 작업의 가장 작은 단위이자 작은 프로그램이며 <code>하나의 프로그램은 하나의 큰 함수다</code>.</p>
@@ -118,6 +119,9 @@ Function
 <p><em>return키워드를 생략한 매개변수가 여러개인 함수</em></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">addTwoNum</span><span class="params">(firstNum: Int, secondNum: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">  firstNum + secondNum</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">addTwoNum(firstNum: <span class="number">5</span>, secondNum: <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
 <p>함수의 내부 코드가 한줄이면 return키워드를 생략할 수 있다. 이 코드에서의 매개변수는 firstNum, secondNum이고 전달인자(Argument)는 실제 전달되는 값인 5와 2이다.</p>
+<p><em>전달인자 레이블을 사용한 함수, 생략한 함수</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sayHello</span><span class="params">(to name: Stirng, <span class="number">_</span> tiem: Int )</span></span></span><br></pre></td></tr></table></figure>
+<p>함수 외부에서 사용할 때에는 Argument Label을 사용하고 함수 내부에서는 파라미터(num)을 사용한다.</p>
 	  
 			</div>
 			<div>
@@ -137,20 +141,9 @@ Function
 		
 	
 		
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
 	
 		
 			
-			
 		
 	
 		
@@ -160,7 +153,10 @@ Function
 		
 	
 		
-			
+	
+		
+	
+		
 			
 			
 		
@@ -180,15 +176,15 @@ Function
 		
 	
 		
-	
-		
-	
-		
+			
+			
 			
 		
 	
 		
-			
+	
+		
+	
 		
 	
 		
@@ -232,9 +228,19 @@ Function
 		
 	
 		
+			
+		
 	
 		
 	
+		
+	
+		
+	
+		
+	
+		
+			
 		
 	
 		
