@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-04-24T18:47:13.172Z</updated>
+  <updated>2020-04-22T05:03:00.371Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>BTT를 활용한 터치바에 메신저 표시하기</title>
-    <link href="https://devyhan93.github.io/2020/04/25/utility/utility-TouchBarCoustom/"/>
-    <id>https://devyhan93.github.io/2020/04/25/utility/utility-TouchBarCoustom/</id>
-    <published>2020-04-24T15:00:00.000Z</published>
-    <updated>2020-04-24T18:47:13.172Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Utility&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;BetterTouchTool&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Utility" scheme="https://devyhan93.github.io/categories/Utility/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>데이터 포맷의 형식(Date Format Symbol)</title>
@@ -567,6 +540,33 @@
     
     
       <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>사칙연산</title>
+    <link href="https://devyhan93.github.io/2020/04/14/Algorithm/Algorithm-Q10869/"/>
+    <id>https://devyhan93.github.io/2020/04/14/Algorithm/Algorithm-Q10869/</id>
+    <published>2020-04-13T15:00:00.000Z</published>
+    <updated>2020-04-15T03:12:02.548Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
     
     
   </entry>
