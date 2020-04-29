@@ -75,7 +75,7 @@
     <link href="https://devyhan93.github.io/2020/04/28/iOS/using-iOSLifeCycle%20copy/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/using-iOSLifeCycle%20copy/</id>
     <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-04-27T21:51:10.143Z</updated>
+    <updated>2020-04-29T06:40:32.599Z</updated>
     
     <summary type="html">
     
@@ -85,7 +85,8 @@
         
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;LifeCycle&lt;/span&gt;
-&lt;h1&gt;1.iOS Life
+&lt;h1&gt;1.iOS Life Cycle&lt;/h1&gt;
+&lt;p&gt;iOS앱은 기본적으로
         
       
     
@@ -93,6 +94,60 @@
     
     
       <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UIKit 이란 ?</title>
+    <link href="https://devyhan93.github.io/2020/04/28/UIKit/uikit-UIKit/"/>
+    <id>https://devyhan93.github.io/2020/04/28/UIKit/uikit-UIKit/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-04-29T07:12:25.850Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;UIKit&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Optional&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="UIKit" scheme="https://devyhan93.github.io/categories/UIKit/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>200422</title>
+    <link href="https://devyhan93.github.io/2020/04/22/til/til-200422/"/>
+    <id>https://devyhan93.github.io/2020/04/22/til/til-200422/</id>
+    <published>2020-04-21T15:00:00.000Z</published>
+    <updated>2020-04-22T08:27:33.449Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
+&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
     
     
   </entry>
@@ -148,33 +203,6 @@
     
     
       <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>200422</title>
-    <link href="https://devyhan93.github.io/2020/04/22/til/til-200422/"/>
-    <id>https://devyhan93.github.io/2020/04/22/til/til-200422/</id>
-    <published>2020-04-21T15:00:00.000Z</published>
-    <updated>2020-04-22T08:27:33.449Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
     
     
   </entry>
@@ -320,33 +348,6 @@
   </entry>
   
   <entry>
-    <title>구구단</title>
-    <link href="https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/"/>
-    <id>https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/</id>
-    <published>2020-04-16T15:00:00.000Z</published>
-    <updated>2020-04-16T15:25:06.427Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>함수(Function)</title>
     <link href="https://devyhan93.github.io/2020/04/17/swift/swift-Function/"/>
     <id>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</id>
@@ -404,6 +405,33 @@
   </entry>
   
   <entry>
+    <title>구구단</title>
+    <link href="https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/"/>
+    <id>https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/</id>
+    <published>2020-04-16T15:00:00.000Z</published>
+    <updated>2020-04-16T15:25:06.427Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>200416</title>
     <link href="https://devyhan93.github.io/2020/04/16/til/til-200416/"/>
     <id>https://devyhan93.github.io/2020/04/16/til/til-200416/</id>
@@ -422,6 +450,63 @@
 &lt;li&gt;옵셔널, 열거형 학습 및 문제 풀이&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;옵셔널 타입의 문자열
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>옵셔널(Optional)</title>
+    <link href="https://devyhan93.github.io/2020/04/15/swift/swift-Optaional/"/>
+    <id>https://devyhan93.github.io/2020/04/15/swift/swift-Optaional/</id>
+    <published>2020-04-14T15:00:00.000Z</published>
+    <updated>2020-04-22T12:31:27.400Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Optionals&lt;/span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>200415</title>
+    <link href="https://devyhan93.github.io/2020/04/15/til/til-200415/"/>
+    <id>https://devyhan93.github.io/2020/04/15/til/til-200415/</id>
+    <published>2020-04-14T15:00:00.000Z</published>
+    <updated>2020-04-17T11:22:13.687Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
+&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 / 회고&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] 데이터 타입(Data Type) 일반 예제 추가하기&lt;/li&gt;
+&lt;li&gt;[ ] 데이터
         
       
     
@@ -466,87 +551,6 @@
     <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/</id>
     <published>2020-04-14T15:00:00.000Z</published>
     <updated>2020-04-16T02:14:50.478Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>알람 시계</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2884/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2884/</id>
-    <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-15T03:19:35.880Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>윤년</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2753/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2753/</id>
-    <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-16T02:14:25.357Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>시험 성적</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q9498/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q9498/</id>
-    <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-15T03:15:01.912Z</updated>
     
     <summary type="html">
     

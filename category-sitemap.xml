@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/categories/UIKit/</loc>
+        <lastmod>2020-04-29T07:12:25.850Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/categories/iOS/</loc>
-        <lastmod>2020-04-27T22:02:05.821Z</lastmod>
+        <lastmod>2020-04-29T06:40:32.599Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
