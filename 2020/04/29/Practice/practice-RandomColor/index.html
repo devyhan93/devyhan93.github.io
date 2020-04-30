@@ -3,49 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello Wold | Devwiki</title>
+  <title>랜덤 색상 표현 | Devwiki</title>
   <meta name="author" content="devyhan93">
   
-  <meta name="description" content="Algolithm
-백준온라인저지
+  <meta name="description" content="Practice
+iOS
 Swift
-2557번
-1.1.문제 2557번
-Hello World
-
-
-
-시간제한
-메모리 제한
-알고리즘 분류
-
-
-
-
-1초
-128MB
-출력
-
-
-
-문제
-Hello World!를 출력하시오.
-입력
-없음
-출력
-Hello World!를 출력하시오.">
+RandomColor
+1.랜덤 색상 표현
+123456func getRandomColor() -&amp;gt; UIColor&amp;#123;    let randomRed:CGFloat = CGFloat(drand48())    let randomG">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello Wold"/>
+  <meta property="og:title" content="랜덤 색상 표현"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
     <meta property="og:image" content=""/>
   
 
-  <link rel="canonical" href="https://devyhan93.github.io/2020/04/10/algorithm/algorithm-q2557/"/>
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/29/practice/practice-randomcolor/"/>
 
   
     <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
@@ -86,7 +64,7 @@ Hello World!를 출력하시오.">
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/Algorithm/Hello Wold</span>
+		<span class="capitalizeFirst">~/Practice/랜덤 색상 표현</span>
 	</h1>
 </div>		
 
@@ -111,40 +89,14 @@ Hello World!를 출력하시오.">
 	  		<!-- content -->
 			<div class="item-contents">
 				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
-				<span class="date" style="float: right;" id="title-date">2020-04-10</span>
-				<span class="label label-primary">Algolithm</span>
-<span class="label label-primary">백준온라인저지</span>
-<span class="label label-primary">Swift</span>
-<span class="label label-info">2557번</span>
-<h1>1.1.문제 2557번</h1>
-<h2 id="Hello-World">Hello World</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">시간제한</th>
-<th style="text-align:center">메모리 제한</th>
-<th style="text-align:center">알고리즘 분류</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1초</td>
-<td style="text-align:center">128MB</td>
-<td style="text-align:center">출력</td>
-</tr>
-</tbody>
-</table>
-<h3 id="문제">문제</h3>
-<p>Hello World!를 출력하시오.</p>
-<h3 id="입력">입력</h3>
-<p>없음</p>
-<h3 id="출력">출력</h3>
-<p>Hello World!를 출력하시오.</p>
-<h3 id="예제입력"><s>예제입력</s></h3>
-<h3 id="예제출력">예제출력</h3>
-<p>Hello World!</p>
-<h3 id="풀이">풀이</h3>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">"Hello World"</span>)</span><br></pre></td></tr></table></figure>
+				<span class="date" style="float: right;" id="title-date">2020-04-29</span>
+				<span class="label label-primary">Practice</span>
+<span class="label label-info">iOS</span>
+<span class="label label-info">Swift</span>
+<span class="label label-info">RandomColor</span>
+<h1>1.랜덤 색상 표현</h1>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">getRandomColor</span><span class="params">()</span></span> -&gt; <span class="type">UIColor</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> randomRed:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">    <span class="keyword">let</span> randomGreen:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">    <span class="keyword">let</span> randomBlue:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">    <span class="keyword">return</span> <span class="type">UIColor</span>(red: randomRed, green: randomGreen, blue: randomBlue, alpha: <span class="number">1.0</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>간단한 랜덤 색상을 표현하기 위해서 rgb 값을 0 에서 1까지의 실수(double 타입)를 생성하는 drand48()값을 넣어주고 rgb를 Return한다.</p>
 	  
 			</div>
 			<div>
@@ -158,123 +110,7 @@ Hello World!를 출력하시오.">
 	
 	
 		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
-	
-		
-	
 		
 	
 		
@@ -296,9 +132,95 @@ Hello World!를 출력하시오.">
 	
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
 	
 	
-		<li class="prev"><a href="/2020/04/11/Algorithm/Algorithm-Q10718/" class="alignleft prev">👈 prev</a></li>
+	
+		<li class="prev"><a href="/2020/04/29/Practice/practice-GridLayout/" class="alignleft prev">👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
