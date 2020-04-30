@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-04-30T02:28:25.089Z</updated>
+  <updated>2020-04-30T15:54:11.598Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>코드로 개발할때 기초 프로젝트 설정</title>
+    <link href="https://devyhan93.github.io/2020/04/30/XCode/xcode-CodeProjectSetting/"/>
+    <id>https://devyhan93.github.io/2020/04/30/XCode/xcode-CodeProjectSetting/</id>
+    <published>2020-04-29T15:00:00.000Z</published>
+    <updated>2020-04-30T15:54:11.598Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;XCode&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Swift&lt;/span&gt;
+&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="XCode" scheme="https://devyhan93.github.io/categories/XCode/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>그리드 레이아웃 연습</title>
@@ -180,6 +208,33 @@
   </entry>
   
   <entry>
+    <title>200422</title>
+    <link href="https://devyhan93.github.io/2020/04/22/til/til-200422/"/>
+    <id>https://devyhan93.github.io/2020/04/22/til/til-200422/</id>
+    <published>2020-04-21T15:00:00.000Z</published>
+    <updated>2020-04-22T08:27:33.449Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
+&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>마크다운(Markdown) 작성법</title>
     <link href="https://devyhan93.github.io/2020/04/22/Foundation/Foundation-Markdown/"/>
     <id>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-Markdown/</id>
@@ -203,33 +258,6 @@
     
     
       <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>200422</title>
-    <link href="https://devyhan93.github.io/2020/04/22/til/til-200422/"/>
-    <id>https://devyhan93.github.io/2020/04/22/til/til-200422/</id>
-    <published>2020-04-21T15:00:00.000Z</published>
-    <updated>2020-04-22T08:27:33.449Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
     
     
   </entry>
@@ -521,33 +549,6 @@
     <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/</id>
     <published>2020-04-14T15:00:00.000Z</published>
     <updated>2020-04-15T03:13:26.871Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>윤년</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2753/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2753/</id>
-    <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-16T02:14:25.357Z</updated>
     
     <summary type="html">
     
