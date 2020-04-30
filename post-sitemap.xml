@@ -8,8 +8,24 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/29/Practice/practice-RandomColor/</loc>
-        <lastmod>2020-04-30T02:31:23.487Z</lastmod>
+        <loc>https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/</loc>
+        <lastmod>2020-04-30T02:45:15.342Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/28/iOS/ios-iOSLifeCycle%20copy/</loc>
+        <lastmod>2020-04-30T02:44:54.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</loc>
+        <lastmod>2020-04-30T02:44:47.852Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,22 +34,6 @@
     <url>
         <loc>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</loc>
         <lastmod>2020-04-30T02:28:25.089Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/28/iOS/using-iOSLifeCycle%20copy/</loc>
-        <lastmod>2020-04-29T06:40:32.599Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/28/iOS/using-FrameBounds/</loc>
-        <lastmod>2020-04-27T22:02:05.821Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
