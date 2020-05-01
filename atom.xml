@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-04-30T15:54:11.598Z</updated>
+  <updated>2020-05-01T00:59:11.702Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>코드로 개발할때 기초 프로젝트 설정</title>
+    <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/04/30/XCode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/04/30/XCode/xcode-CodeProjectSetting/</id>
     <published>2020-04-29T15:00:00.000Z</published>
-    <updated>2020-04-30T15:54:11.598Z</updated>
+    <updated>2020-05-01T00:59:11.702Z</updated>
     
     <summary type="html">
     
@@ -181,33 +181,6 @@
   </entry>
   
   <entry>
-    <title>데이터 포맷의 형식(Date Format Symbol)</title>
-    <link href="https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/"/>
-    <id>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/</id>
-    <published>2020-04-21T15:00:00.000Z</published>
-    <updated>2020-04-22T05:03:00.371Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Foundation&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>200422</title>
     <link href="https://devyhan93.github.io/2020/04/22/til/til-200422/"/>
     <id>https://devyhan93.github.io/2020/04/22/til/til-200422/</id>
@@ -230,6 +203,33 @@
     
     
       <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>데이터 포맷의 형식(Date Format Symbol)</title>
+    <link href="https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/"/>
+    <id>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/</id>
+    <published>2020-04-21T15:00:00.000Z</published>
+    <updated>2020-04-22T05:03:00.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Foundation&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
     
     
   </entry>
@@ -517,11 +517,11 @@
   </entry>
   
   <entry>
-    <title>사분면 고르기</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/</id>
+    <title>두 수 비교하기</title>
+    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/"/>
+    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/</id>
     <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-16T02:14:50.478Z</updated>
+    <updated>2020-04-15T03:13:26.871Z</updated>
     
     <summary type="html">
     
@@ -544,11 +544,11 @@
   </entry>
   
   <entry>
-    <title>두 수 비교하기</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/</id>
+    <title>사분면 고르기</title>
+    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/"/>
+    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/</id>
     <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-15T03:13:26.871Z</updated>
+    <updated>2020-04-16T02:14:50.478Z</updated>
     
     <summary type="html">
     
