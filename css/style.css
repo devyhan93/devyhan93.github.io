@@ -445,6 +445,26 @@ em.search-keyword {
   margin-left: 2px;
 }
 
+.link-point {
+  display: block;
+  height: 10px; /*고정헤더와 동일한 높이*/
+  margin-top: -10px; /*고정헤더와 동일한높이*/
+  visibility: hidden;
+}
+
+.categories-tag-box {
+  align-items: center;
+}
+
+.categories-tag {
+  /* align-items: center; */
+  text-align: center;
+  /* border: 1px solid; */
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
 /* .item-contents>ul+#할-일-목록{
   list-style: none;
 } */
