@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-01T00:59:11.702Z</updated>
+  <updated>2020-05-03T03:33:06.932Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-03T03:33:06.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
@@ -45,11 +72,11 @@
   </entry>
   
   <entry>
-    <title>그리드 레이아웃 연습</title>
+    <title>그리드 레이아웃</title>
     <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
     <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
     <published>2020-04-28T15:00:00.000Z</published>
-    <updated>2020-04-30T02:28:25.089Z</updated>
+    <updated>2020-05-03T03:32:21.907Z</updated>
     
     <summary type="html">
     
@@ -512,33 +539,6 @@
     
     
       <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>사분면 고르기</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/</id>
-    <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-16T02:14:50.478Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
     
     
   </entry>

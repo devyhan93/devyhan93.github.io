@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>메뉴 주문리스트 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Practice
+iOS
+Swift
+OrderList
+1.메뉴 주문리스트
+스토리보드와 코드를 사용하여 메뉴를 주문하는 앱 제작
+
+1.1.구현 사항
+Development info
+
+
+
+Code
+Storyboard
+
+
+
+
+✔
+✔
+
+
+
+
+주문 버튼 터치 시 각 아이템에 대한 ">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="메뉴 주문리스트"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/05/01/practice/practice-orderlist/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/Practice/메뉴 주문리스트</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span class="date" style="float: right;" id="title-date">2020-05-01</span>
+				<span class="label label-primary">Practice</span>
+<span class="label label-info">iOS</span>
+<span class="label label-info">Swift</span>
+<span class="label label-info">OrderList</span>
+<h1>1.메뉴 주문리스트</h1>
+<p>스토리보드와 코드를 사용하여 메뉴를 주문하는 앱 제작</p>
+<center><img width="315" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/80662586-98d0be80-8acc-11ea-8626-e7c82865124c.png"></center>
+<h2 id="1-1-구현-사항">1.1.구현 사항</h2>
+<p><em>Development info</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Code</th>
+<th style="text-align:center">Storyboard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">✔</td>
+<td style="text-align:center">✔</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>주문 버튼 터치 시 각 아이템에 대한 수량 증가</li>
+<li>각 아이템별 주문 수량 증가에 따른 결제금액 증가</li>
+<li>결제 진행 시 소지금액에서 결제금액만큼 차감 및 주문수량 초기화</li>
+<li>소지금액이 결제금액보다 적은 경우 결제 불가 메시지 Alert 띄우기</li>
+<li>초기화 버튼은 주문수량, 결제금액, 소지금액을 모두 초기화</li>
+<li>초기화 버튼 이외에 한 번 올린 주문수량을 내리는 기능은 없음</li>
+</ul>
+<h3 id="1-1-1-코드-구현부분">1.1.1.코드 구현부분</h3>
+<p><em>ViewController.swift</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ViewController.swift</span></span><br><span class="line"><span class="comment">//  test</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by 요한 on 2020/05/01.</span></span><br><span class="line"><span class="comment">//  Copyright © 2020 요한. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">var</span> firstMenuCountLabel: <span class="type">UILabel!</span></span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">var</span> secondMenuCountLabel: <span class="type">UILabel!</span></span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">var</span> thirdMenuCountLabel: <span class="type">UILabel!</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">var</span> 소지금: <span class="type">Int</span> = <span class="number">70000</span> &#123;</span><br><span class="line">        <span class="keyword">didSet</span> &#123;</span><br><span class="line">            amountNum.text = <span class="string">"\(String(소지금))원"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> 결제금액: <span class="type">Int</span> = <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">didSet</span> &#123;</span><br><span class="line">            paymentNum.text = <span class="string">"\(String(결제금액))원"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> countFirstMenu: <span class="type">Int</span> = <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">didSet</span> &#123;</span><br><span class="line">            firstMenuCountLabel.text = <span class="type">String</span>(countFirstMenu)</span><br><span class="line">            결제금액 += <span class="number">5000</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> countSecondMenu: <span class="type">Int</span> = <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">didSet</span> &#123;</span><br><span class="line">            secondMenuCountLabel.text = <span class="type">String</span>(countSecondMenu)</span><br><span class="line">            결제금액 += <span class="number">6000</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> countThirdMenu: <span class="type">Int</span> = <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">didSet</span> &#123;</span><br><span class="line">            thirdMenuCountLabel.text = <span class="type">String</span>(countThirdMenu)</span><br><span class="line">            결제금액 += <span class="number">12000</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> menu = <span class="type">UILabel</span>()</span><br><span class="line">    <span class="keyword">let</span> price = <span class="type">UILabel</span>()</span><br><span class="line">    <span class="keyword">let</span> <span class="built_in">count</span> = <span class="type">UILabel</span>()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> amount = <span class="type">UILabel</span>()</span><br><span class="line">    <span class="keyword">let</span> payment = <span class="type">UILabel</span>()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> amountNum = <span class="type">UILabel</span>()</span><br><span class="line">    <span class="keyword">let</span> paymentNum = <span class="type">UILabel</span>()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> resetButton = <span class="type">UIButton</span>()</span><br><span class="line">    <span class="keyword">let</span> paymentButton = <span class="type">UIButton</span>()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        </span><br><span class="line">        <span class="type">MenuLabel</span>()</span><br><span class="line">        calculationLabel()</span><br><span class="line">        resetButtonFunc()</span><br><span class="line">        paymentButtonFunc()</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">foundationLabel</span><span class="params">(<span class="keyword">for</span> label: UILabel, text: String, frame: CGRect, bgColor: UIColor, textAligen: NSTextAlignment)</span></span> &#123;</span><br><span class="line">        label.text = text</span><br><span class="line">        label.frame = frame</span><br><span class="line">        label.textAlignment = .center</span><br><span class="line">        label.backgroundColor = bgColor</span><br><span class="line">        label.textAlignment = textAligen</span><br><span class="line">        </span><br><span class="line">        view.addSubview(label)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">MenuLabel</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">let</span> pointX = view.center.x</span><br><span class="line">        <span class="built_in">print</span>(view.center.x)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> firstLabelPoint = <span class="type">CGRect</span>(x: pointX - <span class="number">200</span>, y: <span class="number">50</span>, width: <span class="number">100</span>, height: <span class="number">100</span>)</span><br><span class="line">        <span class="keyword">let</span> secondLabelPoint = <span class="type">CGRect</span>(x: pointX - <span class="number">100</span>, y: <span class="number">50</span>, width: <span class="number">100</span>, height: <span class="number">100</span>)</span><br><span class="line">        <span class="keyword">let</span> thiredLabelPoint = <span class="type">CGRect</span>(x: pointX, y: <span class="number">50</span>, width: <span class="number">100</span>, height: <span class="number">100</span>)</span><br><span class="line">        </span><br><span class="line">        foundationLabel(<span class="keyword">for</span>: menu, text: <span class="string">"메뉴"</span>, frame: firstLabelPoint, bgColor: .white, textAligen: .center)</span><br><span class="line">        foundationLabel(<span class="keyword">for</span>: price, text: <span class="string">"가격"</span>, frame: secondLabelPoint, bgColor: .white, textAligen: .center)</span><br><span class="line">        foundationLabel(<span class="keyword">for</span>: <span class="built_in">count</span>, text: <span class="string">"수량"</span>, frame: thiredLabelPoint, bgColor: .white, textAligen: .center)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">calculationLabel</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">let</span> pointX = view.center.x</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> firstLabelPoint = <span class="type">CGRect</span>(x: pointX - <span class="number">200</span>, y: <span class="number">400</span>, width: <span class="number">100</span>, height: <span class="number">50</span>)</span><br><span class="line">        <span class="keyword">let</span> firstLabelRightPoint = <span class="type">CGRect</span>(x: pointX - <span class="number">80</span>, y: <span class="number">400</span>, width: <span class="number">150</span>, height: <span class="number">50</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> secondLabelPoint = <span class="type">CGRect</span>(x: pointX - <span class="number">200</span>, y: <span class="number">465</span>, width: <span class="number">100</span>, height: <span class="number">50</span>)</span><br><span class="line">        <span class="keyword">let</span> secondLabelRightPoint = <span class="type">CGRect</span>(x: pointX - <span class="number">80</span>, y: <span class="number">465</span>, width: <span class="number">150</span>, height: <span class="number">50</span>)</span><br><span class="line">        </span><br><span class="line">        foundationLabel(<span class="keyword">for</span>: amount, text: <span class="string">"소지금"</span>, frame: firstLabelPoint, bgColor: .systemGreen, textAligen: .center)</span><br><span class="line">        foundationLabel(<span class="keyword">for</span>: payment, text: <span class="string">"결제금액"</span>, frame: secondLabelPoint, bgColor: .systemOrange, textAligen: .center)</span><br><span class="line">        foundationLabel(<span class="keyword">for</span>: amountNum, text: <span class="string">"\(String(소지금))원"</span>, frame: firstLabelRightPoint, bgColor: .systemGreen, textAligen: .<span class="keyword">right</span>)</span><br><span class="line">        foundationLabel(<span class="keyword">for</span>: paymentNum, text: <span class="string">"\(String(결제금액))원"</span>, frame: secondLabelRightPoint, bgColor: .systemOrange, textAligen: .<span class="keyword">right</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">resetButtonFunc</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">let</span> pointX = view.center.x</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> buttonPoint = <span class="type">CGRect</span>(x: pointX + <span class="number">100</span>, y: <span class="number">400</span>, width: <span class="number">100</span>, height: <span class="number">50</span>)</span><br><span class="line">        </span><br><span class="line">        resetButton.setTitle(<span class="string">"초기화"</span>, <span class="keyword">for</span>: .normal)</span><br><span class="line">        resetButton.backgroundColor = .black</span><br><span class="line">        resetButton.frame = buttonPoint</span><br><span class="line">        resetButton.addTarget(<span class="keyword">self</span>, action: #selector(resetAction), <span class="keyword">for</span>: .touchUpInside)</span><br><span class="line">        </span><br><span class="line">        view.addSubview(resetButton)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">paymentButtonFunc</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">let</span> pointX = view.center.x</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> buttonPoint = <span class="type">CGRect</span>(x: pointX + <span class="number">100</span>, y: <span class="number">465</span>, width: <span class="number">100</span>, height: <span class="number">50</span>)</span><br><span class="line">        </span><br><span class="line">        paymentButton.setTitle(<span class="string">"결제"</span>, <span class="keyword">for</span>: .normal)</span><br><span class="line">        paymentButton.backgroundColor = .black</span><br><span class="line">        paymentButton.frame = buttonPoint</span><br><span class="line">        paymentButton.addTarget(<span class="keyword">self</span>, action: #selector(paymentAction), <span class="keyword">for</span>: .touchUpInside)</span><br><span class="line">        </span><br><span class="line">        view.addSubview(paymentButton)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="meta">@objc</span> <span class="function"><span class="keyword">func</span> <span class="title">resetAction</span><span class="params">(<span class="number">_</span> sender: <span class="keyword">Any</span>)</span></span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"Enter Reset"</span>)</span><br><span class="line">        <span class="built_in">print</span>(countFirstMenu)</span><br><span class="line">        countFirstMenu = <span class="number">0</span></span><br><span class="line">        countSecondMenu = <span class="number">0</span></span><br><span class="line">        countThirdMenu = <span class="number">0</span></span><br><span class="line">        결제금액 = <span class="number">0</span></span><br><span class="line">        소지금 = <span class="number">70000</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@objc</span> <span class="function"><span class="keyword">func</span> <span class="title">paymentAction</span><span class="params">(<span class="number">_</span> sender: <span class="keyword">Any</span>)</span></span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"Enter Payment"</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> paymentFailAlertController = <span class="type">UIAlertController</span>(title: <span class="string">"소지금이 부족합니다."</span>, message: <span class="string">"총 결제금액은 \(String(결제금액))이며, 결제시 부족한 금액은 \(String(결제금액-소지금))입니다."</span>, preferredStyle: .alert)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> paymentSuccessAlertController = <span class="type">UIAlertController</span>(title: <span class="string">"결제하기"</span>, message: <span class="string">"총 결제금액은 \(String(결제금액))입니다."</span>, preferredStyle: .alert)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> paymentSameAlertController = <span class="type">UIAlertController</span>(title: <span class="string">"결제하기"</span>, message: <span class="string">"총 결제금액은 \(String(결제금액))입니다."</span>, preferredStyle: .alert)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> 결제금액 &gt; 소지금&#123;</span><br><span class="line">            present(paymentFailAlertController, animated: <span class="literal">true</span>)</span><br><span class="line">            <span class="keyword">let</span> okAction = <span class="type">UIAlertAction</span>(title: <span class="string">"확인"</span>, style: .<span class="keyword">default</span>) &#123;<span class="number">_</span> <span class="keyword">in</span></span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span> action <span class="keyword">in</span> [okAction] &#123;</span><br><span class="line">                paymentFailAlertController.addAction(action)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> 결제금액 &lt; 소지금&#123;</span><br><span class="line">            present(paymentSuccessAlertController, animated: <span class="literal">true</span>)</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">let</span> cancelAction = <span class="type">UIAlertAction</span>(title: <span class="string">"취소"</span>, style: .cancel) &#123;<span class="number">_</span> <span class="keyword">in</span></span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">let</span> okAction = <span class="type">UIAlertAction</span>(title: <span class="string">"확인"</span>, style: .<span class="keyword">default</span>) &#123;<span class="number">_</span> <span class="keyword">in</span></span><br><span class="line">                <span class="keyword">self</span>.소지금 = <span class="keyword">self</span>.소지금 - <span class="keyword">self</span>.결제금액</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">self</span>.countFirstMenu = <span class="number">0</span></span><br><span class="line">                <span class="keyword">self</span>.countSecondMenu = <span class="number">0</span></span><br><span class="line">                <span class="keyword">self</span>.countThirdMenu = <span class="number">0</span></span><br><span class="line">                <span class="keyword">self</span>.결제금액 = <span class="number">0</span></span><br><span class="line">                <span class="built_in">print</span>(<span class="keyword">self</span>.결제금액)</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">for</span> action <span class="keyword">in</span> [okAction, cancelAction] &#123;</span><br><span class="line">                paymentSuccessAlertController.addAction(action)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> 결제금액 == 소지금 &#123;</span><br><span class="line">            present(paymentSameAlertController, animated: <span class="literal">true</span>)</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">let</span> cancelAction = <span class="type">UIAlertAction</span>(title: <span class="string">"취소"</span>, style: .cancel) &#123;<span class="number">_</span> <span class="keyword">in</span></span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">let</span> okAction = <span class="type">UIAlertAction</span>(title: <span class="string">"확인"</span>, style: .<span class="keyword">default</span>) &#123;<span class="number">_</span> <span class="keyword">in</span></span><br><span class="line">                <span class="keyword">self</span>.소지금 = <span class="keyword">self</span>.소지금 - <span class="keyword">self</span>.결제금액</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">self</span>.countFirstMenu = <span class="number">0</span></span><br><span class="line">                <span class="keyword">self</span>.countSecondMenu = <span class="number">0</span></span><br><span class="line">                <span class="keyword">self</span>.countThirdMenu = <span class="number">0</span></span><br><span class="line">                <span class="keyword">self</span>.결제금액 = <span class="number">0</span></span><br><span class="line">                <span class="built_in">print</span>(<span class="keyword">self</span>.결제금액)</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">for</span> action <span class="keyword">in</span> [okAction, cancelAction] &#123;</span><br><span class="line">                paymentSameAlertController.addAction(action)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@IBAction</span> <span class="function"><span class="keyword">func</span> <span class="title">orderFirstMenu</span><span class="params">(<span class="number">_</span> sender: <span class="keyword">Any</span>)</span></span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"1st"</span>)</span><br><span class="line">        countFirstMenu += <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@IBAction</span> <span class="function"><span class="keyword">func</span> <span class="title">orderSecondMenu</span><span class="params">(<span class="number">_</span> sender: <span class="keyword">Any</span>)</span></span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"2nd"</span>)</span><br><span class="line">        countSecondMenu += <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@IBAction</span> <span class="function"><span class="keyword">func</span> <span class="title">orderThirdMenu</span><span class="params">(<span class="number">_</span> sender: <span class="keyword">Any</span>)</span></span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"3th"</span>)</span><br><span class="line">        countThirdMenu += <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-1-2-스토리보드-구현부분">1.1.2.스토리보드 구현부분</h3>
+<p><em>Main.storyboard</em></p>
+<center><img width="100%" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/80898036-9fb03900-8d39-11ea-815a-a24dbcd1ec53.png"></center>
+<h3 id="1-1-3-결과">1.1.3.결과</h3>
+<h3 id="1-1-4-회고">1.1.4.회고</h3>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/29/Practice/practice-GridLayout/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

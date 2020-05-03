@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>그리드 레이아웃 연습 | Devwiki</title>
+  <title>그리드 레이아웃 | Devwiki</title>
   <meta name="author" content="devyhan93">
   
   <meta name="description" content="Practice
@@ -16,7 +16,7 @@ GridLayout
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="그리드 레이아웃 연습"/>
+  <meta property="og:title" content="그리드 레이아웃"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
@@ -64,7 +64,7 @@ GridLayout
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/Practice/그리드 레이아웃 연습</span>
+		<span class="capitalizeFirst">~/Practice/그리드 레이아웃</span>
 	</h1>
 </div>		
 
@@ -97,8 +97,7 @@ GridLayout
 <h1>1.그리드 레이아웃(Grid Layout)</h1>
 <p>우선 그리드 레이아웃(Grid Layout)이란, 격자무늬란 뜻으로 격자 모양의 표에 차일드를 배치한다.셀의 위치와 크기를 다양하게 변형할 수 있고, 셀끼리 병합도 가능해 응용 가능성이 많다.</p>
 <center><img width="315" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/80662586-98d0be80-8acc-11ea-8626-e7c82865124c.png"></center>
-<h2 id="1-1-Development-history">1.1.Development history</h2>
-<p><em>Development info</em></p>
+<h2 id="1-1-Development-info">1.1.Development info</h2>
 <table>
 <thead>
 <tr>
@@ -116,11 +115,11 @@ GridLayout
 <h3 id="1-1-1-width와-height가-고정인-그리드">1.1.1.width와 height가 고정인 그리드</h3>
 <p><em>ViewController.swift</em></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">var</span> numberOfApp: <span class="type">Int</span> = <span class="number">16</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">var</span> xNum: <span class="type">CGFloat</span> = <span class="number">50</span></span><br><span class="line">        <span class="keyword">var</span> yNum: <span class="type">CGFloat</span> = <span class="number">50</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">1</span>...numberOfApp &#123;</span><br><span class="line">            gridButton(defaultX: xNum, defaultY: yNum)</span><br><span class="line">            appTitleLabel(defaultX: xNum, defaultY: yNum )</span><br><span class="line">            </span><br><span class="line">            xNum = i % <span class="number">3</span> == <span class="number">0</span> ? <span class="number">50</span> : xNum + <span class="number">120</span></span><br><span class="line">            <span class="keyword">if</span> i % <span class="number">3</span> == <span class="number">0</span> &#123;</span><br><span class="line">                yNum += <span class="number">120</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> itemLabel = <span class="type">UILabel</span>()</span><br><span class="line">    <span class="keyword">let</span> titleLabel = <span class="type">UILabel</span>()</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">labelAttributes</span><span class="params">(label: UILabel, title: String, frame: CGRect, bgColor: UIColor)</span></span> &#123;</span><br><span class="line">        label.text = title</span><br><span class="line">        label.frame = frame</span><br><span class="line">        label.textAlignment = .center</span><br><span class="line">        label.textColor = .black</span><br><span class="line">        label.backgroundColor = bgColor</span><br><span class="line">        </span><br><span class="line">        view.addSubview(label)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">gridButton</span><span class="params">(defaultX: CGFloat, defaultY: CGFloat)</span></span> &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> button = <span class="type">UIButton</span>(type: .system)</span><br><span class="line">        button.setTitle(<span class="string">"App"</span>, <span class="keyword">for</span>: .normal)</span><br><span class="line">        button.titleLabel?.font = .preferredFont(forTextStyle: .title3)</span><br><span class="line">        button.sizeToFit()</span><br><span class="line">        button.center = view.center</span><br><span class="line">        button.addTarget(<span class="keyword">self</span>, action: #selector(btnAction(<span class="number">_</span>:)), <span class="keyword">for</span>: .touchUpInside)</span><br><span class="line">        button.frame = <span class="type">CGRect</span>(x: defaultX, y: defaultY, width: <span class="number">80</span>, height: <span class="number">80</span>)</span><br><span class="line">        button.backgroundColor = getRandomColor()</span><br><span class="line">        button.layer.cornerRadius = <span class="number">20</span></span><br><span class="line"></span><br><span class="line">        view.addSubview(button)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="meta">@objc</span> <span class="keyword">private</span> <span class="function"><span class="keyword">func</span> <span class="title">btnAction</span><span class="params">(<span class="number">_</span> sender: <span class="keyword">Any</span>)</span></span> &#123;</span><br><span class="line">        <span class="comment">// gridButton action</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">appTitleLabel</span><span class="params">(defaultX: CGFloat, defaultY: CGFloat)</span></span> &#123;</span><br><span class="line">        <span class="keyword">let</span> appTitle = <span class="type">UILabel</span>()</span><br><span class="line">        </span><br><span class="line">        labelAttributes(label: appTitle, title: <span class="string">"Title"</span>, frame: <span class="type">CGRect</span>(x: defaultX, y: defaultY + <span class="number">80</span>, width: <span class="number">80</span>, height: <span class="number">20</span>), bgColor: .white)</span><br><span class="line"></span><br><span class="line">        view.addSubview(appTitle)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">getRandomColor</span><span class="params">()</span></span> -&gt; <span class="type">UIColor</span>&#123;</span><br><span class="line">        <span class="keyword">let</span> randomRed:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">        <span class="keyword">let</span> randomGreen:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">        <span class="keyword">let</span> randomBlue:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="type">UIColor</span>(red: randomRed, green: randomGreen, blue: randomBlue, alpha: <span class="number">1.0</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="1-1-2-회고">1.1.2.회고</h3>
-<p>초기에 생각했던것은 아이폰의 앱 아이콘을 떠올리고 개발을 진행하였는데, 원하는 개수를 입력하면 그것만큼에 앱을 그려주는 코드를 만들려고 하였다 x와 y의 좌표값이 고정적이여서 테스트한 시뮬레이터인 iPhone 11 Pro Max가 아닐때에는 조금 다른 UI를 보여준다.</p>
-<h3 id="1-1-3-결과">1.1.3.결과</h3>
+<h3 id="1-1-2-결과">1.1.2.결과</h3>
 <p><em>numberOfApp = 16</em><br>
 <img width="315" alt="numberOfApp = 16" src="https://user-images.githubusercontent.com/45344633/80664258-404ff000-8ad1-11ea-8b5e-33fcf9068d1e.png"></p>
+<h3 id="1-1-3-회고">1.1.3.회고</h3>
+<p>초기에 생각했던것은 아이폰의 앱 아이콘을 떠올리고 개발을 진행하였는데, 원하는 개수를 입력하면 그것만큼에 앱을 그려주는 코드를 만들려고 하였다 x와 y의 좌표값이 고정적이여서 테스트한 시뮬레이터인 iPhone 11 Pro Max가 아닐때에는 조금 다른 UI를 보여준다.</p>
 	  
 			</div>
 			<div>
@@ -134,6 +133,10 @@ GridLayout
 	
 	
 		
+			
+		
+	
+		
 	
 		
 			
@@ -244,7 +247,7 @@ GridLayout
 	
 	
 	
-		<li class="prev disabled"><a>👈 prev</a></li>
+		<li class="prev"><a href="/2020/05/01/Practice/practice-OrderList/" class="alignleft prev">👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
