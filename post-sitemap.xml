@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</loc>
+        <lastmod>2020-05-04T11:21:04.315Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/2020/05/04/Xcode/xcode-XCodeHotkey/</loc>
         <lastmod>2020-05-04T02:29:31.074Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +26,6 @@
     <url>
         <loc>https://devyhan93.github.io/2020/04/30/Xcode/xcode-CodeProjectSetting/</loc>
         <lastmod>2020-05-04T02:20:41.682Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</loc>
-        <lastmod>2020-05-03T03:35:56.699Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

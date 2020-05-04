@@ -18,6 +18,7 @@
   background-color: none;
   border-radius: 5px;
   z-index: 4;
+  list-style: none;
 }
 
 /* All levels of nav */
@@ -30,7 +31,8 @@
 .sidebar .nav > li > a:focus {
   font-weight: bold;
   background-color: #fff;
-  border-right: 1px solid #dbd8e0;
+  border-left: 3px solid #dbd8e0;
+  margin-left: -3px;
 }
 .sidebar .nav > .active > a,
 .sidebar .nav > .active:hover > a,
@@ -38,7 +40,8 @@
   font-weight: bold;
   color: #2d6ea7;
   background-color: transparent;
-  border-right: 1px solid #2d6ea7;
+  border-left: 3px solid #2d6ea7;
+  margin-left: -3px;
 }
 
 /* Nav: second level (shown on .active) */
@@ -74,4 +77,14 @@
   .sidebar.affix {
     width: 263px;
   }
+}
+
+/* -------------------------------------------------- 
+Custom
+-------------------------------------------------- */
+
+.nav {
+  margin-left: 2px;
+  border-left: 3px solid #dbd8e0;
+  font-size: 14px;
 }
