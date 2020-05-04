@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-03T03:35:56.699Z</updated>
+  <updated>2020-05-04T02:21:39.695Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Xcode 단축키 모음</title>
+    <link href="https://devyhan93.github.io/2020/05/04/Xcode/xcode-XCodeHotkey/"/>
+    <id>https://devyhan93.github.io/2020/05/04/Xcode/xcode-XCodeHotkey/</id>
+    <published>2020-05-03T15:00:00.000Z</published>
+    <updated>2020-05-04T02:21:39.695Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;XCode&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Hotkey&lt;/span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>메뉴 주문리스트</title>
@@ -45,10 +73,10 @@
   
   <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
-    <link href="https://devyhan93.github.io/2020/04/30/XCode/xcode-CodeProjectSetting/"/>
-    <id>https://devyhan93.github.io/2020/04/30/XCode/xcode-CodeProjectSetting/</id>
+    <link href="https://devyhan93.github.io/2020/04/30/Xcode/xcode-CodeProjectSetting/"/>
+    <id>https://devyhan93.github.io/2020/04/30/Xcode/xcode-CodeProjectSetting/</id>
     <published>2020-04-29T15:00:00.000Z</published>
-    <updated>2020-05-01T00:59:11.702Z</updated>
+    <updated>2020-05-04T02:20:41.682Z</updated>
     
     <summary type="html">
     
@@ -56,7 +84,7 @@
       
         
         
-          &lt;span class=&quot;label label-primary&quot;&gt;XCode&lt;/span&gt;
+          &lt;span class=&quot;label label-primary&quot;&gt;Xcode&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;Swift&lt;/span&gt;
 &lt;span
@@ -66,7 +94,7 @@
     </summary>
     
     
-      <category term="XCode" scheme="https://devyhan93.github.io/categories/XCode/"/>
+      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
     
     
   </entry>
@@ -539,33 +567,6 @@
     
     
       <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>두 수 비교하기</title>
-    <link href="https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/"/>
-    <id>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/</id>
-    <published>2020-04-14T15:00:00.000Z</published>
-    <updated>2020-04-15T03:13:26.871Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
     
     
   </entry>
