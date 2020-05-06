@@ -49,7 +49,7 @@
     <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
     <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
     <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-04T11:21:04.315Z</updated>
+    <updated>2020-05-06T01:06:52.505Z</updated>
     
     <summary type="html">
     
@@ -208,11 +208,11 @@
   </entry>
   
   <entry>
-    <title>iOS Life Cycle</title>
+    <title>iOS, viewController Life Cycle</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-iOSLifeCycle%20copy/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-iOSLifeCycle%20copy/</id>
     <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-04-30T02:44:54.499Z</updated>
+    <updated>2020-05-06T03:45:55.440Z</updated>
     
     <summary type="html">
     
@@ -222,8 +222,8 @@
         
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;LifeCycle&lt;/span&gt;
-&lt;h1&gt;1.iOS Life Cycle&lt;/h1&gt;
-&lt;p&gt;iOS앱은 기본적으로
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a
         
       
     

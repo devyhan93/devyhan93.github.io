@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>iOS Life Cycle | Devwiki</title>
+  <title>iOS, viewController Life Cycle | Devwiki</title>
   <meta name="author" content="devyhan93">
   
   <meta name="description" content="iOS
 LifeCycle
+
+UIViewController
+iOS Background Mode
+iOS ) View Controller의 생명주기(Life-Cycle)
+
 1.iOS Life Cycle
-iOS앱은 기본적으로 MVC(Model-View-Controller)라는 소프트웨어 디자인 패턴을 사용한다. 이 디자인 패턴의 중요한점은 데이터와 비즈니스 로직을 UI요소로부터 분리시켜주어 다른디바이스에도 같은 동">
+iOS앱은 기본적으로 MVC(Model-View-Controller)라는">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="iOS Life Cycle"/>
+  <meta property="og:title" content="iOS, viewController Life Cycle"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
@@ -62,7 +67,7 @@ iOS앱은 기본적으로 MVC(Model-View-Controller)라는 소프트웨어 디�
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/iOS/iOS Life Cycle</span>
+		<span class="capitalizeFirst">~/iOS/iOS, viewController Life Cycle</span>
 	</h1>
 </div>		
 
@@ -86,15 +91,107 @@ iOS앱은 기본적으로 MVC(Model-View-Controller)라는 소프트웨어 디�
 
 	  		<!-- content -->
 			<div class="item-contents">
-				<span style="float: left; margin-top: 2px; margin-right: 5px;">#️⃣</span>
+				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
 				<span class="date" style="float: right;" id="title-date">2020-04-28</span>
 				<span class="label label-primary">iOS</span>
 <span class="label label-info">LifeCycle</span>
+<blockquote>
+<p><a href="https://developer.apple.com/documentation/uikit/uiviewcontroller" target="_blank" rel="noopener">UIViewController</a><br>
+<a href="https://medium.com/cashwalk/ios-background-mode-9bf921f1c55b" target="_blank" rel="noopener">iOS Background Mode</a><br>
+<a href="https://zeddios.tistory.com/43" target="_blank" rel="noopener">iOS ) View Controller의 생명주기(Life-Cycle)</a></p>
+</blockquote>
 <h1>1.iOS Life Cycle</h1>
 <p>iOS앱은 기본적으로 MVC(Model-View-Controller)라는 소프트웨어 디자인 패턴을 사용한다. 이 디자인 패턴의 중요한점은 데이터와 비즈니스 로직을 UI요소로부터 분리시켜주어 다른디바이스에도 같은 동작이 가능하게 해준다.</p>
 <p><img src="https://user-images.githubusercontent.com/45344633/80566306-a6833700-8a2d-11ea-9700-78e3a08d2290.png" alt="image"></p>
-<h2 id="1-1-The-Main-Run-Loop">1.1.The Main Run Loop</h2>
-<p>Main Run Loop는</p>
+<h2 id="1-1-Application-LifeCycle">1.1.Application LifeCycle</h2>
+<p>iOS의 App인 UIKit App들의 각각의 상태에 대하여 알아보자.</p>
+<center><img width="400px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/81131337-cbbffa00-8f85-11ea-9d0e-d8a3657d9fa6.png"></center>
+<h3 id="1-1-1-Not-running-Terminated">1.1.1.Not running (= Terminated)</h3>
+<ul>
+<li>Not Running 상태란, App을 실행하지 않은 상태로서 App이 실행되기 전 상태 또는 실행이 되었지만 System에 의해 종료된 상태이다.</li>
+</ul>
+<blockquote>
+<p>The app has not been launched or was running but was terminated by the system.</p>
+</blockquote>
+<h3 id="1-1-2-Foreground">1.1.2.Foreground</h3>
+<ul>
+<li>App이 실행되어 사용자에게 보여지고 있는 상태이다.</li>
+<li>오직 하나의 App만 Foreground상태를 가지며 Inactive와 active 두가지 상태로 나뉜다.</li>
+</ul>
+<h4 id="1-1-2-1-Inactive">1.1.2.1.Inactive</h4>
+<ul>
+<li>Foreground에서 App이 실행중이지만, 앱 상태 전환 등의 이유로 이벤트를 일시적으로 받지 못하는 상태</li>
+<li>Foreground 상태에서 전화가 왔을때, 잠금상태, 멀티태스킹 스크린에서는 Inactive상태를 가진다.</li>
+</ul>
+<blockquote>
+<p>The app is running in the foreground but is not receiving events. This might happen as a result of an interruption or because the app is transitioning to or from the background.</p>
+</blockquote>
+<h4 id="1-1-2-2-Active">1.1.2.2.Active</h4>
+<ul>
+<li>Foreground에서 App이 실행 중이며, 이벤트를 정상적으로 수신받을 수 있는 상태</li>
+</ul>
+<blockquote>
+<p>The app is running in the foreground and currently receiving events. This is the normal mode for foreground apps.</p>
+</blockquote>
+<h3 id="1-1-3-Background">1.1.3.Background</h3>
+<ul>
+<li>Foreground상태에서 HomeScreen으로 이동한 상태</li>
+<li>Background에서 앱이 실행 중인 상태 또는 Suspended상태로 넘어가기 직전 잠시 머무는 단계</li>
+</ul>
+<blockquote>
+<p>The app is in the background and executing code. Most apps enter this state briefly on their way to being suspended. However, an app that requests extra execution time may remain in this state for a period of time.</p>
+</blockquote>
+<h3 id="1-1-4-Suspended">1.1.4.Suspended</h3>
+<ul>
+<li>App이 Background에 남아있으며, 메모리에는 남아있지만 어떤 코드도 수행하고 있지 않은 상태</li>
+<li>메모리가 부족해지면 System에 의해 강제로 종료될 수 있는 상태</li>
+</ul>
+<blockquote>
+<p>The app is in the background but is not executing code. The system moves apps to this state automatically and does not notify them before doing so. While suspended, an app remains in memory but does not execute any code. When a low-memory condition occurs, the system may purge suspended apps without notice to make more space for the foreground app.</p>
+</blockquote>
+<h2 id="1-2-ViewController-LifeCycle">1.2.ViewController LifeCycle</h2>
+<p>App을 구성하고있는 View Controller에 대해 알아보자.</p>
+<center><img width="400px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/81132604-0035b500-8f8a-11ea-8438-1b9c2843a09a.png"></center>
+<h3 id="1-2-1-viewDidLoad">1.2.1.viewDidLoad</h3>
+<ul>
+<li>View에 대한 로드가 완료된 시점(메모리상에 저장됨)에 딱한번만 호출</li>
+<li>View가 로드 되었다</li>
+</ul>
+<blockquote>
+<p>Called after the controller’s view is loaded into memory.</p>
+</blockquote>
+<h3 id="1-2-2-viewWillAppear">1.2.2.viewWillAppear</h3>
+<ul>
+<li>View를 화면에 나타내기 직전에 호출</li>
+<li>View가 나타날 것이다</li>
+</ul>
+<blockquote>
+<p>Called after the title bar accessory view controller’s view has been loaded into memory is about to be added to the view hierarchy in the window.</p>
+</blockquote>
+<h3 id="1-2-3-viewDidAppear">1.2.3.viewDidAppear</h3>
+<ul>
+<li>View를 화면에 나타낸 직후 호출</li>
+<li>View가 나타났다</li>
+</ul>
+<blockquote>
+<p>Called when the title bar accessory view controller’s view is fully transitioned onto the screen.</p>
+</blockquote>
+<h3 id="1-2-4-viewWillDisappear">1.2.4.viewWillDisappear</h3>
+<ul>
+<li>View가 화면에서 사라지기 직전 호출</li>
+<li>View가 사라질 것이다</li>
+</ul>
+<blockquote>
+<p>Called when the view controller’s view is about to be removed from the view hierarchy in the window.</p>
+</blockquote>
+<h3 id="1-2-5-viewDidDisappear">1.2.5.viewDidDisappear</h3>
+<ul>
+<li>View가 화면에서 사라진 직후 호출</li>
+<li>View가 사라졌다</li>
+</ul>
+<blockquote>
+<p>Called after the title bar accessory view controller’s view is removed from the window’s view hierarchy.</p>
+</blockquote>
 	  
 			</div>
 			<div>
