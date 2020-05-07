@@ -263,33 +263,6 @@
   </entry>
   
   <entry>
-    <title>데이터 포맷의 형식(Date Format Symbol)</title>
-    <link href="https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/"/>
-    <id>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/</id>
-    <published>2020-04-21T15:00:00.000Z</published>
-    <updated>2020-04-22T05:03:00.371Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Foundation&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>마크다운(Markdown) 작성법</title>
     <link href="https://devyhan93.github.io/2020/04/22/Foundation/Foundation-Markdown/"/>
     <id>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-Markdown/</id>
@@ -306,6 +279,33 @@
 &lt;span class=&quot;label label-primary&quot;&gt;Markdown&lt;/span&gt;
 &lt;h1&gt;1.마크다운(Markdown) 작성법&lt;/h1&gt;
 &lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>데이터 포맷의 형식(Date Format Symbol)</title>
+    <link href="https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/"/>
+    <id>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/</id>
+    <published>2020-04-21T15:00:00.000Z</published>
+    <updated>2020-04-22T05:03:00.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Foundation&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label
         
       
     
