@@ -181,33 +181,6 @@
   </entry>
   
   <entry>
-    <title>Frame과 Bounds</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-04-30T02:44:47.852Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Frame과
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>guard let과 if let의 차이</title>
     <link href="https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/"/>
     <id>https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/</id>
@@ -230,6 +203,33 @@
     
     
       <category term="Using Swift" scheme="https://devyhan93.github.io/categories/Using-Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Frame과 Bounds</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-04-30T02:44:47.852Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;h1&gt;1.Frame과
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
     
     
   </entry>
@@ -345,33 +345,6 @@
   </entry>
   
   <entry>
-    <title>200421</title>
-    <link href="https://devyhan93.github.io/2020/04/21/til/til-200421/"/>
-    <id>https://devyhan93.github.io/2020/04/21/til/til-200421/</id>
-    <published>2020-04-20T15:00:00.000Z</published>
-    <updated>2020-04-21T11:37:27.812Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>접근제어(Access Control)</title>
     <link href="https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/"/>
     <id>https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/</id>
@@ -395,6 +368,33 @@
     
     
       <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>200421</title>
+    <link href="https://devyhan93.github.io/2020/04/21/til/til-200421/"/>
+    <id>https://devyhan93.github.io/2020/04/21/til/til-200421/</id>
+    <published>2020-04-20T15:00:00.000Z</published>
+    <updated>2020-04-21T11:37:27.812Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
+&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
     
     
   </entry>
@@ -485,6 +485,34 @@
   </entry>
   
   <entry>
+    <title>함수(Function)</title>
+    <link href="https://devyhan93.github.io/2020/04/17/swift/swift-Function/"/>
+    <id>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</id>
+    <published>2020-04-16T15:00:00.000Z</published>
+    <updated>2020-04-24T18:43:43.539Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Function&lt;/span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>구구단</title>
     <link href="https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/"/>
     <id>https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/</id>
@@ -536,34 +564,6 @@
     
     
       <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>함수(Function)</title>
-    <link href="https://devyhan93.github.io/2020/04/17/swift/swift-Function/"/>
-    <id>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</id>
-    <published>2020-04-16T15:00:00.000Z</published>
-    <updated>2020-04-24T18:43:43.539Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;Function&lt;/span&gt;
-&lt;blockquote&gt;
-&lt;p&gt;위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
     
     
   </entry>
