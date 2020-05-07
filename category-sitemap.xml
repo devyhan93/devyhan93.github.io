@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/categories/Foundation/</loc>
+        <lastmod>2020-05-07T01:42:03.322Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/categories/Practice/</loc>
+        <lastmod>2020-05-06T11:28:10.710Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/categories/Xcode/</loc>
         <lastmod>2020-05-06T06:35:40.822Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,13 +31,6 @@
     <url>
         <loc>https://devyhan93.github.io/categories/iOS/</loc>
         <lastmod>2020-05-06T04:06:32.229Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/categories/Practice/</loc>
-        <lastmod>2020-05-06T01:06:52.505Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -45,13 +52,6 @@
     <url>
         <loc>https://devyhan93.github.io/categories/Todo-Til/</loc>
         <lastmod>2020-04-22T08:27:33.449Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/categories/Foundation/</loc>
-        <lastmod>2020-04-22T07:35:22.798Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

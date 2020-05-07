@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-06T06:35:40.822Z</updated>
+  <updated>2020-05-07T01:42:03.322Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>객체지향 프로그래밍(Object Oriented Programing)</title>
+    <link href="https://devyhan93.github.io/2020/05/06/Foundation/Foundation-OOP/"/>
+    <id>https://devyhan93.github.io/2020/05/06/Foundation/Foundation-OOP/</id>
+    <published>2020-05-05T15:00:00.000Z</published>
+    <updated>2020-05-07T01:42:03.322Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Foundation&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;OOP&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Xcode 단축키 모음</title>
@@ -49,7 +76,7 @@
     <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
     <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
     <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-06T01:06:52.505Z</updated>
+    <updated>2020-05-06T11:28:10.710Z</updated>
     
     <summary type="html">
     
@@ -530,36 +557,6 @@
 &lt;h2 id=&quot;할-일-목록&quot;&gt;할 일 목록&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[X] Git
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>200416</title>
-    <link href="https://devyhan93.github.io/2020/04/16/til/til-200416/"/>
-    <id>https://devyhan93.github.io/2020/04/16/til/til-200416/</id>
-    <published>2020-04-15T15:00:00.000Z</published>
-    <updated>2020-04-17T11:22:16.840Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 / 회고&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;옵셔널, 열거형 학습 및 문제 풀이&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;옵셔널 타입의 문자열
         
       
     
