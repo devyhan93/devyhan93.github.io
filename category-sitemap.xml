@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/categories/Blog/</loc>
+        <lastmod>2020-05-08T02:20:01.946Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/categories/Xcode/</loc>
         <lastmod>2020-05-08T02:12:02.507Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -66,13 +73,6 @@
     <url>
         <loc>https://devyhan93.github.io/categories/Algolithm/</loc>
         <lastmod>2020-04-16T15:25:06.427Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/categories/Blog/</loc>
-        <lastmod>2020-04-13T13:45:37.644Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
