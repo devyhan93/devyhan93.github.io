@@ -181,33 +181,6 @@
   </entry>
   
   <entry>
-    <title>Frame과 Bounds</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-04-30T02:44:47.852Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Frame과
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>guard let과 if let의 차이</title>
     <link href="https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/"/>
     <id>https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/</id>
@@ -230,6 +203,33 @@
     
     
       <category term="Using Swift" scheme="https://devyhan93.github.io/categories/Using-Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Frame과 Bounds</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-04-30T02:44:47.852Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;h1&gt;1.Frame과
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
     
     
   </entry>
