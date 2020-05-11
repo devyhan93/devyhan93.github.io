@@ -4,27 +4,32 @@
 
   <meta charset="utf-8">
   
-  <title>200418 | Devwiki</title>
+  <title>값(Value) 타입 참조(Reference) 타입 | Devwiki</title>
   <meta name="author" content="devyhan93">
   
-  <meta name="description" content="Todo
-Til
-학습내용 / 회고
+  <meta name="description" content="UsingSwift
+Valuetypes
+Referencetypes
 
-Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 생성해주는 패키지 설치 후 sitemap을 제출하였다.
-객체지향 프로그래밍 개념을 이해하기 위하여 동영상을 보았다. (https://www.yout">
+미완
+
+1.값(Value) 타입 참조(Reference) 타입
+1.1.값 타입(Value types)
+struct, enum, tuple
+메모리의 Stack 영역에 데이터가 저장
+Copy on Writ">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="200418"/>
+  <meta property="og:title" content="값(Value) 타입 참조(Reference) 타입"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
     <meta property="og:image" content=""/>
   
 
-  <link rel="canonical" href="https://devyhan93.github.io/2020/04/18/til/til-200418/"/>
+  <link rel="canonical" href="https://devyhan93.github.io/2020/05/12/using-swift/using-valref/"/>
 
   
     <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
@@ -64,7 +69,7 @@ Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/til/200418</span>
+		<span class="capitalizeFirst">~/Using-Swift/값(Value) 타입 참조(Reference) 타입</span>
 	</h1>
 </div>		
 
@@ -89,25 +94,22 @@ Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 
 	  		<!-- content -->
 			<div class="item-contents">
 				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
-				<span class="date" style="float: right;" id="title-date">2020-04-18</span>
-				<span class="label label-primary">Todo</span>
-<span class="label label-primary">Til</span>
-<h2 id="학습내용-회고">학습내용 / 회고</h2>
-<ul>
-<li>Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 생성해주는 패키지 설치 후 sitemap을 제출하였다.</li>
-<li>객체지향 프로그래밍 개념을 이해하기 위하여 동영상을 보았다. (<a href="https://www.youtube.com/watch?v=vrhIxBWSJ04" target="_blank" rel="noopener">https://www.youtube.com/watch?v=vrhIxBWSJ04</a>)</li>
-</ul>
-<h2 id="할-일-목록">할 일 목록</h2>
-<ul>
-<li>[X] Git Commit</li>
-<li>[X] Til 작성하기</li>
-<li>[ ] 연산자 포스트 작성</li>
-<li>[ ] 옵셔널 포스트 작성</li>
-<li>[ ] 컬렉션 타입 포스트 작성</li>
-<li>[ ] Enum, Optional 포스트 쓰기</li>
-<li>[X] 클로저 연습문제 풀어보기</li>
-<li>[X] 객체지향 프로그래밍 동영상 시청</li>
-</ul>
+				<span class="date" style="float: right;" id="title-date">2020-05-12</span>
+				<span class="label label-primary">UsingSwift</span>
+<span class="label label-info">Valuetypes</span>
+<span class="label label-info">Referencetypes</span>
+<blockquote>
+<p>미완</p>
+</blockquote>
+<h1>1.값(Value) 타입 참조(Reference) 타입</h1>
+<h2 id="1-1-값-타입-Value-types">1.1.값 타입(Value types)</h2>
+<p>struct, enum, tuple<br>
+메모리의 Stack 영역에 데이터가 저장<br>
+Copy on Write<br>
+멀티 스레드 환경에서 유용</p>
+<h2 id="1-2-참조-타입-Reference-types">1.2.참조 타입(Reference types)</h2>
+<p>usually defined as a class  (반드시 클래스에만 해당하지는 않음)<br>
+메모리의 Stack 영역에 데이터가 담긴 주소를 가르키는 포인터가 저장되고, Heap 영역에 실제 데이터가 저장</p>
 	  
 			</div>
 			<div>
@@ -121,61 +123,7 @@ Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 
 	
 	
 		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 			
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-			
-		
-	
-		
-	
-		
-	
-		
-			
-			
-			
-		
 			
 		
 	
@@ -193,15 +141,7 @@ Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 
 	
 		
 			
-		
-	
-		
-	
-		
-	
-		
-	
-		
+			
 			
 		
 	
@@ -218,7 +158,15 @@ Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 
 		
 	
 		
-			
+	
+		
+	
+		
+	
+		
+	
+		
+	
 		
 	
 		
@@ -230,17 +178,7 @@ Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 
 		
 	
 		
-			
-		
 	
-		
-	
-		
-	
-		
-	
-		
-			
 		
 	
 		
@@ -252,26 +190,64 @@ Google Search Console 적용을 하기 위해 hexo에 사이트맵을 알아서 
 		
 	
 		
-			
-		
 	
-		
-			
 		
 	
 		
 	
 		
-			
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
 		
 	
 	
 	
-		<li class="prev"><a href="/2020/04/19/til/til-200419/" class="alignleft prev">👈 prev</a></li>
+		<li class="prev disabled"><a>👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/17/til/til-200417/" class="alignright next">next 👉</a></li>
+		<li class="next"><a href="/2020/04/28/Using-Swift/using-GuardLet/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>

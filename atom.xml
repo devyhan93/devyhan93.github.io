@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-07T02:01:28.221Z</updated>
+  <updated>2020-05-11T15:51:30.598Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>값(Value) 타입 참조(Reference) 타입</title>
+    <link href="https://devyhan93.github.io/2020/05/12/Using-Swift/using-ValRef/"/>
+    <id>https://devyhan93.github.io/2020/05/12/Using-Swift/using-ValRef/</id>
+    <published>2020-05-11T15:00:00.000Z</published>
+    <updated>2020-05-11T15:51:30.598Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;UsingSwift&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Valuetypes&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Using Swift" scheme="https://devyhan93.github.io/categories/Using-Swift/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>객체지향 프로그래밍(Object Oriented Programing)</title>
@@ -535,35 +562,6 @@
     
     
       <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>200417</title>
-    <link href="https://devyhan93.github.io/2020/04/17/til/til-200417/"/>
-    <id>https://devyhan93.github.io/2020/04/17/til/til-200417/</id>
-    <published>2020-04-16T15:00:00.000Z</published>
-    <updated>2020-04-20T02:05:48.212Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;할-일-목록&quot;&gt;할 일 목록&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[X] Git
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
     
     
   </entry>
