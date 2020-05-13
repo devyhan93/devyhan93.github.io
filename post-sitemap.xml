@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/2020/04/15/swift/swift-Optaional/</loc>
+        <lastmod>2020-05-13T15:35:25.146Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/2020/05/12/Using-Swift/using-ValRef/</loc>
         <lastmod>2020-05-13T08:25:29.198Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -114,14 +122,6 @@
     <url>
         <loc>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</loc>
         <lastmod>2020-04-24T18:43:43.539Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/15/swift/swift-Optaional/</loc>
-        <lastmod>2020-04-22T12:31:27.400Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
