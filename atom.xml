@@ -539,11 +539,11 @@
   </entry>
   
   <entry>
-    <title>함수(Function)</title>
-    <link href="https://devyhan93.github.io/2020/04/17/swift/swift-Function/"/>
-    <id>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</id>
+    <title>클로저(Closure)</title>
+    <link href="https://devyhan93.github.io/2020/04/17/swift/swift-Closure/"/>
+    <id>https://devyhan93.github.io/2020/04/17/swift/swift-Closure/</id>
     <published>2020-04-16T15:00:00.000Z</published>
-    <updated>2020-04-24T18:43:43.539Z</updated>
+    <updated>2020-05-13T15:52:23.271Z</updated>
     
     <summary type="html">
     
@@ -552,9 +552,9 @@
         
         
           &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;Function&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Closure&lt;/span&gt;
 &lt;blockquote&gt;
-&lt;p&gt;위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의
+&lt;p&gt;위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 &lt;a
         
       
     

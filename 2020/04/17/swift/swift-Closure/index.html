@@ -4,26 +4,27 @@
 
   <meta charset="utf-8">
   
-  <title>guard let과 if let의 차이 | Devwiki</title>
+  <title>클로저(Closure) | Devwiki</title>
   <meta name="author" content="devyhan93">
   
-  <meta name="description" content="UsingSwift
-Optional
-guardlet
-1.guard let과 if let의 차이
-1guard let count = Int(countLabel.text ?? &#34;&#34;) else &amp;#123; return &amp;#125;">
+  <meta name="description" content="Swift
+Closure
+
+위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다. 포스트에 문제가 있을거나 피드백은 댓글 달아주시면 작성자가 빠르게확인 할 수 있습니다.
+
+1.클로저">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="guard let과 if let의 차이"/>
+  <meta property="og:title" content="클로저(Closure)"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
     <meta property="og:image" content=""/>
   
 
-  <link rel="canonical" href="https://devyhan93.github.io/2020/04/28/using-swift/using-guardlet/"/>
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/17/swift/swift-closure/"/>
 
   
     <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
@@ -63,7 +64,7 @@ guardlet
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/Using-Swift/guard let과 if let의 차이</span>
+		<span class="capitalizeFirst">~/swift/클로저(Closure)</span>
 	</h1>
 </div>		
 
@@ -88,12 +89,27 @@ guardlet
 	  		<!-- content -->
 			<div class="item-contents">
 				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
-				<span class="date" style="float: right;" id="title-date">2020-04-28</span>
-				<span class="label label-primary">UsingSwift</span>
-<span class="label label-info">Optional</span>
-<span class="label label-info">guardlet</span>
-<h1>1.guard let과 if let의 차이</h1>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">guard</span> <span class="keyword">let</span> <span class="built_in">count</span> = <span class="type">Int</span>(countLabel.text ?? <span class="string">""</span>) <span class="keyword">else</span> &#123; <span class="keyword">return</span> &#125;</span><br></pre></td></tr></table></figure>
+				<span class="date" style="float: right;" id="title-date">2020-04-17</span>
+				<span class="label label-primary">Swift</span>
+<span class="label label-info">Closure</span>
+<blockquote>
+<p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B9421379018" target="_blank" rel="noopener">스위프트프로그래밍 3판</a> 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다. 포스트에 문제가 있을거나 피드백은 댓글 달아주시면 작성자가 빠르게확인 할 수 있습니다.</p>
+</blockquote>
+<h1>1.클로저</h1>
+<p>스위프트에서 함수형 프로그램 패러다임을 접할 때 처음으로 꼭 알아야 할 것이 클로저(Closuer)이다<br>
+<em>Closure의 세가지 형태</em></p>
+<ul>
+<li>이름이 있으면서 어떤 값도 획득하지 않는 전역함수 형태</li>
+<li>이름이 있으면서 다른 함수 내부의 값을 획득할 수 있는 중첩된 함수의 형태</li>
+<li>이름이 없고 주변 문맥에 따라 값을 획득할 수 있는 축약 문법으로 작성한 형태</li>
+</ul>
+<p><em>Closure의 표현</em></p>
+<ul>
+<li>클로저는 매개변수와 반환 값의 타입을 문맥을 통해 유추할 수 있기 때문에 매개변수와 반환 값의 타입을 생략 할 수 있다.</li>
+<li>클로저에 단 한 줄의 표현만 들어있다면 암시적으로 반한값으로 취급한다.</li>
+<li>축약된 전달인자 이름을 사용할 수 있다.</li>
+<li>후행 클로저 문법을 사용할 수 있다.</li>
+</ul>
 	  
 			</div>
 			<div>
@@ -107,6 +123,53 @@ guardlet
 	
 	
 		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+			
+			
 			
 		
 	
@@ -124,6 +187,57 @@ guardlet
 	
 		
 			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
 			
 		
 	
@@ -136,87 +250,7 @@ guardlet
 		
 	
 		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
+			
 		
 	
 		
@@ -229,11 +263,11 @@ guardlet
 	
 	
 	
-		<li class="prev"><a href="/2020/05/12/Using-Swift/using-ValRef/" class="alignleft prev">👈 prev</a></li>
+		<li class="prev"><a href="/2020/04/21/swift/swift-AccessControl/" class="alignleft prev">👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next disabled"><a>next 👉</a></li>
+		<li class="next"><a href="/2020/04/17/swift/swift-Function/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>
