@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-14T02:32:23.084Z</updated>
+  <updated>2020-05-14T02:32:49.488Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Frame과 Bounds</title>
+    <title>커밋 메시지 컨벤션(Commit message convention)</title>
     <link href="https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/"/>
     <id>https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/</id>
     <published>2020-05-13T15:00:00.000Z</published>
-    <updated>2020-05-14T02:32:23.084Z</updated>
+    <updated>2020-05-14T02:32:49.488Z</updated>
     
     <summary type="html">
     
@@ -126,33 +126,6 @@
   </entry>
   
   <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-06T11:28:10.710Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -176,6 +149,33 @@
     
     
       <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-06T11:28:10.710Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
     
     
   </entry>
@@ -399,33 +399,6 @@
   </entry>
   
   <entry>
-    <title>200421</title>
-    <link href="https://devyhan93.github.io/2020/04/21/til/til-200421/"/>
-    <id>https://devyhan93.github.io/2020/04/21/til/til-200421/</id>
-    <published>2020-04-20T15:00:00.000Z</published>
-    <updated>2020-04-21T11:37:27.812Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>접근제어(Access Control)</title>
     <link href="https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/"/>
     <id>https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/</id>
@@ -449,6 +422,33 @@
     
     
       <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>200421</title>
+    <link href="https://devyhan93.github.io/2020/04/21/til/til-200421/"/>
+    <id>https://devyhan93.github.io/2020/04/21/til/til-200421/</id>
+    <published>2020-04-20T15:00:00.000Z</published>
+    <updated>2020-04-21T11:37:27.812Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
+&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
     
     
   </entry>
