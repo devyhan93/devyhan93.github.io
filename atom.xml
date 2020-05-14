@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-13T08:25:29.198Z</updated>
+  <updated>2020-05-14T02:29:50.275Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Frame과 Bounds</title>
+    <link href="https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/"/>
+    <id>https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/</id>
+    <published>2020-05-13T15:00:00.000Z</published>
+    <updated>2020-05-14T02:29:50.275Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Git&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;CommitMessageConvention&lt;/span&gt;
+&lt;h1&gt;1.커밋 메시지 컨벤션(Commit message
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://devyhan93.github.io/categories/Git/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>값(Value) 타입 참조(Reference) 타입</title>
@@ -512,38 +539,11 @@
   </entry>
   
   <entry>
-    <title>구구단</title>
-    <link href="https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/"/>
-    <id>https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/</id>
-    <published>2020-04-16T15:00:00.000Z</published>
-    <updated>2020-04-16T15:25:06.427Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Algolithm&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;백준온라인저지&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Algolithm" scheme="https://devyhan93.github.io/categories/Algolithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>클로저(Closure)</title>
     <link href="https://devyhan93.github.io/2020/04/17/swift/swift-Closure/"/>
     <id>https://devyhan93.github.io/2020/04/17/swift/swift-Closure/</id>
     <published>2020-04-16T15:00:00.000Z</published>
-    <updated>2020-05-13T16:00:02.634Z</updated>
+    <updated>2020-05-14T02:30:37.153Z</updated>
     
     <summary type="html">
     

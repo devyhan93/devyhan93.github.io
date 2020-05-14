@@ -9,7 +9,14 @@
 
     <url>
         <loc>https://devyhan93.github.io/categories/Swift/</loc>
-        <lastmod>2020-05-13T16:00:02.634Z</lastmod>
+        <lastmod>2020-05-14T02:30:37.153Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/categories/Git/</loc>
+        <lastmod>2020-05-14T02:29:50.275Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
