@@ -316,6 +316,33 @@
   </entry>
   
   <entry>
+    <title>Frame과 Bounds</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-05-18T07:27:33.668Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;h1&gt;1.Frame과
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>iOS, viewController Life Cycle</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-iOSLifeCycle%20copy/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-iOSLifeCycle%20copy/</id>
@@ -525,35 +552,6 @@
 &lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 / 회고&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;컬렉션 타입의
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>200418</title>
-    <link href="https://devyhan93.github.io/2020/04/18/til/til-200418/"/>
-    <id>https://devyhan93.github.io/2020/04/18/til/til-200418/</id>
-    <published>2020-04-17T15:00:00.000Z</published>
-    <updated>2020-04-20T02:05:41.444Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 / 회고&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Google
         
       
     

@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/categories/iOS/</loc>
+        <lastmod>2020-05-18T07:27:33.668Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/categories/Xcode/</loc>
         <lastmod>2020-05-17T15:15:05.402Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -59,13 +66,6 @@
     <url>
         <loc>https://devyhan93.github.io/categories/Blog/</loc>
         <lastmod>2020-05-08T02:20:01.946Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/categories/iOS/</loc>
-        <lastmod>2020-05-08T01:26:23.335Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
