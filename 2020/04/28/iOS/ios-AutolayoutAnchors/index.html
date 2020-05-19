@@ -9,7 +9,9 @@
   
   <meta name="description" content="iOS
 FrameBounds
-1.Autolayout Anchors">
+1.Autolayout Anchors
+1.1.NSLayoutConstraint
+12345678910111213// Creating constraints using NSLayoutConstraintNSLayoutConstraint(item: ">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -90,7 +92,18 @@ FrameBounds
 				<span class="label label-primary">iOS</span>
 <span class="label label-info">FrameBounds</span>
 <h1>1.Autolayout Anchors</h1>
-	  
+<h2 id="1-1-NSLayoutConstraint">1.1.NSLayoutConstraint</h2>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Creating constraints using NSLayoutConstraint</span></span><br><span class="line"><span class="type">NSLayoutConstraint</span>(item: subview,</span><br><span class="line">                    attribute: .leading,</span><br><span class="line">                    relatedBy: .<span class="built_in">equal</span>,</span><br><span class="line">                    toItem: view,</span><br><span class="line">                    attribute: .leadingMargin,</span><br><span class="line">                    multiplier: <span class="number">1.0</span>, constant: <span class="literal">true</span>).isActive = <span class="literal">true</span></span><br><span class="line"><span class="type">NSLayoutConstraint</span>(item: subview,</span><br><span class="line">                    attribute: .trailing,</span><br><span class="line">                    relatedBy: .<span class="built_in">equal</span>,</span><br><span class="line">                    toItem: view,</span><br><span class="line">                    attribute: .trailingMargin,</span><br><span class="line">                    multiplier: <span class="number">1.0</span>, constant: <span class="number">0.0</span>).isActive = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-2-NSLayoutAnchor">1.2.NSLayoutAnchor</h2>
+<p>iOS 9.0이상에서 위의 Constraint를 2줄로 표현이 가능하다.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> mergins = view.layoutMarginsGuide</span><br><span class="line">    </span><br><span class="line">subview.leadingAnchor.constraint(eqaulTo: margins.leadingAnchor).isActive = <span class="literal">true</span></span><br><span class="line">subview.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = ture</span><br></pre></td></tr></table></figure>
+<h2 id="1-3-Horizontal-Layout-Anchors">1.3.Horizontal Layout Anchors</h2>
+<ul>
+<li>View의 수평선, X축에 관련된 제약조건</li>
+<li>NSLayoutXAxisAnchor클래스의 객체</li>
+</ul>
+<p>Leading anchor, Trailing anchor, Left anchor, Right anchor, Center-X anchor</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">view.leadingAnchor.constraint(equalTO: <span class="type">NSLayoutAnchor</span>&lt;<span class="type">NSLayoutXAxisAnchor</span>&gt;)</span><br></pre></td></tr></table></figure>	  
 			</div>
 			<div>
 			<center>
@@ -126,10 +139,6 @@ FrameBounds
 	
 		
 			
-		
-	
-		
-			
 			
 		
 	
@@ -142,7 +151,7 @@ FrameBounds
 		
 	
 		
-	
+			
 		
 	
 		
@@ -237,13 +246,17 @@ FrameBounds
 	
 		
 	
+		
+	
+		
 	
 	
-		<li class="prev"><a href="/2020/04/28/iOS/ios-FrameBounds/" class="alignleft prev">👈 prev</a></li>
+	
+		<li class="prev"><a href="/2020/04/29/iOS/ios-RandomColor/" class="alignleft prev">👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/28/iOS/ios-iOSLifeCycle%20copy/" class="alignright next">next 👉</a></li>
+		<li class="next"><a href="/2020/04/28/iOS/ios-FrameBounds/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>
