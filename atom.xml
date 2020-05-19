@@ -316,11 +316,11 @@
   </entry>
   
   <entry>
-    <title>Frame과 Bounds</title>
+    <title>AutolayoutAnchors</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
     <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-18T07:27:33.668Z</updated>
+    <updated>2020-05-19T09:51:27.275Z</updated>
     
     <summary type="html">
     
@@ -330,7 +330,7 @@
         
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Frame과
+&lt;h1&gt;1.Autolayout
         
       
     
