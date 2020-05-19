@@ -4,27 +4,31 @@
 
   <meta charset="utf-8">
   
-  <title>클로저(Closure) | Devwiki</title>
+  <title>UIViewController | Devwiki</title>
   <meta name="author" content="devyhan93">
   
-  <meta name="description" content="Swift
-Closure
+  <meta name="description" content="iOS
+FrameBounds
+1.UIViewController
 
-위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 스위프트프로그래밍 3판 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다. 포스트에 문제가 있을거나 피드백은 댓글 달아주시면 작성자가 빠르게확인 할 수 있습니다.
+ViewController의 부모 class
+얍 구조의 뼈대
+모든 앱에 반드시 하나 이상, 대부분 많은 수의 ViewController로 구성
 
-1.클로저">
+1.1.View Management
+뷰의 계층관리, 모든 뷰">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="클로저(Closure)"/>
+  <meta property="og:title" content="UIViewController"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
     <meta property="og:image" content=""/>
   
 
-  <link rel="canonical" href="https://devyhan93.github.io/2020/04/17/swift/swift-closure/"/>
+  <link rel="canonical" href="https://devyhan93.github.io/2020/04/27/ios/ios-uiviewcontroller/"/>
 
   
     <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
@@ -64,7 +68,7 @@ Closure
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/swift/클로저(Closure)</span>
+		<span class="capitalizeFirst">~/iOS/UIViewController</span>
 	</h1>
 </div>		
 
@@ -89,30 +93,36 @@ Closure
 	  		<!-- content -->
 			<div class="item-contents">
 				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
-				<span class="date" style="float: right;" id="title-date">2020-04-17</span>
-				<span class="label label-primary">Swift</span>
-<span class="label label-info">Closure</span>
-<blockquote>
-<p>위 내용은 패스트캠퍼스 iOS 강의 및 야곰님의 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B9421379018" target="_blank" rel="noopener">스위프트프로그래밍 3판</a> 내용을 참고하여 개인적으로 요약한 내용이므로 오류가 있을 수 있습니다. 포스트에 문제가 있을거나 피드백은 댓글 달아주시면 작성자가 빠르게확인 할 수 있습니다.</p>
-</blockquote>
-<h1>1.클로저(Closure)</h1>
-<p>스위프트에서 함수형 프로그램 패러다임을 접할 때 처음으로 꼭 알아야 할 것이 클로저(Closuer)이다</p>
-<p><em>Closure의 세가지 형태</em></p>
+				<span class="date" style="float: right;" id="title-date">2020-04-27</span>
+				<span class="label label-primary">iOS</span>
+<span class="label label-info">FrameBounds</span>
+<h1>1.UIViewController</h1>
 <ul>
-<li>이름이 있으면서 어떤 값도 획득하지 않는 전역함수 형태</li>
-<li>이름이 있으면서 다른 함수 내부의 값을 획득할 수 있는 중첩된 함수의 형태</li>
-<li>이름이 없고 주변 문맥에 따라 값을 획득할 수 있는 축약 문법으로 작성한 형태</li>
+<li>ViewController의 부모 class</li>
+<li>얍 구조의 뼈대</li>
+<li>모든 앱에 반드시 하나 이상, 대부분 많은 수의 ViewController로 구성</li>
 </ul>
-<p><em>Closure의 표현</em></p>
+<h2 id="1-1-View-Management">1.1.View Management</h2>
+<p>뷰의 계층관리, 모든 뷰컨트롤러마다 RootView를 지니며, 화면에 표시하기 위해서는 해당 RootView계층애 속해야함.<br>
+<img src="https://user-images.githubusercontent.com/45344633/82313483-61866b00-9a03-11ea-84df-25cb4ff68158.png" alt="image"></p>
+<h2 id="1-2-Data-Marshaling">1.2.Data Marshaling</h2>
+<p>MVC(Model-View-Controller)<br>
+자신이 관리하는 View와 Data간 중개 역할<br>
+<img src="https://user-images.githubusercontent.com/45344633/82314198-6861ad80-9a04-11ea-90a9-28041adc507d.png" alt="image"></p>
+<h2 id="1-3-UserInteraction">1.3.UserInteraction</h2>
+<p>이벤트 처리</p>
 <ul>
-<li>클로저는 매개변수와 반환 값의 타입을 문맥을 통해 유추할 수 있기 때문에 매개변수와 반환 값의 타입을 생략 할 수 있다.</li>
-<li>클로저에 단 한 줄의 표현만 들어있다면 암시적으로 반한값으로 취급한다.</li>
-<li>축약된 전달인자 이름을 사용할 수 있다.</li>
-<li>후행 클로저 문법을 사용할 수 있다.</li>
+<li>뷰컨트롤러는 Responder객체: 직접 이벤트를 받아 처리 가능하나 일반적으로 지양</li>
+<li>뷰가 그 자신의 터치 이벤트를 연관된 객체에 action메서드나 delegate로 전달</li>
 </ul>
-<h2 id="1-1-클로저-기본-Closure-Basic">1.1.클로저 기본(Closure Basic)</h2>
-<p><em>CloSure 표현</em></p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;(매개변수들) -&gt; 반환타입 <span class="keyword">in</span></span><br><span class="line">    실행코드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>	  
+<h2 id="1-4-Resource-Management">1.4.Resource Management</h2>
+<p>뷰컨트롤러가 생성한 모든 뷰와 객체들은 뷰컨트롤러의 책임<br>
+뷰컨츠롤러의 생명 주기에 따라 생성되었다가 자동 소멸되기도 하지만 ARC개념에 맞게 관리 필요<br>
+메모리 부족 시 didReceiveMemoryWarning메서드에서  꼭 유지하지 않아도 되는 자원들은 정리 필요</p>
+<h2 id="1-5-Adaptivity">1.5.Adaptivity</h2>
+<p>뷰컨트롤러라는 뷰의 표현을 책임지고, 현재 환경에 적절한 방법으로 적용되도록 할 책임을 가짐<br>
+<img src="https://user-images.githubusercontent.com/45344633/82314897-719f4a00-9a05-11ea-9013-4167ee762b6a.png" alt="image"></p>
+	  
 			</div>
 			<div>
 			<center>
@@ -141,78 +151,7 @@ Closure
 		
 	
 		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-			
-		
-	
-		
-			
-			
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
 		
 	
 		
@@ -226,28 +165,11 @@ Closure
 		
 	
 		
-	
-		
-	
-		
-	
-		
 			
 		
 	
 		
 			
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
 			
 		
 	
@@ -260,7 +182,15 @@ Closure
 		
 	
 		
-			
+	
+		
+	
+		
+	
+		
+	
+		
+	
 		
 	
 		
@@ -271,13 +201,81 @@ Closure
 	
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
 	
 	
-		<li class="prev"><a href="/2020/04/21/swift/swift-AccessControl/" class="alignleft prev">👈 prev</a></li>
+	
+		<li class="prev"><a href="/2020/04/28/iOS/ios-iOSLifeCycle%20copy/" class="alignleft prev">👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/17/swift/swift-Function/" class="alignright next">next 👉</a></li>
+		<li class="next disabled"><a>next 👉</a></li>
 	
 </ul>
 </div>
