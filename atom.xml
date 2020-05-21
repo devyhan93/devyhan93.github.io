@@ -289,34 +289,6 @@
   </entry>
   
   <entry>
-    <title>AutolayoutAnchors</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-21T01:24:27.206Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Frame과 Bounds</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
@@ -372,6 +344,34 @@
   </entry>
   
   <entry>
+    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-05-21T01:52:08.077Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
+&lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>UIViewController</title>
     <link href="https://devyhan93.github.io/2020/04/27/iOS/ios-UIViewController/"/>
     <id>https://devyhan93.github.io/2020/04/27/iOS/ios-UIViewController/</id>
@@ -386,6 +386,34 @@
         
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>오토 레이아웃(AutoLayout)</title>
+    <link href="https://devyhan93.github.io/2020/04/27/iOS/ios-Autolayout/"/>
+    <id>https://devyhan93.github.io/2020/04/27/iOS/ios-Autolayout/</id>
+    <published>2020-04-26T15:00:00.000Z</published>
+    <updated>2020-05-21T02:13:54.206Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;AutoLayout&lt;/span&gt;
+&lt;h1&gt;1.오토 레이아웃(Auto Layout)&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;오토
         
       
     
@@ -513,33 +541,6 @@
     <id>https://devyhan93.github.io/2020/04/21/til/til-200421/</id>
     <published>2020-04-20T15:00:00.000Z</published>
     <updated>2020-04-21T11:37:27.812Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>200420</title>
-    <link href="https://devyhan93.github.io/2020/04/20/til/til-200420/"/>
-    <id>https://devyhan93.github.io/2020/04/20/til/til-200420/</id>
-    <published>2020-04-19T15:00:00.000Z</published>
-    <updated>2020-04-21T00:32:05.018Z</updated>
     
     <summary type="html">
     
