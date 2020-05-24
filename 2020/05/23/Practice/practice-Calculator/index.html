@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>계산기 | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Practice
+iOS
+Swift
+Calculator
+1.Calculator
+1.1.요구사항
+
+displayLabel 에는 2 + 3 / 4 와 같이 여러 개의 표현식이 출력되지 않고 결과창에는 항상 숫자만 표현
+곱하기(×)와 나누기(÷) 기호는 control + co">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="계산기"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/05/23/practice/practice-calculator/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+  <!-- / analytics -->
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/Practice/계산기</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
+				<span class="date" style="float: right;" id="title-date">2020-05-23</span>
+				<span class="label label-primary">Practice</span>
+<span class="label label-info">iOS</span>
+<span class="label label-info">Swift</span>
+<span class="label label-info">Calculator</span>
+<h1>1.Calculator</h1>
+<h2 id="1-1-요구사항">1.1.요구사항</h2>
+<ul>
+<li>displayLabel 에는 2 + 3 / 4 와 같이 여러 개의 표현식이 출력되지 않고 결과창에는 항상 숫자만 표현</li>
+<li>곱하기(×)와 나누기(÷) 기호는 control + command + spacebar를 눌러서 수학 기호를 사용해야 함</li>
+<li>2 + 3 * 4를 하면 2 + (3 * 4) = 14가 되는 게 아니라 (2 + 3) * 4 와 같이 항상 누른 순서대로 연산</li>
+<li>2 + =  순으로 누르면 현재 displayLabel에 표현된 숫자인 2가 더해져 2 + 2 = 4 와 같이 동작<br>
+단, 다시 한 번 = 를 누르면 더 이상 계산되지 않음</li>
+<li>2 + + + x - 3 = 순으로 누르면 최종적으로 - 연산자가 적용되어 2 - 3 = -1</li>
+<li>등호(=)를 눌러 계산 결과가 나온 뒤 연산자를 누르지 않고 바로 숫자를 입력하면<br>
+기존의 값은 초기화되고 다시 처음부터 시작</li>
+<li>displayLabel에 입력할 수 있는 숫자는 최대 13자리.  (계산 결과로 인해 나오는 숫자는 무관)</li>
+</ul>
+<h2 id="1-2-테스트케이스">1.2.테스트케이스</h2>
+<table>
+<thead>
+<tr>
+<th>테스트케이스</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12 = 3</td>
+<td>3  -  12는 초기화 되고 최초에 3을 누른 것부터 다시 시작</td>
+</tr>
+<tr>
+<td>12 + 3 = + 4 =</td>
+<td>19 -  12 + 3 + 4 = 19</td>
+</tr>
+<tr>
+<td>12 + 3</td>
+<td>12 (화면상에는 3) - 아직 3이 더해지지 않은 상태</td>
+</tr>
+<tr>
+<td>12 + 3 -</td>
+<td>15 -  -버튼이 눌려지는 순간 앞의 + 연산이 수행됨</td>
+</tr>
+<tr>
+<td>12 + 3 * + - *</td>
+<td>15 -  연산자만 바꾸는 것은 결과에 영향 없이 다음에 수행할 연산자를 덮어씀</td>
+</tr>
+<tr>
+<td>12 + - * / 3 =</td>
+<td>4  -  마지막으로 누른 연산자(/)로 연산. 12 / 3 = 4</td>
+</tr>
+<tr>
+<td>12 + =</td>
+<td>24 -  12 + 12 = 24</td>
+</tr>
+<tr>
+<td>12 + = = =</td>
+<td>24 -  12 + 12 = 24,  등호(=)는 이전 연산자에 대해 한 번만 계산</td>
+</tr>
+<tr>
+<td>12 ±<em>/ ±</em>/</td>
+<td>12 -  연산자를 막 바꿔가면서 눌렀을 때 이상 없는지 체크</td>
+</tr>
+<tr>
+<td>-5 + 1 =</td>
+<td>-4 -  초기 상태에서 -버튼부터 누르고 시작할 때도 정상적으로 연산</td>
+</tr>
+<tr>
+<td>1 * 2 + 3 / 2 - 1 =</td>
+<td>1.5 -  연산자 우선순위와 관계없이 항상 앞에 있던 연산자부터 계산</td>
+</tr>
+</tbody>
+</table>
+<p><em>숫자를 큰 수나 작은 수 음수로 바꿔가며 결과가 제대로 나오는지 테스트해보기</em></p>
+<h2 id="1-3-Commit">1.3.Commit</h2>
+<h3 id="1-3-1-Commit-message-convension">1.3.1.Commit message convension</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Docs: 문서 수정</span><br><span class="line">Feat: 새로운 기능 추가</span><br><span class="line">Test: 테스트 코드, 리펙토링 테스트 코드 추가</span><br><span class="line">Fix: 버그 수정</span><br></pre></td></tr></table></figure>
+<p><em><a href="http://localhost:4000/2020/05/14/git/git-CommitMessage" target="_blank" rel="noopener">관련 문서</a></em></p>
+<h3 id="1-3-2-Init-project">1.3.2.Init project</h3>
+<p>프로젝트 생성 및 git init</p>
+<p><img src="https://user-images.githubusercontent.com/45344633/82724266-c85f9900-9d0f-11ea-8d23-e40c0d138c62.png" alt="image"></p>
+<h3 id="1-3-3-초기-프로젝트-구조-및-스토리보드-UI-추가">1.3.3.초기 프로젝트 구조 및 스토리보드 UI 추가</h3>
+<p><img src="https://user-images.githubusercontent.com/45344633/82724099-9dc11080-9d0e-11ea-8c5c-b102084d973b.png" alt="image"></p>
+<ul>
+<li>
+<p>Deployment info</p>
+<ul>
+<li>Target Device - iOS12.2</li>
+<li>Device Orientation - Portrait<br>
+<img src="https://user-images.githubusercontent.com/45344633/82723604-f9899a80-9d0a-11ea-9fc2-aa2ec7e8bc0e.png" alt="image"></li>
+</ul>
+</li>
+<li>
+<p>AppDelegate.swift - window 연결</p>
+</li>
+<li>
+<p>Seendelegate.swift - 파일 제거</p>
+</li>
+<li>
+<p>Main.storyboard - 계산기 레이아웃 생성</p>
+</li>
+<li>
+<p>Assets.xcassets - 아이콘 추가<br>
+<img src="https://user-images.githubusercontent.com/45344633/82723460-1d001580-9d0a-11ea-9366-85ed10f8dbf4.png" alt="image"></p>
+</li>
+<li>
+<p>Info.plist - Application Scene Manifest 제거<br>
+<img src="https://user-images.githubusercontent.com/45344633/82723717-d4e1f280-9d0b-11ea-9b05-4b006297a830.png" alt="image"></p>
+</li>
+</ul>
+<h3 id="1-3-4-IBOutlet-및-IBAction설정">1.3.4.IBOutlet 및 IBAction설정</h3>
+<p>레이블과 버튼에 액션과 아웃렛 설정<br>
+<img src="https://user-images.githubusercontent.com/45344633/82724614-4a50c180-9d12-11ea-8bf0-bbe000e61f07.png" alt="image"></p>
+<h3 id="1-3-5-입력된-버튼-종류에-따른-명령-분기">1.3.5.입력된 버튼 종류에 따른 명령 분기</h3>
+<p>입력을 받는 버튼의 숫자, 연산자, =, AC 를 구분<br>
+<em>Command.swift</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Command</span> </span>&#123;</span><br><span class="line">    <span class="keyword">case</span> addDigit(<span class="type">String</span>)</span><br><span class="line">    <span class="keyword">case</span> operation(<span class="type">String</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="built_in">equal</span></span><br><span class="line">    <span class="keyword">case</span> clear</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>ViewController.swift - func didTapButton</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@IBAction</span> <span class="keyword">private</span> <span class="function"><span class="keyword">func</span> <span class="title">didTapButton</span><span class="params">(<span class="number">_</span> sender: UIButton)</span></span> &#123;</span><br><span class="line">        <span class="keyword">guard</span> <span class="keyword">let</span> input = sender.currentTitle  <span class="keyword">else</span> &#123; <span class="keyword">return</span> &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> commend: <span class="type">Command</span></span><br><span class="line">        <span class="keyword">switch</span> input &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"AC"</span>:</span><br><span class="line">            commend = .clear</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"="</span>:</span><br><span class="line">            commend = .<span class="built_in">equal</span></span><br><span class="line">        <span class="keyword">case</span> <span class="string">"+"</span>, <span class="string">"-"</span>, <span class="string">"×"</span>, <span class="string">"÷"</span>:</span><br><span class="line">            commend = .operation(input)</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            commend = .addDigit(input)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">print</span>(commend)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-3-6-입력된-버튼의-타이틀-출력">1.3.6.입력된 버튼의 타이틀 출력</h3>
+<p><em>ViewController.swift</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">var</span> displayValue: <span class="type">String</span> &#123;</span><br><span class="line">    <span class="keyword">get</span> &#123; <span class="keyword">return</span> displayLabel.text ?? <span class="string">""</span> &#125;</span><br><span class="line">    <span class="keyword">set</span> &#123; displayLabel.text = newValue &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>ViewController.swift - func didTapButton</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">displayValue = input</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"display : \(displayValue), command : \(commend)"</span>/)</span><br></pre></td></tr></table></figure>
+<p><code>displayValue</code>를 통해 새로들어온 값을 <code>newValue</code>로 받아 <code>displayLabel</code>에 출력</p>
+<h3 id="1-3-7-입력된-커멘드를-활용하는-함수-생성">1.3.7.입력된 커멘드를 활용하는 함수 생성</h3>
+<p><em>ViewController.swift</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">displayValue = performCommand(commend, with: displayValue)</span><br></pre></td></tr></table></figure>
+<p><em>ViewController.swift - func performCommand</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="function"><span class="keyword">func</span> <span class="title">performCommand</span><span class="params">(<span class="number">_</span> command: Command, with displayText: String)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line">    <span class="keyword">switch</span> command &#123;</span><br><span class="line">    <span class="keyword">case</span> .addDigit(<span class="keyword">let</span> input):</span><br><span class="line">        <span class="keyword">return</span> displayText + input</span><br><span class="line">    <span class="keyword">case</span> .operation(<span class="number">_</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">case</span> .<span class="built_in">equal</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">case</span> .clear:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"0"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>입력된 커멘드에따라 <code>displayText</code>에 추가 혹은 0으로 초기화 함수생성</p>
+<h2 id="1-4-Project-repo">1.4.Project repo</h2>
+<p><a href="https://github.com/devyhan93/Calculator" target="_blank" rel="noopener">Git</a></p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/05/01/Practice/practice-OrderList/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+  			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+
