@@ -223,8 +223,10 @@ displayLabel 에는 2 + 3 / 4 와 같이 여러 개의 표현식이 출력되지
 <p><em>ViewController.swift - func performCommand</em></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="function"><span class="keyword">func</span> <span class="title">performCommand</span><span class="params">(<span class="number">_</span> command: Command, with displayText: String)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line">    <span class="keyword">switch</span> command &#123;</span><br><span class="line">    <span class="keyword">case</span> .addDigit(<span class="keyword">let</span> input):</span><br><span class="line">        <span class="keyword">return</span> displayText + input</span><br><span class="line">    <span class="keyword">case</span> .operation(<span class="number">_</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">case</span> .<span class="built_in">equal</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">case</span> .clear:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"0"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>입력된 커멘드에따라 <code>displayText</code>에 추가 혹은 0으로 초기화 함수생성</p>
-<h2 id="1-4-Project-repo">1.4.Project repo</h2>
-<p><a href="https://github.com/devyhan93/Calculator" target="_blank" rel="noopener">Git</a></p>
+<blockquote>
+<h2 id="Project-repositories">Project repositories</h2>
+<p><a href="https://github.com/devyhan93/Calculator" target="_blank" rel="noopener">Git Hub Repositories</a></p>
+</blockquote>
 	  
 			</div>
 			<div>
