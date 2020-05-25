@@ -208,33 +208,6 @@
   </entry>
   
   <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -258,6 +231,33 @@
     
     
       <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-16T07:18:31.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
     
     
   </entry>
@@ -344,6 +344,33 @@
   </entry>
   
   <entry>
+    <title>Frame과 Bounds</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-04-30T02:44:47.852Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;h1&gt;1.Frame과
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
@@ -360,33 +387,6 @@
 &lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
 &lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
 &lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Frame과 Bounds</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-04-30T02:44:47.852Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Frame과
         
       
     
@@ -536,11 +536,11 @@
   </entry>
   
   <entry>
-    <title>200422</title>
-    <link href="https://devyhan93.github.io/2020/04/22/til/til-200422/"/>
-    <id>https://devyhan93.github.io/2020/04/22/til/til-200422/</id>
-    <published>2020-04-21T15:00:00.000Z</published>
-    <updated>2020-04-22T08:27:33.449Z</updated>
+    <title>접근제어(Access Control)</title>
+    <link href="https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/"/>
+    <id>https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/</id>
+    <published>2020-04-20T15:00:00.000Z</published>
+    <updated>2020-04-22T12:27:22.409Z</updated>
     
     <summary type="html">
     
@@ -548,16 +548,17 @@
       
         
         
-          &lt;span class=&quot;label label-primary&quot;&gt;Todo&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Til&lt;/span&gt;
-&lt;h2 id=&quot;학습내용-회고&quot;&gt;학습내용 /
+          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;AccessControl&lt;/span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;위 내용은 패스트캠퍼스 iOS 강의 및
         
       
     
     </summary>
     
     
-      <category term="Todo / Til" scheme="https://devyhan93.github.io/categories/Todo-Til/"/>
+      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
     
     
   </entry>
