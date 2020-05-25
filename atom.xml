@@ -263,33 +263,6 @@
   </entry>
   
   <entry>
-    <title>그리드 레이아웃</title>
-    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
-    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
-    <published>2020-04-28T15:00:00.000Z</published>
-    <updated>2020-05-03T03:32:21.907Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>랜덤 색상 표현</title>
     <link href="https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/"/>
     <id>https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/</id>
@@ -312,6 +285,33 @@
     
     
       <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>그리드 레이아웃</title>
+    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
+    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
+    <published>2020-04-28T15:00:00.000Z</published>
+    <updated>2020-05-03T03:32:21.907Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
     
     
   </entry>

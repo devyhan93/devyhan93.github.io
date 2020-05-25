@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/2020/04/17/swift/swift-Closure/</loc>
+        <lastmod>2020-05-25T16:01:17.738Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/2020/05/16/Xcode/xcode-CodeSnippet/</loc>
         <lastmod>2020-05-25T02:18:50.735Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -90,14 +98,6 @@
     <url>
         <loc>https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/</loc>
         <lastmod>2020-05-14T02:34:40.447Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/17/swift/swift-Closure/</loc>
-        <lastmod>2020-05-14T02:30:37.153Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
