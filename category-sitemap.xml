@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/categories/Git/</loc>
+        <lastmod>2020-05-25T16:06:03.443Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/categories/Swift/</loc>
-        <lastmod>2020-05-25T16:01:17.738Z</lastmod>
+        <lastmod>2020-05-25T16:03:40.509Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -38,13 +45,6 @@
     <url>
         <loc>https://devyhan93.github.io/categories/Foundation/</loc>
         <lastmod>2020-05-16T07:37:54.702Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/categories/Git/</loc>
-        <lastmod>2020-05-14T02:34:40.447Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -103,7 +103,7 @@
     <link href="https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/"/>
     <id>https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/</id>
     <published>2020-05-13T15:00:00.000Z</published>
-    <updated>2020-05-14T02:34:40.447Z</updated>
+    <updated>2020-05-25T16:06:03.443Z</updated>
     
     <summary type="html">
     
@@ -263,33 +263,6 @@
   </entry>
   
   <entry>
-    <title>랜덤 색상 표현</title>
-    <link href="https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/"/>
-    <id>https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/</id>
-    <published>2020-04-28T15:00:00.000Z</published>
-    <updated>2020-04-30T02:45:15.342Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;Swift&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>그리드 레이아웃</title>
     <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
     <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
@@ -312,6 +285,33 @@
     
     
       <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>랜덤 색상 표현</title>
+    <link href="https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/"/>
+    <id>https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/</id>
+    <published>2020-04-28T15:00:00.000Z</published>
+    <updated>2020-04-30T02:45:15.342Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
     
     
   </entry>
