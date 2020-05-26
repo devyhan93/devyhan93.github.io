@@ -208,33 +208,6 @@
   </entry>
   
   <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -263,11 +236,11 @@
   </entry>
   
   <entry>
-    <title>그리드 레이아웃</title>
-    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
-    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
-    <published>2020-04-28T15:00:00.000Z</published>
-    <updated>2020-05-03T03:32:21.907Z</updated>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-16T07:18:31.816Z</updated>
     
     <summary type="html">
     
@@ -317,6 +290,33 @@
   </entry>
   
   <entry>
+    <title>그리드 레이아웃</title>
+    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
+    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
+    <published>2020-04-28T15:00:00.000Z</published>
+    <updated>2020-05-03T03:32:21.907Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>guard let과 if let의 차이</title>
     <link href="https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/"/>
     <id>https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/</id>
@@ -348,7 +348,7 @@
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
     <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-04-30T02:44:47.852Z</updated>
+    <updated>2020-05-26T13:55:55.659Z</updated>
     
     <summary type="html">
     
@@ -358,34 +358,7 @@
         
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Frame과
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-21T01:52:08.077Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
-&lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
+&lt;h1&gt;1.Frame과 Bounds&lt;/h1&gt;
 &lt;h2
         
       
@@ -415,6 +388,34 @@
 &lt;span class=&quot;label label-info&quot;&gt;LifeCycle&lt;/span&gt;
 &lt;h1&gt;1.Life Cycle&lt;/h1&gt;
 &lt;p&gt;iOS앱은 기본적으로
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-05-21T01:52:08.077Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
+&lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
+&lt;h2
         
       
     

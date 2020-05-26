@@ -9,7 +9,12 @@
   
   <meta name="description" content="iOS
 FrameBounds
-1.Frame과 Bounds">
+1.Frame과 Bounds
+1.1.Frame
+
+superview의 좌표계를 기반으로 해당 view에 대한 위치(좌표)와 사이즈를 나타내는 사각형
+원점(0, 0)은 부모뷰(superview)의 시작 지점이며,
+원점을 변경하면 자신의 위치가 ">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -90,6 +95,19 @@ FrameBounds
 				<span class="label label-primary">iOS</span>
 <span class="label label-info">FrameBounds</span>
 <h1>1.Frame과 Bounds</h1>
+<h2 id="1-1-Frame">1.1.Frame</h2>
+<ul>
+<li>superview의 좌표계를 기반으로 해당 view에 대한 위치(좌표)와 사이즈를 나타내는 사각형</li>
+<li>원점(0, 0)은 부모뷰(superview)의 시작 지점이며,</li>
+<li>원점을 변경하면 자신의 위치가 이동하고 이에 따라 자신의 하위 뷰도 함께 움직임<br>
+<code>The frame rectangle, which describes the view’s location and size in its superview’s coordinate system.</code></li>
+</ul>
+<h2 id="1-2-Bounds">1.2.Bounds</h2>
+<ul>
+<li>자기 자신의 좌표계를 기반으로 그 뷰의 위치와 사이즈를 표현하는 사각형</li>
+<li>원점(0, 0)은 자체 뷰의 시작 지점이며, 원점을 변경하면 자신의 하위 뷰에만 영향을 줌<br>
+<code>The bounds rectangle, which describes the view’s location and size in its own coordinate system.</code></li>
+</ul>
 	  
 			</div>
 			<div>
@@ -121,9 +139,9 @@ FrameBounds
 		
 	
 		
-	
-		
 			
+		
+	
 		
 	
 		
@@ -221,7 +239,7 @@ FrameBounds
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/28/iOS/ios-AutolayoutAnchors/" class="alignright next">next 👉</a></li>
+		<li class="next"><a href="/2020/04/28/iOS/ios-iOSLifeCycle%20copy/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>
