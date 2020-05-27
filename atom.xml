@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-26T02:28:45.843Z</updated>
+  <updated>2020-05-27T05:54:33.233Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UIViewController</title>
+    <link href="https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/"/>
+    <id>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</id>
+    <published>2020-05-26T15:00:00.000Z</published>
+    <updated>2020-05-27T05:54:33.233Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;h1&gt;1.UITableView&lt;/h1&gt;
+&lt;p&gt;UITableView
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>계산기</title>
@@ -208,6 +236,33 @@
   </entry>
   
   <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-16T07:18:31.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -236,11 +291,11 @@
   </entry>
   
   <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
+    <title>그리드 레이아웃</title>
+    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
+    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
+    <published>2020-04-28T15:00:00.000Z</published>
+    <updated>2020-05-03T03:32:21.907Z</updated>
     
     <summary type="html">
     
@@ -285,33 +340,6 @@
     
     
       <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>그리드 레이아웃</title>
-    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
-    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
-    <published>2020-04-28T15:00:00.000Z</published>
-    <updated>2020-05-03T03:32:21.907Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
     
     
   </entry>
@@ -532,34 +560,6 @@
     
     
       <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>접근제어(Access Control)</title>
-    <link href="https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/"/>
-    <id>https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/</id>
-    <published>2020-04-20T15:00:00.000Z</published>
-    <updated>2020-04-22T12:27:22.409Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;AccessControl&lt;/span&gt;
-&lt;blockquote&gt;
-&lt;p&gt;위 내용은 패스트캠퍼스 iOS 강의 및
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
     
     
   </entry>

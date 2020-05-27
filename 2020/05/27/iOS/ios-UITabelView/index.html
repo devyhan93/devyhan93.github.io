@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>UIViewController | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="iOS
+FrameBounds
+1.UITableView
+UITableView 선언
+class UITableView : UIScrollView
+
+UIScrollView를 상속받아 리스트 형태로 반복되는 아이템을 보여주기 위한 뷰
+1.1.Plain Table Views
+
+기">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="UIViewController"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/05/27/ios/ios-uitabelview/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+  <!-- / analytics -->
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/iOS/UIViewController</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
+				<span class="date" style="float: right;" id="title-date">2020-05-27</span>
+				<span class="label label-primary">iOS</span>
+<span class="label label-info">FrameBounds</span>
+<h1>1.UITableView</h1>
+<p>UITableView 선언<br>
+<code>class UITableView : UIScrollView</code></p>
+<center><img width="100%" style="max-width: 300px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/82970472-5cc94480-a00b-11ea-9448-54a4bc975295.png"></center>
+<p>UIScrollView를 상속받아 리스트 형태로 반복되는 아이템을 보여주기 위한 뷰</p>
+<h2 id="1-1-Plain-Table-Views">1.1.Plain Table Views</h2>
+<ul>
+<li>기본 스타일</li>
+<li>하나 이상의 섹션(section)을 가질 수 있으며 각 섹션은 다시 하나 이상의 로우(row) 를 가짐</li>
+<li>각 섹션은 그 자신의 헤더/푸터 뷰를 가질 수 있고 해당 섹션이 보여질 때 헤더뷰는 Top, 푸터뷰는 Bottom에 고정</li>
+<li>섹션을 빠르게 검색할 수 있도록 Indexed List설정 가능</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/45344633/82977418-bb4aee80-a01c-11ea-8f3a-499b87088196.png" alt="image"></p>
+<h2 id="1-2-Grouped-Table-Views">1.2.Grouped Table Views</h2>
+<ul>
+<li>관련된 아이템들을 하나의 그룹으로 그룹핑</li>
+<li>테이터 계층 구조에 대한 상세 정보를 표현 하는데 적합한 형태</li>
+<li>Plain스타일과 달리 헤더뷰와 푸터뷰가 Top, Bottom에 고정되지 않음</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/45344633/82977456-d87fbd00-a01c-11ea-9bdb-6a4327a6cca1.png" alt="image"></p>
+<h2 id="1-3-UITableViewDataSource">1.3.UITableViewDataSource</h2>
+<p><em>TableView에서 표현할 데이터를 제공하는데 사용하는 프로토콜</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">protocol</span> <span class="title">UITableViewDataSourece</span>: <span class="title">NSObjectProtocol</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">tableView</span><span class="params">(<span class="number">_</span> tableView: UITableView, numberOfRowsInSection section: Int)</span></span> -&gt; <span class="type">Int</span></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">tableView</span><span class="params">(<span class="number">_</span> tableViewL UITbleView, cellForRowAt indexPath: IndexPath)</span></span> -&gt; <span class="type">UITableViewCell</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">tableView</span><span class="params">(<span class="number">_</span> tableView: UITableView, numberOfRowsInSection section: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="comment">// 섹션별 row 갯수 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">tableView</span><span class="params">(<span class="number">_</span> tableView: UITableView, cellForRowAt indexPath: IndexPath)</span></span> -&gt; <span class="type">UITableViewCell</span> &#123;</span><br><span class="line">    <span class="comment">// UITableViewCell 커스터마이징 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1-4-UITabelViewDelegate">1.4.UITabelViewDelegate</h2>
+<p><em>Interaction 과 관련된 동작을 커스터마이징 하는 프로토콜</em></p>
+<h2 id="1-5-UITableViewCell">1.5.UITableViewCell</h2>
+<p><em>TableView에서 사용하는 각 아이템을 담는 컨테이너, 반복되는 셀을 매번 생성-해제-재할당 하는 부담을 덜기 위해 화면에 보이지 않는 부분의 셀을 재사용</em></p>
+<h2 id="1-6-UITableViewCell-Identifier">1.6.UITableViewCell Identifier</h2>
+<p><em>각 Cell을 구분해서 재사용하기 위한 식별자</em><br>
+<img src="https://user-images.githubusercontent.com/45344633/82979316-b6d50480-a021-11ea-88d9-356b175bd1eb.png" alt="image"></p>
+<h3 id="1-6-1-UITableViewCell-Style">1.6.1.UITableViewCell Style</h3>
+<blockquote>
+<h2 id="Reference-⚑">Reference ⚑</h2>
+<p><a href="https://developer.apple.com/documentation/uikit/uitableviewa" target="_blank" rel="noopener">UITableView - UIKit | Apple Developer Documentation</a></p>
+</blockquote>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/29/iOS/ios-RandomColor/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+  			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+
