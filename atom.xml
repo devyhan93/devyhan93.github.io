@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-27T11:56:42.870Z</updated>
+  <updated>2020-05-28T00:45:07.846Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/"/>
     <id>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</id>
     <published>2020-05-26T15:00:00.000Z</published>
-    <updated>2020-05-27T11:56:42.870Z</updated>
+    <updated>2020-05-28T00:45:07.846Z</updated>
     
     <summary type="html">
     
@@ -236,33 +236,6 @@
   </entry>
   
   <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -286,6 +259,33 @@
     
     
       <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-16T07:18:31.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
     
     
   </entry>
@@ -372,34 +372,6 @@
   </entry>
   
   <entry>
-    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-21T01:52:08.077Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
-&lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Frame과 Bounds</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
@@ -415,6 +387,34 @@
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
 &lt;h1&gt;1.Frame과 Bounds&lt;/h1&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-05-21T01:52:08.077Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
+&lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
 &lt;h2
         
       
