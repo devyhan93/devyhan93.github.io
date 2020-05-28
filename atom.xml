@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-28T00:45:32.292Z</updated>
+  <updated>2020-05-28T01:03:22.240Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/"/>
     <id>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</id>
     <published>2020-05-26T15:00:00.000Z</published>
-    <updated>2020-05-28T00:45:32.292Z</updated>
+    <updated>2020-05-28T01:03:22.240Z</updated>
     
     <summary type="html">
     
@@ -372,34 +372,6 @@
   </entry>
   
   <entry>
-    <title>Frame과 Bounds</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-26T13:55:55.659Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Frame과 Bounds&lt;/h1&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
@@ -415,6 +387,34 @@
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
 &lt;h1&gt;1.Autolayout Anchors&lt;/h1&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Frame과 Bounds</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-05-26T13:55:55.659Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;h1&gt;1.Frame과 Bounds&lt;/h1&gt;
 &lt;h2
         
       
