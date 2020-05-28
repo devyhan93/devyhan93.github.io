@@ -10,8 +10,9 @@
   <meta name="description" content="iOS
 AutoLayoutAnchors
 1.Autolayout Anchors
+스위프트에서 Auto Layout을 코드로 구현하기 위한 방법 중 하나인 Autolayout Anchors에 대해 알아보자.
 1.1.NSLayoutConstraint
-12345678910111213// Creating constraints using NSLayoutConstraintNSLayoutConstraint(">
+12345678910111">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -92,6 +93,7 @@ AutoLayoutAnchors
 				<span class="label label-primary">iOS</span>
 <span class="label label-info">AutoLayoutAnchors</span>
 <h1>1.Autolayout Anchors</h1>
+<p>스위프트에서 <code>Auto Layout</code>을 코드로 구현하기 위한 방법 중 하나인 <code>Autolayout Anchors</code>에 대해 알아보자.</p>
 <h2 id="1-1-NSLayoutConstraint">1.1.NSLayoutConstraint</h2>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Creating constraints using NSLayoutConstraint</span></span><br><span class="line"><span class="type">NSLayoutConstraint</span>(item: subview,</span><br><span class="line">                    attribute: .leading,</span><br><span class="line">                    relatedBy: .<span class="built_in">equal</span>,</span><br><span class="line">                    toItem: view,</span><br><span class="line">                    attribute: .leadingMargin,</span><br><span class="line">                    multiplier: <span class="number">1.0</span>, constant: <span class="literal">true</span>).isActive = <span class="literal">true</span></span><br><span class="line"><span class="type">NSLayoutConstraint</span>(item: subview,</span><br><span class="line">                    attribute: .trailing,</span><br><span class="line">                    relatedBy: .<span class="built_in">equal</span>,</span><br><span class="line">                    toItem: view,</span><br><span class="line">                    attribute: .trailingMargin,</span><br><span class="line">                    multiplier: <span class="number">1.0</span>, constant: <span class="number">0.0</span>).isActive = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <h2 id="1-2-NSLayoutAnchor">1.2.NSLayoutAnchor</h2>
@@ -102,28 +104,28 @@ AutoLayoutAnchors
 <li>View의 수평선, X축에 관련된 제약조건</li>
 <li>NSLayoutXAxisAnchor클래스의 객체</li>
 </ul>
-<p>Leading anchor, Trailing anchor, Left anchor, Right anchor, Center-X anchor</p>
+<p><code>Leading anchor, Trailing anchor, Left anchor, Right anchor, Center-X anchor</code></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">view.leadingAnchor.constraint(equalTO: <span class="type">NSLayoutAnchor</span>&lt;<span class="type">NSLayoutXAxisAnchor</span>&gt;)</span><br></pre></td></tr></table></figure>
 <h2 id="1-4-Vertical-Layout-Anchors">1.4.Vertical Layout Anchors</h2>
 <ul>
 <li>view의 수직선, Y축에 괸련된 제약조건</li>
 <li>NSLayoutYAxisAnchor클래스의 객체</li>
 </ul>
-<p>Top anchor, Bottomanchor, Xenter-Y anchor, First baseline anchor, Last baseline anchor</p>
+<p><code>Top anchor, Bottom anchor, Xenter-Y anchor, First baseline anchor, Last baseline anchor</code></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">view.topAnchor.constraint(equalTo: <span class="type">NSLayoutAnxhor</span>&lt;<span class="type">NSLayoutYAxistAnxhor</span>&gt;)</span><br></pre></td></tr></table></figure>
 <h2 id="1-5-Dimension-Layout-Anchors">1.5.Dimension Layout Anchors</h2>
 <ul>
 <li>view의 크기 정의</li>
 <li>NSLayoutDimension클래스의 객체</li>
 </ul>
-<p>Width anchor, Height anchor</p>
+<p><code>Width anchor, Height anchor</code></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">view.widthAnchor.constraint(eqaulToConstant: <span class="type">CGFloat</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="1-6-Basic-Layout-Constraints">1.6.Basic Layout Constraints</h2>
-<p><img src="https://user-images.githubusercontent.com/45344633/82512955-90f4bf00-9b4c-11ea-83eb-68b576c06717.png" alt="image"></p>
+<center><img width="100%" style="max-width: 400px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/82512955-90f4bf00-9b4c-11ea-83eb-68b576c06717.png"></center>
 <h2 id="1-7-Dimension-Center-X-Y-Layout">1.7.Dimension &amp; Center X,Y Layout</h2>
-<p><img src="https://user-images.githubusercontent.com/45344633/82513061-ddd89580-9b4c-11ea-89d6-18d89931c70a.png" alt="image"></p>
+<center><img width="100%" style="max-width: 400px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/82513061-ddd89580-9b4c-11ea-89d6-18d89931c70a.png"></center>
 <h2 id="1-8-First-Last-Baseline-Constraints">1.8.First, Last Baseline Constraints</h2>
-<p><img src="https://user-images.githubusercontent.com/45344633/82513146-15dfd880-9b4d-11ea-8845-b0b081f038ec.png" alt="image"></p>
+<center><img width="100%" style="max-width: 400px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/82513146-15dfd880-9b4d-11ea-8845-b0b081f038ec.png"></center>
 	  
 			</div>
 			<div>
@@ -168,12 +170,16 @@ AutoLayoutAnchors
 	
 		
 			
-			
 		
 	
 		
 			
 			
+		
+	
+		
+			
+			
 			
 		
 			
@@ -184,8 +190,6 @@ AutoLayoutAnchors
 		
 	
 		
-			
-		
 	
 		
 	
@@ -251,15 +255,13 @@ AutoLayoutAnchors
 	
 		
 	
-		
 	
 	
-	
-		<li class="prev"><a href="/2020/04/29/iOS/ios-RandomColor/" class="alignleft prev">👈 prev</a></li>
+		<li class="prev"><a href="/2020/04/28/iOS/ios-FrameBounds/" class="alignleft prev">👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/28/iOS/ios-FrameBounds/" class="alignright next">next 👉</a></li>
+		<li class="next"><a href="/2020/04/28/iOS/ios-iOSLifeCycle%20copy/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>

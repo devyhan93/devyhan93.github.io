@@ -4,24 +4,21 @@
 
   <meta charset="utf-8">
   
-  <title>스토리보드사용 안할때 기초 프로젝트 설정 | Devwiki</title>
+  <title>코드베이스 초기 프로젝트 설정 | Devwiki</title>
   <meta name="author" content="devyhan93">
   
   <meta name="description" content="Xcode
 iOS
 Swift
 CodeSetting
-1.스토리보드사용 안할때 기초 프로젝트 설정
-iOS개발을 할때 스토리보드를 사용하지 않고 코드로만 개발할때의 기초 설정
-1.1.프로젝트 생성
-NewProjcet &amp;gt; Single View App &amp;gt; Next
-
-">
+1.코드베이스 초기 프로젝트 설정
+iOS개발을 할때 스토리보드를 사용하지 않고 코드로만 개발할때의 기초 설정, iOS 13이상의 버전을 사용할 경우 SceneDelegate.swift를 사용할 떄도 있다.
+1.1.프로젝">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="스토리보드사용 안할때 기초 프로젝트 설정"/>
+  <meta property="og:title" content="코드베이스 초기 프로젝트 설정"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
@@ -68,7 +65,7 @@ NewProjcet &amp;gt; Single View App &amp;gt; Next
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/Xcode/스토리보드사용 안할때 기초 프로젝트 설정</span>
+		<span class="capitalizeFirst">~/Xcode/코드베이스 초기 프로젝트 설정</span>
 	</h1>
 </div>		
 
@@ -98,8 +95,8 @@ NewProjcet &amp;gt; Single View App &amp;gt; Next
 <span class="label label-info">iOS</span>
 <span class="label label-info">Swift</span>
 <span class="label label-info">CodeSetting</span>
-<h1>1.스토리보드사용 안할때 기초 프로젝트 설정</h1>
-<p>iOS개발을 할때 스토리보드를 사용하지 않고 코드로만 개발할때의 기초 설정</p>
+<h1>1.코드베이스 초기 프로젝트 설정</h1>
+<p>iOS개발을 할때 스토리보드를 사용하지 않고 코드로만 개발할때의 기초 설정, iOS 13이상의 버전을 사용할 경우 SceneDelegate.swift를 사용할 떄도 있다.</p>
 <h2 id="1-1-프로젝트-생성">1.1.프로젝트 생성</h2>
 <p>NewProjcet &gt; Single View App &gt; Next</p>
 <center><img width="100%" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/80729834-c4db5680-8b43-11ea-9f30-9760b5d15c34.png"></center>
@@ -111,10 +108,18 @@ NewProjcet &amp;gt; Single View App &amp;gt; Next
 <p><em>삭제후</em></p>
 <center><img width="50%" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/80730752-eee14880-8b44-11ea-8581-a762d6f5ced3.png"></center>
 <h2 id="1-3-AppDelegate-swift-파일-수정">1.3.AppDelegate.swift 파일 수정</h2>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="meta">@UIApplicationMain</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AppDelegate</span>: <span class="title">UIResponder</span>, <span class="title">UIApplicationDelegate</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> window: <span class="type">UIWindow?</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">application</span><span class="params">(<span class="number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: <span class="keyword">Any</span>]?)</span></span> -&gt; <span class="type">Bool</span> &#123;</span><br><span class="line">        </span><br><span class="line">        window = <span class="type">UIWindow</span>(frame: <span class="type">UIScreen</span>.main.bounds) <span class="comment">// 해당 기기의 완전한 크기</span></span><br><span class="line">        window?.rootViewController = <span class="type">ViewController</span>()</span><br><span class="line">        window?.makeKeyAndVisible()</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>iOS 12 이하 - AppDelegate.swift 일 때</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AppDelegate</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> window: <span class="type">UIWindow?</span></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">application</span><span class="params">(<span class="number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: <span class="keyword">Any</span>]?)</span></span> -&gt; <span class="type">Bool</span> &#123;</span><br><span class="line">        window = <span class="type">UIWindow</span>(frame: <span class="type">UIScreen</span>.main.bounds)</span><br><span class="line">        window?.rootViewController = <span class="type">ViewController</span>()</span><br><span class="line">        window?.backgroundColor = .systemBackground</span><br><span class="line">        window?.makeKeyAndVisible()</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>UIWindow(frame: UIScreen.main.bounds)</code>를 통하여 해당 기기의 완전한 크기를 <code>window</code>에 할당한 후에 이를 <code>ViewController()</code>롲 <code>rootViewController</code>를 지정해 우리가 만들 앱의 시작 화면을 만들어 준다.<br>
+다음으로 백그라운드 컬러를 <code>.systemBackground</code>로 지정해 주는데, 다크모드를 지원한다면 시스템 컬러를 사용해야 하기 때문이다.<br>
+그리고 마지막으로 <code>window?.makeKeyAndVisible()</code>은 만든 윈도우에서 키보드의 입력을 받을 수 있게끔 한다.</p>
+<p><em>iOS 13 이상 - SceneDelegate.swift 일 때</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SceneDelegate</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> window: <span class="type">UIWindow?</span></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">scene</span><span class="params">(<span class="number">_</span> scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)</span></span> &#123;</span><br><span class="line">        <span class="keyword">guard</span> <span class="keyword">let</span> windowScene = (scene <span class="keyword">as</span>? <span class="type">UIWindowScene</span>) <span class="keyword">else</span> &#123; <span class="keyword">return</span> &#125;</span><br><span class="line">        </span><br><span class="line">        window = <span class="type">UIWindow</span>(windowScene: windowScene)</span><br><span class="line">        window?.rootViewController = <span class="type">ViewController</span>()</span><br><span class="line">        window?.frame = <span class="type">UIScreen</span>.main.bounds</span><br><span class="line">        window?.backgroundColor = .systemBackground</span><br><span class="line">        window?.makeKeyAndVisible()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>위 두개의 코드는 동일한 동작을 하는 코드로, 스토리보드를 이용하지 않을 떄 초기 <code>window</code>를 생성하고, <code>ViewController</code>를 전달하는 코드이다.</p>
 <h2 id="1-4-info-plist-수정">1.4.info.plist 수정</h2>
 <p><em>Application Scene Manifest 제거</em></p>
 <center><img width="100%" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/80731294-ac6c3b80-8b45-11ea-824a-32a39e1b9f23.png"></center>
+<p>프로젝트를 생성하면 기본적으로 메인화면을 같이 만들어진 Main.storyboard로 설정하는데 이를 해제한다.</p>
 	  
 			</div>
 			<div>

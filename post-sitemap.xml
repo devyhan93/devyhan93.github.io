@@ -8,8 +8,32 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</loc>
+        <lastmod>2020-05-28T15:13:47.490Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</loc>
+        <lastmod>2020-05-28T15:06:25.421Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan93.github.io/2020/04/27/iOS/ios-Autolayout/</loc>
+        <lastmod>2020-05-28T14:57:17.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</loc>
-        <lastmod>2020-05-28T01:03:22.240Z</lastmod>
+        <lastmod>2020-05-28T03:57:41.896Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -64,32 +88,8 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/27/iOS/ios-Autolayout/</loc>
-        <lastmod>2020-05-21T02:13:54.206Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</loc>
-        <lastmod>2020-05-21T01:52:08.077Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://devyhan93.github.io/2020/04/27/iOS/ios-UIViewController/</loc>
         <lastmod>2020-05-21T01:11:50.340Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</loc>
-        <lastmod>2020-05-17T15:15:05.402Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
