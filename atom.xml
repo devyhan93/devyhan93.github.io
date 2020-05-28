@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-28T00:45:07.846Z</updated>
+  <updated>2020-05-28T00:45:32.292Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>UIViewController</title>
+    <title>UITableView</title>
     <link href="https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/"/>
     <id>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</id>
     <published>2020-05-26T15:00:00.000Z</published>
-    <updated>2020-05-28T00:45:07.846Z</updated>
+    <updated>2020-05-28T00:45:32.292Z</updated>
     
     <summary type="html">
     
@@ -236,6 +236,33 @@
   </entry>
   
   <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-16T07:18:31.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>스토리보드사용 안할때 기초 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -259,33 +286,6 @@
     
     
       <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
     
     
   </entry>
