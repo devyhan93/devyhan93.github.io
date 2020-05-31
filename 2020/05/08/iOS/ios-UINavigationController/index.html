@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>UINavigationController | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="iOS
+UINavigationController
+1.UINavigationController
+A container view controller that defines a stack-based scheme for navigating hierarchical content.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="UINavigationController"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/05/08/ios/ios-uinavigationcontroller/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+  <!-- / analytics -->
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/iOS/UINavigationController</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
+				<span class="date" style="float: right;" id="title-date">2020-05-08</span>
+				<span class="label label-primary">iOS</span>
+<span class="label label-info">UINavigationController</span>
+<h1>1.UINavigationController</h1>
+<p><code>A container view controller that defines a stack-based scheme for navigating hierarchical content.</code></p>
+<h2 id="1-1-Layered-Views">1.1.Layered Views</h2>
+<center><img width="100%" style="max-width: 400px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/83163198-b9c91580-a145-11ea-95ee-a89b3e44e205.png"></center>
+<p>뷰의 계층으로 <code>window</code>가 있고, 그 위에 <code>Tab bar view - Navigation view - Custom view hierarchy</code> 가 순서대로 배치되게 된다.</p>
+<p>그중 Tab bar나 Navigation은 공간 제외하고 표시하는데 최종적으로 Assembly vies로 합쳐진다.</p>
+<h2 id="1-2-Navigation-Controller">1.2.Navigation Controller</h2>
+<center><img width="100%" style="max-width: 500px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/83164084-c437df00-a146-11ea-880e-f1ab87f1de58.png"></center>
+<p>오른쪽으로 넘어갈 때마다 depth가 깊어진다</p>
+<h3 id="1-2-1-Navigation-Controller-Stack">1.2.1.Navigation Controller Stack</h3>
+<center><img width="100%" style="max-width: 500px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/83164433-2e508400-a147-11ea-9ee7-6c53a6d37b0f.png"></center>
+<p>NavigationController는 스텍 구조의 형태를 보이는데, depth가 깊어질수록 뷰에서는 해당 뷰가 상위로 나와야하고 뒤로가기를 눌렀을 경우 맨위에 존재하는 뷰가 사라지기 때문이다.</p>
+<p><code>topViewController</code>은 Navigation의 stack에서 맨위에 존재하고</p>
+<p><code>visibleViewController</code>은 사용자에게 보여지는 뷰애서 맨위에 존재한다.</p>
+<center><img width="100%" style="max-width: 500px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/83165196-23e2ba00-a148-11ea-8d53-d7b16e6446b9.png"></center>
+<p>이 그림에서 <code>UINavigationController</code>에 <code>childViewControllers</code>안에 쌓인 View Controller들이 Navigation Controller Stack인데 UINavigationController에 View Controller를 presentedViewController로 띄우게 된다면 사용자에게 보여지는 뷰인 visibleViewController는 presentedViewController로띄운 view가 된다.</p>
+<h2 id="1-3-UITabBarController">1.3.UITabBarController</h2>
+<center><img width="100%" style="max-width: 500px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/83166090-5a6d0480-a149-11ea-9f07-39ed8295891d.png"></center>
+<p>컨테이너 뷰 컨트롤러인 <code>UITabBarController</code>는 <code>radio-style</code> 인터페이스를 가진다<br>
+라디오 버튼과 같은 원리 로 토글하면 <code>true</code>로 보여질 자식 뷰가 보이게 된다.</p>
+<p>하나 이상의 버튼을 이용해 서로 다른 작업이나 뷰, 모델 등을 선택해 제어하기 위한 바 형식 네비게이션</p>
+<p>보통 <code>UITabBarController</code>와 결합하여 많이 쓰지만 단독으로도 활용이 가능하다.</p>
+<p><code>UIToolbar</code>와 비슷한 모양이지만 상이한 목적을 지닌다.</p>
+<ul>
+<li>탭바는 앱의 모드를 변화하기 위한것이다.</li>
+<li>툴바는 현재 뷰컨트롤러의 컨텐츠에 관련된 액션을 수행하기 위한것이다.</li>
+</ul>
+<h3 id="1-3-1-UITabBarItem">1.3.1.UITabBarItem</h3>
+<center><img width="100%" style="max-width: 500px" alt="Pasted Graphic 01" src="https://user-images.githubusercontent.com/45344633/83166862-7b822500-a14a-11ea-9eac-a9c39537d54d.png"></center>
+<ul>
+<li>하나의 TabBarItem마다 각가의 ViewController가 연결</li>
+<li>ViewController에 tabBarItem속성을 통해 해당 아이템에 접근  가능</li>
+<li>TabBar에는 최대 5개의 TabBarItem표현 5개를 초과할 경우 More아이템으로 대체</li>
+</ul>
+<h2 id="1-4-NavigationController-Codebase-구현">1.4.NavigationController Codebase 구현</h2>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2020/05/27/iOS/ios-UITabelView/" class="alignleft prev">👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/04/29/iOS/ios-RandomColor/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+  			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

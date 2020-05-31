@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-05-28T03:57:41.896Z</updated>
+  <updated>2020-05-28T15:19:40.815Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/"/>
     <id>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</id>
     <published>2020-05-26T15:00:00.000Z</published>
-    <updated>2020-05-28T03:57:41.896Z</updated>
+    <updated>2020-05-28T15:19:40.815Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,7 @@
         
         
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;UITableView&lt;/span&gt;
 &lt;h1&gt;1.UITableView&lt;/h1&gt;
 &lt;p&gt;UITableView
         
@@ -176,6 +176,32 @@
     
     
       <category term="Using Swift" scheme="https://devyhan93.github.io/categories/Using-Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UINavigationController</title>
+    <link href="https://devyhan93.github.io/2020/05/08/iOS/ios-UINavigationController/"/>
+    <id>https://devyhan93.github.io/2020/05/08/iOS/ios-UINavigationController/</id>
+    <published>2020-05-07T15:00:00.000Z</published>
+    <updated>2020-05-29T02:16:53.171Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
     
     
   </entry>
@@ -524,34 +550,6 @@
           &lt;span class=&quot;label label-primary&quot;&gt;Foundation&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
 &lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>마크다운(Markdown) 작성법</title>
-    <link href="https://devyhan93.github.io/2020/04/22/Foundation/Foundation-Markdown/"/>
-    <id>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-Markdown/</id>
-    <published>2020-04-21T15:00:00.000Z</published>
-    <updated>2020-04-22T07:35:22.798Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Foundation&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Markdown&lt;/span&gt;
-&lt;h1&gt;1.마크다운(Markdown) 작성법&lt;/h1&gt;
-&lt;h2
         
       
     
