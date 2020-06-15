@@ -4,26 +4,29 @@
 
   <meta charset="utf-8">
   
-  <title>랜덤 색상 표현 | Devwiki</title>
+  <title>옵셔널(Optional) | Devwiki</title>
   <meta name="author" content="devyhan93">
   
-  <meta name="description" content="iOS
-Swift
-RandomColor
-1.랜덤 색상 표현
-123456func getRandomColor() -&amp;gt; UIColor&amp;#123;    let randomRed:CGFloat = CGFloat(drand48())    let randomGreen:CGFl">
+  <meta name="description" content="Swift
+High-Order
+1.고차함수(High-Order Function)
+
+하나 이상의 함수를 인자로 취하는 함수
+함수를 결과로 반환하는 함수
+
+Higher-order Function이 되기 위해서는 함수가 1급 객체(First-class Citizen) 이어야">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="랜덤 색상 표현"/>
+  <meta property="og:title" content="옵셔널(Optional)"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
     <meta property="og:image" content=""/>
   
 
-  <link rel="canonical" href="https://devyhan93.github.io/2020/04/29/ios/ios-randomcolor/"/>
+  <link rel="canonical" href="https://devyhan93.github.io/2020/06/15/swift/swift-high-order function/"/>
 
   
     <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
@@ -63,7 +66,7 @@ RandomColor
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/iOS/랜덤 색상 표현</span>
+		<span class="capitalizeFirst">~/swift/옵셔널(Optional)</span>
 	</h1>
 </div>		
 
@@ -88,13 +91,50 @@ RandomColor
 	  		<!-- content -->
 			<div class="item-contents">
 				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
-				<span class="date" style="float: right;" id="title-date">2020-04-29</span>
-				<span class="label label-primary">iOS</span>
-<span class="label label-info">Swift</span>
-<span class="label label-info">RandomColor</span>
-<h1>1.랜덤 색상 표현</h1>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">getRandomColor</span><span class="params">()</span></span> -&gt; <span class="type">UIColor</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> randomRed:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">    <span class="keyword">let</span> randomGreen:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">    <span class="keyword">let</span> randomBlue:<span class="type">CGFloat</span> = <span class="type">CGFloat</span>(drand48())</span><br><span class="line">    <span class="keyword">return</span> <span class="type">UIColor</span>(red: randomRed, green: randomGreen, blue: randomBlue, alpha: <span class="number">1.0</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>간단한 랜덤 색상을 표현하기 위해서 rgb 값을 0 에서 1까지의 실수(double 타입)를 생성하는 drand48()값을 넣어주고 rgb를 Return한다.</p>
+				<span class="date" style="float: right;" id="title-date">2020-06-15</span>
+				<span class="label label-primary">Swift</span>
+<span class="label label-Function">High-Order</span>
+<h1>1.고차함수(High-Order Function)</h1>
+<ul>
+<li>하나 이상의 함수를 인자로 취하는 함수</li>
+<li>함수를 결과로 반환하는 함수</li>
+</ul>
+<p><strong>Higher-order Function이 되기 위해서는 함수가 <em>1급 객체(First-class Citizen)</em> 이어야 한다.</strong></p>
+<ul>
+<li><em>1급 객체 (First-class citizen)</em>
+<ul>
+<li>변수나 데이터에 할당할 수 있어야 한다.</li>
+<li>객체의 인자로 넘길 수 있어야 한다.</li>
+<li>객체의 리턴값으로 리턴할 수 있어야 한다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-1-스위프트에서의-고차함수-Higher-order-Functions-in-Swift">1.1.스위프트에서의 고차함수(Higher-order Functions in Swift)</h2>
+<p><strong>forEach</strong></p>
+<ul>
+<li>컬렉션의 각 요소(Element)에 동일 연산을 적용하며, 반환값이 없는 형태</li>
+</ul>
+<p><strong>map</strong></p>
+<ul>
+<li>컬렉션의 각 요소(Element)에 동일 연산을 적용하여, 변형된 새 컬렉션 반환</li>
+</ul>
+<p><strong>filter</strong></p>
+<ul>
+<li>컬렉션의 각 요소를 평가하여 조건을 만족하는 요소만을 새로운 컬렉션으로 반환</li>
+</ul>
+<p><strong>reduce</strong></p>
+<ul>
+<li>컬렉션의 각 요소들을 결합하여 단일 타입으로 반환.</li>
+</ul>
+<p><strong>flatMap</strong></p>
+<ul>
+<li>중첩된 컬렉션을 하나의 컬렉션으로 병합</li>
+</ul>
+<p><strong>compactMap</strong></p>
+<ul>
+<li>컬렉션의요소중옵셔널이있을경우제거 e.g. Int, String</li>
+<li>(flatMap으로 사용하다가 Swift 4.1 에서 compactMap 으로 변경됨)</li>
+</ul>
 	  
 			</div>
 			<div>
@@ -108,6 +148,77 @@ RandomColor
 	
 	
 		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
 	
 		
 			
@@ -126,6 +237,12 @@ RandomColor
 		
 	
 		
+	
+		
+			
+		
+	
+		
 			
 		
 	
@@ -134,28 +251,13 @@ RandomColor
 		
 	
 		
-	
-		
-	
-		
-	
-		
-			
-			
-		
-	
-		
-	
-		
-			
-			
-			
-		
 			
 		
 	
 		
 			
+		
+	
 		
 	
 		
@@ -173,72 +275,18 @@ RandomColor
 		
 	
 		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
+			
 		
 	
 		
 	
 	
 	
-		<li class="prev"><a href="/2020/05/08/iOS/ios-UINavigationController/" class="alignleft prev">👈 prev</a></li>
+		<li class="prev disabled"><a>👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/28/iOS/ios-FrameBounds/" class="alignright next">next 👉</a></li>
+		<li class="next"><a href="/2020/04/21/swift/swift-AccessControl/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>
