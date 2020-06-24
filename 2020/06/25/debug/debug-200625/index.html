@@ -4,45 +4,28 @@
 
   <meta charset="utf-8">
   
-  <title>A*B | Devwiki</title>
+  <title>dyld: Library not loaded: @rpath/ | Devwiki</title>
   <meta name="author" content="devyhan93">
   
-  <meta name="description" content="Algolithm
-백준온라인저지
-Swift
-10998번
-1.문제 10998번
-1.1.A×B
-
-
-
-시간제한
-메모리 제한
-
-
-
-
-1초
-256 MB
-
-
-
-1.2.문제
-두 정수 A와 B를 입력받은 다음, A×B를 출력하는 프로그램을 작성하시오.
-1.3.입력
-첫째 줄에 A와 B">
+  <meta name="description" content="debug
+iOS
+Xcode
+Library
+1.dyld: Library not loaded: @rpath/
+라이브러리를 사용하다 시뮬레이터에서는 정상 작동하고, 기기에서 빌드시 이런 에러에 직면하면 해당 문제가 일어난 프로젝트 파일로 들어가 podfile로 들어간다.
+">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="A*B"/>
+  <meta property="og:title" content="dyld: Library not loaded: @rpath/"/>
   <meta property="og:site_name" content="Devwiki"/>
 
   
     <meta property="og:image" content=""/>
   
 
-  <link rel="canonical" href="https://devyhan93.github.io/2020/04/13/algorithm/algorithm-q10998/"/>
+  <link rel="canonical" href="https://devyhan93.github.io/2020/06/25/debug/debug-200625/"/>
 
   
     <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
@@ -82,7 +65,7 @@ Swift
 			Devwiki
 	    </a>
 				
-		<span class="capitalizeFirst">~/Algorithm/A*B</span>
+		<span class="capitalizeFirst">~/debug/dyld: Library not loaded: @rpath/</span>
 	</h1>
 </div>		
 
@@ -107,41 +90,15 @@ Swift
 	  		<!-- content -->
 			<div class="item-contents">
 				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
-				<span class="date" style="float: right;" id="title-date">2020-04-13</span>
-				<span class="label label-primary">Algolithm</span>
-<span class="label label-primary">백준온라인저지</span>
-<span class="label label-primary">Swift</span>
-<span class="label label-info">10998번</span>
-<h1>1.문제 10998번</h1>
-<h2 id="1-1-A×B">1.1.A×B</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">시간제한</th>
-<th style="text-align:center">메모리 제한</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1초</td>
-<td style="text-align:center">256 MB</td>
-</tr>
-</tbody>
-</table>
-<h3 id="1-2-문제">1.2.문제</h3>
-<p>두 정수 A와 B를 입력받은 다음, A×B를 출력하는 프로그램을 작성하시오.</p>
-<h3 id="1-3-입력">1.3.입력</h3>
-<p>첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10)</p>
-<h3 id="1-4-출력">1.4.출력</h3>
-<p>첫째 줄에 A×B를 출력한다.</p>
-<h3 id="1-5-예제입력">1.5.예제입력</h3>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span> <span class="number">4</span></span><br></pre></td></tr></table></figure>
-<h3 id="1-6-예제출력">1.6.예제출력</h3>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">12</span></span><br></pre></td></tr></table></figure>
-<h3 id="1-7-풀이">1.7.풀이</h3>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"><span class="keyword">let</span> line = <span class="built_in">readLine</span>()!</span><br><span class="line"><span class="keyword">let</span> lineArr = line.components(separatedBy: <span class="string">" "</span>)</span><br><span class="line"><span class="keyword">let</span> a = <span class="type">Int</span>(lineArr[<span class="number">0</span>])!</span><br><span class="line"><span class="keyword">let</span> b = <span class="type">Int</span>(lineArr[<span class="number">1</span>])!</span><br><span class="line"><span class="built_in">print</span>(a*b)</span><br></pre></td></tr></table></figure>
+				<span class="date" style="float: right;" id="title-date">2020-06-25</span>
+				<span class="label label-primary">debug</span>
+<span class="label label-info">iOS</span>
+<span class="label label-info">Xcode</span>
+<span class="label label-info">Library</span>
+<h1>1.dyld: Library not loaded: @rpath/</h1>
+<p>라이브러리를 사용하다 시뮬레이터에서는 정상 작동하고, 기기에서 빌드시 이런 에러에 직면하면 해당 문제가 일어난 프로젝트 파일로 들어가 podfile로 들어간다.</p>
+<p><code>use_frameworks!</code> 를 <code>use_modular_headers!</code>로 변경한 후</p>
+<p>pod update 해준후 빌드 해보자.</p>
 	  
 			</div>
 			<div>
@@ -155,6 +112,59 @@ Swift
 	
 	
 		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
 	
 		
 	
@@ -208,67 +218,6 @@ Swift
 	
 		
 			
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-		
-	
-		
-			
-			
-		
-	
-		
-	
-		
-	
-		
-			
 			
 			
 		
@@ -279,33 +228,13 @@ Swift
 	
 		
 	
-		
-			
-		
-	
-		
-	
-		
-	
-		
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
 	
 	
-	
-		<li class="prev"><a href="/2020/04/13/Algorithm/Algorithm-Q1001/" class="alignleft prev">👈 prev</a></li>
+		<li class="prev disabled"><a>👈 prev</a></li>
 	
 	<li><a href="/">Home</a></li>
 	
-		<li class="next"><a href="/2020/04/12/Algorithm/Algorithm-Q10172/" class="alignright next">next 👉</a></li>
+		<li class="next"><a href="/2020/04/10/blog/blog-update200411/" class="alignright next">next 👉</a></li>
 	
 </ul>
 </div>
