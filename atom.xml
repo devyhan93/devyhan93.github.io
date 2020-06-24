@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-06-24T17:11:56.936Z</updated>
+  <updated>2020-06-24T17:13:59.263Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200625/"/>
     <id>https://devyhan93.github.io/2020/06/25/debug/debug-200625/</id>
     <published>2020-06-24T15:00:00.000Z</published>
-    <updated>2020-06-24T17:11:56.936Z</updated>
+    <updated>2020-06-24T17:13:59.263Z</updated>
     
     <summary type="html">
     
@@ -39,7 +39,7 @@
     </summary>
     
     
-      <category term="Blog" scheme="https://devyhan93.github.io/categories/Blog/"/>
+      <category term="Debug" scheme="https://devyhan93.github.io/categories/Debug/"/>
     
     
   </entry>
@@ -479,6 +479,33 @@
   </entry>
   
   <entry>
+    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-05-28T15:06:25.421Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
+&lt;h1&gt;1.Autolayout
+        
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Frame과 Bounds</title>
     <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
     <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
@@ -495,33 +522,6 @@
 &lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
 &lt;h1&gt;1.Frame과 Bounds&lt;/h1&gt;
 &lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-28T15:06:25.421Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
-&lt;h1&gt;1.Autolayout
         
       
     
