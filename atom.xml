@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-07-25T08:19:52.306Z</updated>
+  <updated>2020-07-27T16:44:30.410Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Sticky header</title>
-    <link href="https://devyhan93.github.io/2020/07/25/Side.proj/swift-varlet/"/>
-    <id>https://devyhan93.github.io/2020/07/25/Side.proj/swift-varlet/</id>
-    <published>2020-07-24T15:00:00.000Z</published>
-    <updated>2020-07-25T08:19:52.306Z</updated>
+    <link href="https://devyhan93.github.io/2020/07/28/Side.proj/swift-varlet/"/>
+    <id>https://devyhan93.github.io/2020/07/28/Side.proj/swift-varlet/</id>
+    <published>2020-07-27T15:00:00.000Z</published>
+    <updated>2020-07-27T16:44:30.410Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,10 @@
         
         
           &lt;span class=&quot;label label-primary&quot;&gt;Side.proj&lt;/span&gt;
-&lt;h1&gt;1.Sticky
+&lt;h1&gt;1.Sticky header&lt;/h1&gt;
+&lt;h2 id=&quot;1-1-Purpose&quot;&gt;1.1. Purpose&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;테이블 뷰를 활용하여 화면
         
       
     
@@ -181,32 +184,6 @@
   </entry>
   
   <entry>
-    <title>Iphone</title>
-    <link href="https://devyhan93.github.io/2020/05/22/Xcode/xcode-Iphone/"/>
-    <id>https://devyhan93.github.io/2020/05/22/Xcode/xcode-Iphone/</id>
-    <published>2020-05-21T15:00:00.000Z</published>
-    <updated>2020-06-02T15:04:30.982Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Xcode&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Xcode Git 연동</title>
     <link href="https://devyhan93.github.io/2020/05/22/Xcode/xcode-Git/"/>
     <id>https://devyhan93.github.io/2020/05/22/Xcode/xcode-Git/</id>
@@ -223,6 +200,32 @@
 &lt;span class=&quot;label label-info&quot;&gt;G&lt;/span&gt;
 &lt;h1&gt;1.Xcode Git 연동&lt;/h1&gt;
 &lt;p&gt;Xcode에서 git을 사용하기 위한 설정하는
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Iphone</title>
+    <link href="https://devyhan93.github.io/2020/05/22/Xcode/xcode-Iphone/"/>
+    <id>https://devyhan93.github.io/2020/05/22/Xcode/xcode-Iphone/</id>
+    <published>2020-05-21T15:00:00.000Z</published>
+    <updated>2020-06-02T15:04:30.982Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Xcode&lt;/span&gt;
+&lt;span class=&quot;label
         
       
     
@@ -397,6 +400,33 @@
   </entry>
   
   <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-16T07:18:31.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>코드베이스 초기 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -420,33 +450,6 @@
     
     
       <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
     
     
   </entry>
@@ -533,11 +536,11 @@
   </entry>
   
   <entry>
-    <title>오토 레이아웃 앵커(Auto layout Anchors)</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</id>
+    <title>Frame과 Bounds</title>
+    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
+    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
     <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-28T15:06:25.421Z</updated>
+    <updated>2020-05-26T13:55:55.659Z</updated>
     
     <summary type="html">
     
@@ -546,8 +549,9 @@
         
         
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;AutoLayoutAnchors&lt;/span&gt;
-&lt;h1&gt;1.Autolayout
+&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
+&lt;h1&gt;1.Frame과 Bounds&lt;/h1&gt;
+&lt;h2
         
       
     
