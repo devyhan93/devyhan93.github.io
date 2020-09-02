@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-09-02T03:22:36.551Z</updated>
+  <updated>2020-09-02T03:23:38.609Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://devyhan93.github.io/2020/09/02/Application/TripDo/"/>
     <id>https://devyhan93.github.io/2020/09/02/Application/TripDo/</id>
     <published>2020-09-01T15:00:00.000Z</published>
-    <updated>2020-09-02T03:22:36.551Z</updated>
+    <updated>2020-09-02T03:23:38.609Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,11 @@
         
         
           &lt;span class=&quot;label label-primary&quot;&gt;TripDo&lt;/span&gt;
-&lt;center&gt;&lt;img width=&quot;150px&quot; alt=&quot;Pasted Graphic 01&quot;
+&lt;h1&gt;TripDo 개인정보 처리방침&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;개인정보의 처리 목적&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight
         
       
     
@@ -71,6 +75,33 @@
   </entry>
   
   <entry>
+    <title>File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</title>
+    <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200729/"/>
+    <id>https://devyhan93.github.io/2020/06/25/debug/debug-200729/</id>
+    <published>2020-06-24T15:00:00.000Z</published>
+    <updated>2020-07-29T01:28:18.184Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;debug&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Debug" scheme="https://devyhan93.github.io/categories/Debug/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>dyld: Library not loaded: @rpath/</title>
     <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200625/"/>
     <id>https://devyhan93.github.io/2020/06/25/debug/debug-200625/</id>
@@ -87,33 +118,6 @@
 &lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;Xcode&lt;/span&gt;
 &lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Debug" scheme="https://devyhan93.github.io/categories/Debug/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</title>
-    <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200729/"/>
-    <id>https://devyhan93.github.io/2020/06/25/debug/debug-200729/</id>
-    <published>2020-06-24T15:00:00.000Z</published>
-    <updated>2020-07-29T01:28:18.184Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;debug&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
         
       
     
