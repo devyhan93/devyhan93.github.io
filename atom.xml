@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-07-29T01:23:39.529Z</updated>
+  <updated>2020-09-02T03:16:57.802Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Application/TripDo</title>
+    <link href="https://devyhan93.github.io/2020/09/02/Application/TripDo/"/>
+    <id>https://devyhan93.github.io/2020/09/02/Application/TripDo/</id>
+    <published>2020-09-02T03:05:07.146Z</published>
+    <updated>2020-09-02T03:16:57.802Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;&lt;img width=&quot;150px&quot; alt=&quot;Pasted Graphic 01&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Sticky header</title>
@@ -72,33 +95,6 @@
   </entry>
   
   <entry>
-    <title>File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</title>
-    <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200729/"/>
-    <id>https://devyhan93.github.io/2020/06/25/debug/debug-200729/</id>
-    <published>2020-06-24T15:00:00.000Z</published>
-    <updated>2020-07-29T01:28:18.184Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;debug&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Debug" scheme="https://devyhan93.github.io/categories/Debug/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>dyld: Library not loaded: @rpath/</title>
     <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200625/"/>
     <id>https://devyhan93.github.io/2020/06/25/debug/debug-200625/</id>
@@ -115,6 +111,33 @@
 &lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;Xcode&lt;/span&gt;
 &lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Debug" scheme="https://devyhan93.github.io/categories/Debug/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</title>
+    <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200729/"/>
+    <id>https://devyhan93.github.io/2020/06/25/debug/debug-200729/</id>
+    <published>2020-06-24T15:00:00.000Z</published>
+    <updated>2020-07-29T01:28:18.184Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;debug&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
         
       
     
@@ -425,6 +448,33 @@
   </entry>
   
   <entry>
+    <title>메뉴 주문리스트</title>
+    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
+    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
+    <published>2020-04-30T15:00:00.000Z</published>
+    <updated>2020-05-16T07:18:31.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>코드베이스 초기 프로젝트 설정</title>
     <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
     <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
@@ -453,11 +503,11 @@
   </entry>
   
   <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
+    <title>그리드 레이아웃</title>
+    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
+    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
+    <published>2020-04-28T15:00:00.000Z</published>
+    <updated>2020-05-03T03:32:21.907Z</updated>
     
     <summary type="html">
     
@@ -495,61 +545,6 @@
           &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;Swift&lt;/span&gt;
 &lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>그리드 레이아웃</title>
-    <link href="https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/"/>
-    <id>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</id>
-    <published>2020-04-28T15:00:00.000Z</published>
-    <updated>2020-05-03T03:32:21.907Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Frame과 Bounds</title>
-    <link href="https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/"/>
-    <id>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</id>
-    <published>2020-04-27T15:00:00.000Z</published>
-    <updated>2020-05-26T13:55:55.659Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;FrameBounds&lt;/span&gt;
-&lt;h1&gt;1.Frame과 Bounds&lt;/h1&gt;
-&lt;h2
         
       
     
