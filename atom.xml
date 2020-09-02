@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-09-02T03:19:45.325Z</updated>
+  <updated>2020-09-02T03:22:36.551Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://devyhan93.github.io/2020/09/02/Application/TripDo/"/>
     <id>https://devyhan93.github.io/2020/09/02/Application/TripDo/</id>
     <published>2020-09-01T15:00:00.000Z</published>
-    <updated>2020-09-02T03:19:45.325Z</updated>
+    <updated>2020-09-02T03:22:36.551Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;center&gt;&lt;img width=&quot;150px&quot; alt=&quot;Pasted Graphic 01&quot;
+          &lt;span class=&quot;label label-primary&quot;&gt;TripDo&lt;/span&gt;
+&lt;center&gt;&lt;img width=&quot;150px&quot; alt=&quot;Pasted Graphic 01&quot;
         
       
     
