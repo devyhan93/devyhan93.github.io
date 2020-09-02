@@ -42,33 +42,6 @@
   </entry>
   
   <entry>
-    <title>Sticky header</title>
-    <link href="https://devyhan93.github.io/2020/07/28/Side.proj/Side-StickyHeader/"/>
-    <id>https://devyhan93.github.io/2020/07/28/Side.proj/Side-StickyHeader/</id>
-    <published>2020-07-27T15:00:00.000Z</published>
-    <updated>2020-07-29T01:23:39.529Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Side.proj&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;StickyHeader&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Side.proj" scheme="https://devyhan93.github.io/categories/Side-proj/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>GCD</title>
     <link href="https://devyhan93.github.io/2020/07/02/iOS/ios-GCD/"/>
     <id>https://devyhan93.github.io/2020/07/02/iOS/ios-GCD/</id>
@@ -554,6 +527,33 @@
     
     
       <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>guard let과 if let의 차이</title>
+    <link href="https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/"/>
+    <id>https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/</id>
+    <published>2020-04-27T15:00:00.000Z</published>
+    <updated>2020-04-27T21:43:01.980Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;UsingSwift&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Optional&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Using Swift" scheme="https://devyhan93.github.io/categories/Using-Swift/"/>
     
     
   </entry>
