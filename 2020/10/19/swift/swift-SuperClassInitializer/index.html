@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>생성자(SuperClassInitializer) | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Swift
+SuperClassInitializer
+1.생성자(SuperClassInitializer)
+
+
+서브 클래스는 자기 자신 이외에 Super Class의 저장 프로퍼티까지 초기화 해야한다
+서브 클래스는 Super Class의 지정 생성자의 호출이 필요하다 (편의">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="생성자(SuperClassInitializer)"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/10/19/swift/swift-superclassinitializer/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+  <!-- / analytics -->
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/swift/생성자(SuperClassInitializer)</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
+				<span class="date" style="float: right;" id="title-date">2020-10-19</span>
+				<span class="label label-primary">Swift</span>
+<span class="label label-info">SuperClassInitializer</span>
+<h1>1.생성자(SuperClassInitializer)</h1>
+<p><img src="../../images/Initializer_01.png" alt="image"></p>
+<ul>
+<li>서브 클래스는 자기 자신 이외에 Super Class의 저장 프로퍼티까지 초기화 해야한다</li>
+<li>서브 클래스는 Super Class의 지정 생성자의 호출이 필요하다 (편의 생성자는 호출 불가)</li>
+<li>Super Class의 지정 생성자가 기본 init함수 하나만 있을 경우는 별도로 작성하지 않아도 자동으로 super.init()메서드를 호출한다</li>
+<li>생성자가 여려 개인 경우, 어떤 초기화 메서드를 선택해야 할지 알 수 없으므로 선택해주지 않으면 오류(이때는 Sub Class에서 Super Class의 생성자를 명시적으로 선택해주어야 한다, 편의 생성자는 무관)</li>
+</ul>
+<p><em>지정 생성자는 항상 위로 위임해야 한다, 편의 생성자는 항상 위임하여야 한다.</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SuperClass</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> someProperty: <span class="type">String</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>() &#123;</span><br><span class="line">        someProperty = <span class="string">"someProperty"</span> </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//  init(_ designatedValue: String) &#123;</span></span><br><span class="line">    <span class="comment">//      self.someProperty = "someProperty"</span></span><br><span class="line">    <span class="comment">//  &#125; </span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">convenience</span> <span class="keyword">init</span>(someProperty: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.<span class="keyword">init</span>()</span><br><span class="line">        <span class="keyword">self</span>.someProperty = someProperty</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SubClass</span>: <span class="title">SuperClass</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">var</span> age: <span class="type">Int</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">init</span>() &#123;</span><br><span class="line">        name = <span class="string">"john"</span></span><br><span class="line">        age = <span class="number">28</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">super</span>.<span class="keyword">init</span>() <span class="comment">// SuperClass의 지정 생성자가 기본 생성자 하나만 있을 경우 자동 호출</span></span><br><span class="line">        <span class="comment">// super.init("designated value") 생성자 내에서 수퍼 클래스의 편의 생성자 호출 시 오류 </span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>(name: <span class="type">String</span>, age: <span class="type">Int</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.name = name</span><br><span class="line">        <span class="keyword">self</span>.age = age</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>자식이 부모 클래스의 초기화를 해야할 의무가 있기 때문에, 나중에 업데이트가 되어 부모클래스의 생성자가 추가가 되어도 이상이 없도록 <code>super.init()</code>으로 항상 명시적으로 작성 하는것을 권장한다.</p>
+<h2 id="1-1-오버라이드-생성자-Override-Initializer">1.1.오버라이드 생성자(Override Initializer)</h2>
+<ul>
+<li>생성자도 일반 메서드와 같이 Override 하여 사용 할 수 있다.</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Human</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name: <span class="type">String</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>() &#123;</span><br><span class="line">        <span class="keyword">self</span>.name = <span class="string">"조요한"</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>(name: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.name = name</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>: <span class="title">Human</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> school: <span class="type">String</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">init</span>() &#123;</span><br><span class="line">        <span class="keyword">self</span>.school = <span class="string">"University"</span></span><br><span class="line">        <span class="keyword">super</span>.<span class="keyword">init</span>()</span><br><span class="line">        <span class="comment">// super.init(name: "john") </span></span><br><span class="line">        <span class="comment">// 두개의 SuperClass지정생성자중 하나 호출</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 이때의 순서는 자기자신의 프로퍼티부터 초기화를 해주어야한다. 1.1.2참조</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>(school: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.school = school</span><br><span class="line">        <span class="keyword">super</span>.<span class="keyword">init</span>()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// sample</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> student1 = <span class="type">Student</span>()</span><br><span class="line"><span class="keyword">let</span> student2 = <span class="type">Student</span>(name: <span class="string">"요한"</span>)</span><br><span class="line"><span class="keyword">let</span> student3 = <span class="type">Student</span>(school: <span class="string">"High School"</span>)</span><br></pre></td></tr></table></figure>
+<p>Student Class는 Human Class를 상속받고 있기 때문에 Humen의 init() {…}이 포함되어 있는데 Studet Class의 init() {…}로 그냥 사용할 수 없고 override init() {…}을 사용하여 덮어 써야 한다.</p>
+<h3 id="1-1-1-편의-오버라이드-생성자-convenience-override-Initializer">1.1.1.편의 오버라이드 생성자(convenience override Initializer)</h3>
+<ul>
+<li>이와같이 Super Class의 지정생성자의 Override와 편의 생성자기능을 동시에 사용 가능하다</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// class Student: Human ...</span></span><br><span class="line"><span class="keyword">convenience</span> <span class="keyword">override</span> <span class="keyword">init</span>(name: <span class="type">String</span>) &#123;</span><br><span class="line">    <span class="keyword">self</span>.<span class="keyword">init</span>(school: <span class="string">"Univ"</span>)</span><br><span class="line">    <span class="keyword">self</span>.name = name</span><br><span class="line">    <span class="comment">// school을 초기화 하고 name을 덮어쓴다.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-1-2-초기화-순서">1.1.2.초기화 순서</h3>
+<p>위의 1.1.의 Student Class의 override init()을 살펴보면 자식 클래스를 먼저 초기화 하고 있는데, 이때의 이유는 자신의 프로퍼티를 초기화 하지 않은 상태로 부모 클래스의 초기화 메서드를 호출하였을 경우 초기화되지 않은 프로퍼티를 사용하게 되는 일이 발생하기 때문이다.</p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+			
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/10/19/swift/swift-Initializer/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+  			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+

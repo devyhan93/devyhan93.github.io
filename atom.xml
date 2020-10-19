@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devyhan93.github.io/"/>
-  <updated>2020-10-19T03:38:43.174Z</updated>
+  <updated>2020-10-19T04:57:48.337Z</updated>
   <id>https://devyhan93.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>생성자(SuperClassInitializer)</title>
+    <link href="https://devyhan93.github.io/2020/10/19/swift/swift-SuperClassInitializer/"/>
+    <id>https://devyhan93.github.io/2020/10/19/swift/swift-SuperClassInitializer/</id>
+    <published>2020-10-18T15:00:00.000Z</published>
+    <updated>2020-10-19T04:57:48.337Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>생성자(Initializer)</title>
     <link href="https://devyhan93.github.io/2020/10/19/swift/swift-Initializer/"/>
     <id>https://devyhan93.github.io/2020/10/19/swift/swift-Initializer/</id>
     <published>2020-10-18T15:00:00.000Z</published>
-    <updated>2020-10-19T03:38:43.174Z</updated>
+    <updated>2020-10-19T04:13:58.403Z</updated>
     
     <summary type="html">
     
@@ -531,33 +557,6 @@
     
     
       <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>랜덤 색상 표현</title>
-    <link href="https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/"/>
-    <id>https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/</id>
-    <published>2020-04-28T15:00:00.000Z</published>
-    <updated>2020-04-30T02:45:15.342Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;Swift&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
     
     
   </entry>
