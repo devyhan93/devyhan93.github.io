@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>생성자(Initializer) | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  <meta name="description" content="Swift
+Initializer
+1.생성자(Initializer)
+
+Swift의 객체는 사용하기 전 모든 저장 프로퍼티에 대해 초기화가 필수적이다.
+다음의 3가지 중 하나를 택하여 초기화
+
+초깃값 지정
+옵셔널 타입 -nil값으로 초기화
+초깃값이 없고, 옵셔널 타입이 아">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="생성자(Initializer)"/>
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/2020/10/19/swift/swift-initializer/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+  <!-- / analytics -->
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header affix-top"  data-spy="affix" data-offset-top="20">		
+	<h1>
+		<a class="brand" href="/">
+			Devwiki
+	    </a>
+				
+		<span class="capitalizeFirst">~/swift/생성자(Initializer)</span>
+	</h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+	
+	<div class="col-xs-12 col-sm-9 col-md-9 note">
+		
+
+	  		<!-- content -->
+			<div class="item-contents">
+				<span style="float: left; margin-top: 2px; margin-right: 5px; font-size: 20px;">🏁</span>
+				<span class="date" style="float: right;" id="title-date">2020-10-19</span>
+				<span class="label label-primary">Swift</span>
+<span class="label label-info">Initializer</span>
+<h1>1.생성자(Initializer)</h1>
+<ul>
+<li>Swift의 객체는 사용하기 전 모든 저장 프로퍼티에 대해 초기화가 필수적이다.</li>
+<li>다음의 3가지 중 하나를 택하여 초기화
+<ul>
+<li>초깃값 지정</li>
+<li>옵셔널 타입 <code>-nil</code>값으로 초기화</li>
+<li>초깃값이 없고, 옵셔널 타입이 아닌 프로퍼티에 대해서는 초기화 메서드에서 설정</li>
+</ul>
+</li>
+</ul>
+<p><em>self 키워드는 초기화(Initializer)가 끝나고 사용할 수 있다.</em></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Circle</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> desc: <span class="type">String?</span>       <span class="comment">// nil로 초기화</span></span><br><span class="line">    <span class="keyword">var</span> radius: <span class="type">Int</span> = <span class="number">20</span>    <span class="comment">// 정수형 20으로 초기화</span></span><br><span class="line">    <span class="keyword">var</span> xCoordinate: <span class="type">Int</span>    <span class="comment">// 값이 없을경우 init()을 통하여 값을 넣어준다</span></span><br><span class="line">    <span class="keyword">var</span> yCoordinate: <span class="type">Int</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>() &#123;</span><br><span class="line">        xCoordinate = <span class="number">5</span></span><br><span class="line">        yCoordinate = <span class="number">10</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>(xCoordinate: <span class="type">Int</span>, yCoordinate: <span class="type">Int</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.xCoordinate = xCoordinate</span><br><span class="line">        <span class="keyword">self</span>.yCoordinate = yCoordinate</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> circle1 = <span class="type">Circle</span>()</span><br><span class="line"><span class="keyword">let</span> circle2 = <span class="type">Circle</span>(xCoordinate: <span class="number">10</span>, yCoordinate: <span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="1-1-지정생성자-Designated-Initializer">1.1.지정생성자(Designated Initializer)</h2>
+<ul>
+<li>클래스에 반드시 1개 이상 필요</li>
+<li>초기화가 필요한 모든 프로퍼티를 단독으로 초기화 가능한 Initializer</li>
+<li>위에서 사용한 init(), init(height: Int, xPosition: Int)가 여기에 해당</li>
+<li>초기화 과정에서 반드시 한 번은 호출<br>
+<em>지정생성자가 init(), init(height: Int, xPosition: Int)로 표현되지 않았을경우에는 init()이 생략되어 있는것이다.</em></li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> width: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">var</span> height: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">var</span> xPosition: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">var</span> yPosition: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">var</span> <span class="type">CornerRadius</span>: <span class="type">Int</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>() &#123;</span><br><span class="line">        width = <span class="number">20</span></span><br><span class="line">        height = <span class="number">20</span></span><br><span class="line">        xPosition = <span class="number">10</span></span><br><span class="line">        yPosition = <span class="number">10</span></span><br><span class="line">        cornerRadius = <span class="number">5</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>(width: <span class="type">Int</span>, height: <span class="type">Int</span>, xPosition: <span class="type">Int</span>, yPosition: <span class="type">Int</span>, cornerRadius: <span class="type">Int</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.width = width</span><br><span class="line">        <span class="keyword">self</span>.height = height</span><br><span class="line">        <span class="keyword">self</span>.xPosition = xPosition</span><br><span class="line">        <span class="keyword">self</span>.yPosition = yPosition</span><br><span class="line">        <span class="keyword">self</span>.cornerRadius = cornerRadius</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1-2-편의-생성자-Convenience-Initializer">1.2.편의 생성자(Convenience Initializer)</h2>
+<ul>
+<li>단독으로 모두 초기화할 수 없고 일부만 처리한 뒤 다른 생성자에게 나머지 부분을 위임 (1.2.1 참조)</li>
+<li>중복되는 초기화 코드를 줄이기 위해 사용</li>
+</ul>
+<h3 id="1-2-1-편의생성자-지정생성자-overwrite">1.2.1.편의생성자 - 지정생성자 overwrite</h3>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">convenience</span> <span class="keyword">init</span>(xPosition: <span class="type">Int</span>) &#123;</span><br><span class="line">    <span class="comment">// 편의생성자 -&gt; 지정생성자 -&gt; overwrite</span></span><br><span class="line">    <span class="keyword">self</span>.<span class="keyword">init</span>() <span class="comment">// 자기 자신의 생성자를 호출하여 초기화 하는 방식은 편의 생성자(convenience init)에서 가능</span></span><br><span class="line">    <span class="keyword">self</span>.xPosition = xPosition</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>xPosition</code>에 해당하는 값은 지정 생성자의 값만 바꾸고 싶을경우 모든 값에 대한 초기화를 하는대신 <code>convenience init()</code>을 활용하여 초기화를 진행하고 값의 변경을 요구하는 값만 지정해주고 나머지 값은 <code>self.init()</code>을 통하여 초기화를해 반복을 최소화 한다.</p>
+<h3 id="1-2-2-편의생성자-지정생성자">1.2.2.편의생성자 - 지정생성자</h3>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">convenience</span> <span class="keyword">init</span>(width: <span class="type">Int</span>, height: <span class="type">Int</span>, cornerRadius: <span class="type">Int</span>) &#123;</span><br><span class="line">    <span class="comment">// 편의생성자 -&gt; 지정생성자</span></span><br><span class="line">    <span class="keyword">self</span>.<span class="keyword">init</span>(width: width, height: height, xPosition: <span class="number">10</span>, yPosition: <span class="number">30</span>, cornerRadius: cornerRadius)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>이렇게 편의 생성자에서 지정 생성자를 호출하여 값의 변동이 필요하지 않는 값만 지정해주고 나머지는 값을 받을 수 있도록 해줄 수 있다. 1.2.1처럼 값을 처음에 호출하여 사용할 수 있고 지금처럼 특정한 값을 지정한 형태로 사용할 수 있다.</p>
+<h3 id="1-2-3-편의생성자-편의생성자">1.2.3.편의생성자 - 편의생성자</h3>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">convenience</span> <span class="keyword">init</span>(cornerRadius: <span class="type">Int</span>) &#123;</span><br><span class="line">    <span class="comment">// 편의생성자 -&gt; 또다른 편의생성자</span></span><br><span class="line">    <span class="keyword">self</span>.<span class="keyword">init</span>(width: <span class="number">20</span>, height: <span class="number">20</span>, cornerRadius: cornerRadius)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>편의 생성자에서 또다른 편의 생성자를 호출하여 사용할수도 있는데, 최종적으로 편의 생성자가 지정 생성자를 호출하여 끝마치게 된다.</p>
+<h2 id="1-3-최기화-과정">1.3.최기화 과정</h2>
+<p>앞에서 다룬 초기화의 과정은 앞에 편의 생성자가 몇개가 되든 최종엔 지정 생성자의 순서로 동작한다.<br>
+<em>지정생성자에서 지정생성자의 호출은 불가능</em></p>
+<h2 id="1-4-실패할-수-있는-생성자-Failable-Initializer">1.4.실패할 수 있는 생성자(Failable Initializer)</h2>
+<ul>
+<li>인스턴스 생성시 특정 조건을 만족하지 않으면 객체를 생성하지 않는 것</li>
+<li>생성이 되면 옵셔널 타입을 반환하게 되며, 생성 실패시에는 nil 반환</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">let</span> age: <span class="type">Int</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>?(name: <span class="type">String</span>, age: <span class="type">Int</span>) &#123;</span><br><span class="line">        <span class="keyword">guard</span> age &gt; <span class="number">0</span> <span class="keyword">else</span> &#123; <span class="keyword">return</span> <span class="literal">nil</span> &#125;</span><br><span class="line">        <span class="keyword">self</span>.name = name</span><br><span class="line">        <span class="keyword">self</span>.age = age</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> person = <span class="type">Person</span>(name: <span class="string">"Jhon"</span>, age: <span class="number">20</span>) &#123;</span><br><span class="line">    person</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> person = <span class="type">Person</span>(name: <span class="string">"Jhon"</span>, age: -<span class="number">20</span>) &#123;</span><br><span class="line">    person</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="string">"Failed"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>init?()</code>으로 생성된 생성자는 초깃값이 guard문에 걸릴경우 nil을 반환하여 아래의 if let 에서 초기화가 되지 않은경우에는 Failed를 반환한다.</p>
+	  
+			</div>
+			<div>
+			<center>
+			<div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a>👈 prev</a></li>
+	
+	<li><a href="/">Home</a></li>
+	
+		<li class="next"><a href="/2020/06/15/swift/swift-High-Order%20Function/" class="alignright next">next 👉</a></li>
+	
+</ul>
+</div>
+
+			</center>
+			<!-- 라이브리 시티 설치 코드 -->
+  			<div id="lv-container" data-id="city" data-uid="MTAyMC80OTcxNS8yNjIwNg==">
+    <script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+    </script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+			<!-- 시티 설치 코드 끝 -->
+			</div>
+		</div>
+	</div> <!-- col-md-9/col-md-12 -->
+</div><!-- row -->
+
+
+
+
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+
