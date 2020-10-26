@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://devyhan93.github.io/categories/RxSwift/</loc>
+        <lastmod>2020-10-26T07:06:43.782Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://devyhan93.github.io/categories/Swift/</loc>
         <lastmod>2020-10-22T01:37:30.083Z</lastmod>
         <changefreq>weekly</changefreq>

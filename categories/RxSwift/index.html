@@ -1,0 +1,2270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>RxSwift | Devwiki</title>
+  <meta name="author" content="devyhan93">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Devwiki"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="canonical" href="https://devyhan93.github.io/categories/rxswift/"/>
+
+  
+    <link rel="alternative" href="/atom.xml" title="Devwiki" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163387956-1');
+</script>
+
+  <!-- / analytics -->
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	  <div class="page-header">
+  <h1><a class="brand" href="#">Devwiki 📦</a></h1>
+  <h4>Development Wiki</h4>
+</div>
+
+
+
+<div class="row page">
+	<div class="col-md-12">
+		<h3>tags 🏷</h3>
+		
+		<!-- <a class="link-style-none" href="#Algolithm">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Algolithm'">
+				<h4>⌗ Algolithm </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Application">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Application'">
+				<h4>⌗ Application </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Blog">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Blog'">
+				<h4>⌗ Blog </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Debug">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Debug'">
+				<h4>⌗ Debug </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Foundation">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Foundation'">
+				<h4>⌗ Foundation </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Git">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Git'">
+				<h4>⌗ Git </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Practice">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Practice'">
+				<h4>⌗ Practice </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#RxSwift">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#RxSwift'">
+				<h4>⌗ RxSwift </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Swift">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Swift'">
+				<h4>⌗ Swift </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Using Swift">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Using Swift'">
+				<h4>⌗ Using Swift </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Utility">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Utility'">
+				<h4>⌗ Utility </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#Xcode">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#Xcode'">
+				<h4>⌗ Xcode </h4>
+			</div>
+		<!-- </a> -->
+		
+		<!-- <a class="link-style-none" href="#iOS">	 -->
+			<div class="categories-tag col-md-2" OnClick="location.href ='#iOS'">
+				<h4>⌗ iOS </h4>
+			</div>
+		<!-- </a> -->
+		
+	
+		<!-- <div class="affix-top"  data-spy="affix" data-offset-top="20"> -->
+			<input type="text" id="local-search-input" name="q" results="0" placeholder="⌗" class="st-search-input st-default-search-input form-control"/>
+			<div id="local-search-result">
+				
+			</div>
+		<!-- </div> -->
+		<div class="panel-group" id="notebook">
+			
+			<span class="link-point" id="Algolithm"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Algolithm"> -->
+						📍 Algolithm
+				</div>
+				
+					<div id="Algolithm" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/10/Algorithm/Algorithm-Q2557/">Hello Wold</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/11/Algorithm/Algorithm-Q10718/">We love kriii</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/12/Algorithm/Algorithm-Q10171/">고양이</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/12/Algorithm/Algorithm-Q10172/">강아지</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/13/Algorithm/Algorithm-Q1000/">A+B</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/13/Algorithm/Algorithm-Q1001/">A-B</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/13/Algorithm/Algorithm-Q1008/">A/B</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/13/Algorithm/Algorithm-Q10998/">A*B</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/14/Algorithm/Algorithm-Q10869/">사칙연산</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/14/Algorithm/Algorithm-Q1430/">나머지</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/14/Algorithm/Algorithm-Q2588/">곱셈</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/15/Algorithm/Algorithm-Q14681/">사분면 고르기</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/15/Algorithm/Algorithm-Q1330/">두 수 비교하기</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/15/Algorithm/Algorithm-Q2753/">윤년</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/15/Algorithm/Algorithm-Q2884/">알람 시계</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/15/Algorithm/Algorithm-Q9498/">시험 성적</a></li>
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/17/Algorithm/Algorithm-Q2739/">구구단</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Application"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Application"> -->
+						📍 Application
+				</div>
+				
+					<div id="Application" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/09/02/Application/TripDo/">TripDo</a></li>
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Blog"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Blog"> -->
+						📍 Blog
+				</div>
+				
+					<div id="Blog" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/10/blog/blog-update200410/">블로그 검색결과 기능추가</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/10/blog/blog-update200411/">포스트 헤더 수정</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Debug"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Debug"> -->
+						📍 Debug
+				</div>
+				
+					<div id="Debug" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/06/25/debug/debug-200625/">dyld: Library not loaded: @rpath/</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/06/25/debug/debug-200729/">File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Foundation"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Foundation"> -->
+						📍 Foundation
+				</div>
+				
+					<div id="Foundation" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/22/Foundation/Foundation-DateControl/">데이터 포맷의 형식(Date Format Symbol)</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/22/Foundation/Foundation-Markdown/">마크다운(Markdown) 작성법</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/06/Foundation/Foundation-OOP/">객체지향 프로그래밍(Object Oriented Programing)</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Git"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Git"> -->
+						📍 Git
+				</div>
+				
+					<div id="Git" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/14/git/git-CommitMessage/">커밋 메시지 컨벤션(Commit message convention)</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Practice"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Practice"> -->
+						📍 Practice
+				</div>
+				
+					<div id="Practice" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/29/Practice/practice-GridLayout/">그리드 레이아웃</a></li>
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/01/Practice/practice-OrderList/">메뉴 주문리스트</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/23/Practice/practice-Calculator/">계산기</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="RxSwift"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#RxSwift"> -->
+						📍 RxSwift
+				</div>
+				
+					<div id="RxSwift" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/20/RxSwift/RxSwift-Start/">RxSwift</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Swift"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Swift"> -->
+						📍 Swift
+				</div>
+				
+					<div id="Swift" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/10/swift/swift-varlet/">변수와 상수(Constants and Variables)</a></li>
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/11/swift/swift-DataType/">데이터 타입(Data Type) 일반</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/11/swift/swift-DataType2/">데이터 타입(Data Type) 고급</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/12/swift/swift-DataType4/">데이터 타입(Data Type) 열거형</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/12/swift/swift-DataType3/">데이터 타입(Data Type) 컬렉션형</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/13/swift/swift-FlowControll2/">흐름 제어(Flow control) 반복문</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/13/swift/swift-FlowControll/">흐름 제어(Flow control) 조건문</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/15/swift/swift-Optaional/">옵셔널(Optional)</a></li>
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/17/swift/swift-Function/">함수(Function)</a></li>
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/20/swift/swift-Closure/">클로저(Closure)</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/21/swift/swift-AccessControl/">접근제어(Access Control)</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/06/15/swift/swift-High-Order Function/">옵셔널(Optional)</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/10/19/swift/swift-Initializer/">생성자(Initializer)</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/10/19/swift/swift-SuperClassInitializer/">생성자(SuperClassInitializer)</a></li>
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Using Swift"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Using Swift"> -->
+						📍 Using Swift
+				</div>
+				
+					<div id="Using Swift" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/28/Using-Swift/using-GuardLet/">guard let과 if let의 차이</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/12/Using-Swift/using-ValRef/">값(Value) 타입 참조(Reference) 타입</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Utility"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Utility"> -->
+						📍 Utility
+				</div>
+				
+					<div id="Utility" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/08/utility/utility-googlesearch/">구글 검색 명령어</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="Xcode"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#Xcode"> -->
+						📍 Xcode
+				</div>
+				
+					<div id="Xcode" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/01/Xcode/xcode-CodeProjectSetting/">코드베이스 초기 프로젝트 설정</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/04/Xcode/xcode-XcodeHotkey/">Xcode 단축키 모음</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/16/Xcode/xcode-CodeSnippet/">Xcode 코드 스니펫(Code Snippet)</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/22/Xcode/xcode-Iphone/">Iphone</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/22/Xcode/xcode-Git/">Xcode Git 연동</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			<span class="link-point" id="iOS"></span>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<!-- <a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#iOS"> -->
+						📍 iOS
+				</div>
+				
+					<div id="iOS" class="panel-collapse collapse in">
+				
+				
+						<div class="panel-body">
+							<ul class="post">                                
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/27/iOS/ios-Autolayout/">오토 레이아웃(AutoLayout)</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/27/iOS/ios-UIViewController/">UIViewController</a></li>
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/28/iOS/ios-AutolayoutAnchors/">오토 레이아웃 앵커(Auto layout Anchors)</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/28/iOS/ios-FrameBounds/">Frame과 Bounds</a></li>
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/28/iOS/ios-iOSLifeCycle copy/">iOS, viewController Life Cycle</a></li>
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/04/29/iOS/ios-RandomColor/">랜덤 색상 표현</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/08/iOS/ios-UINavigationController/">UINavigationController</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/05/27/iOS/ios-UITabelView/">UITableView</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+								    
+								        <li class="post-list-item"><a href="/2020/07/02/iOS/ios-GCD/">GCD</a></li>
+								    
+								
+								    
+								
+								    
+								
+								    
+								
+							</ul>
+						</div>
+					</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div><!-- accordion -->
+		</div>
+	</div>
+</div>
+
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; create by <a href="https://github.com/devyhan93" target="_blank" rel="noopener"> devyhan93🤩</a>
+  
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
+
+
