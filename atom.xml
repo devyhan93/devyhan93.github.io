@@ -5,23 +5,23 @@
   <subtitle>Development Wiki</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://devyhan93.github.io/"/>
-  <updated>2020-10-26T07:36:59.856Z</updated>
-  <id>https://devyhan93.github.io/</id>
+  <link href="https://devyhan.github.io/"/>
+  <updated>2021-01-15T01:18:12.084Z</updated>
+  <id>https://devyhan.github.io/</id>
   
   <author>
-    <name>devyhan93</name>
+    <name>devyhan</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>RxSwift</title>
-    <link href="https://devyhan93.github.io/2020/10/26/RxSwift/RxSwift-Start/"/>
-    <id>https://devyhan93.github.io/2020/10/26/RxSwift/RxSwift-Start/</id>
-    <published>2020-10-25T15:00:00.000Z</published>
-    <updated>2020-10-26T07:36:59.856Z</updated>
+    <title>UIColor를 SwiftUI의 Color로 변환하는 방법</title>
+    <link href="https://devyhan.github.io/2021/01/15/SwiftUI/SwiftUI-#210115/"/>
+    <id>https://devyhan.github.io/2021/01/15/SwiftUI/SwiftUI-#210115/</id>
+    <published>2021-01-14T15:00:00.000Z</published>
+    <updated>2021-01-15T01:18:12.084Z</updated>
     
     <summary type="html">
     
@@ -29,27 +29,26 @@
       
         
         
-          &lt;span class=&quot;label label-primary&quot;&gt;RxSwift&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;Start&lt;/span&gt;
-&lt;blockquote&gt;
-&lt;p&gt;위 내용은 &lt;a
+          &lt;span class=&quot;label label-primary&quot;&gt;SwiftUI&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;210115&lt;/span&gt;
+&lt;h1&gt;1.UIColor를 SwiftUI의 Color로 변환하는
         
       
     
     </summary>
     
     
-      <category term="RxSwift" scheme="https://devyhan93.github.io/categories/RxSwift/"/>
+      <category term="SwiftUI" scheme="https://devyhan.github.io/categories/SwiftUI/"/>
     
     
   </entry>
   
   <entry>
-    <title>생성자(SuperClassInitializer)</title>
-    <link href="https://devyhan93.github.io/2020/10/19/swift/swift-SuperClassInitializer/"/>
-    <id>https://devyhan93.github.io/2020/10/19/swift/swift-SuperClassInitializer/</id>
-    <published>2020-10-18T15:00:00.000Z</published>
-    <updated>2020-10-20T04:01:51.558Z</updated>
+    <title>Combine</title>
+    <link href="https://devyhan.github.io/2021/01/05/Combine/Combine-Start/"/>
+    <id>https://devyhan.github.io/2021/01/05/Combine/Combine-Start/</id>
+    <published>2021-01-04T15:00:00.000Z</published>
+    <updated>2021-01-05T07:53:48.603Z</updated>
     
     <summary type="html">
     
@@ -57,7 +56,7 @@
       
         
         
-          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+          &lt;span class=&quot;label label-primary&quot;&gt;Combine&lt;/span&gt;
 &lt;span class=&quot;label
         
       
@@ -65,15 +64,41 @@
     </summary>
     
     
-      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+      <category term="Combine" scheme="https://devyhan.github.io/categories/Combine/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SwiftUI</title>
+    <link href="https://devyhan.github.io/2021/01/05/SwiftUI/SwiftUI-Start/"/>
+    <id>https://devyhan.github.io/2021/01/05/SwiftUI/SwiftUI-Start/</id>
+    <published>2021-01-04T15:00:00.000Z</published>
+    <updated>2021-01-05T07:53:04.892Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;SwiftUI&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="SwiftUI" scheme="https://devyhan.github.io/categories/SwiftUI/"/>
     
     
   </entry>
   
   <entry>
     <title>생성자(Initializer)</title>
-    <link href="https://devyhan93.github.io/2020/10/19/swift/swift-Initializer/"/>
-    <id>https://devyhan93.github.io/2020/10/19/swift/swift-Initializer/</id>
+    <link href="https://devyhan.github.io/2020/10/19/swift/swift-Initializer/"/>
+    <id>https://devyhan.github.io/2020/10/19/swift/swift-Initializer/</id>
     <published>2020-10-18T15:00:00.000Z</published>
     <updated>2020-10-22T01:37:30.083Z</updated>
     
@@ -91,15 +116,41 @@
     </summary>
     
     
-      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+      <category term="Swift" scheme="https://devyhan.github.io/categories/Swift/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>생성자(SuperClassInitializer)</title>
+    <link href="https://devyhan.github.io/2020/10/19/swift/swift-SuperClassInitializer/"/>
+    <id>https://devyhan.github.io/2020/10/19/swift/swift-SuperClassInitializer/</id>
+    <published>2020-10-18T15:00:00.000Z</published>
+    <updated>2020-10-20T04:01:51.558Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Swift&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Swift" scheme="https://devyhan.github.io/categories/Swift/"/>
     
     
   </entry>
   
   <entry>
     <title>TripDo</title>
-    <link href="https://devyhan93.github.io/2020/09/02/Application/TripDo/"/>
-    <id>https://devyhan93.github.io/2020/09/02/Application/TripDo/</id>
+    <link href="https://devyhan.github.io/2020/09/02/Application/TripDo/"/>
+    <id>https://devyhan.github.io/2020/09/02/Application/TripDo/</id>
     <published>2020-09-01T15:00:00.000Z</published>
     <updated>2020-09-02T03:23:38.609Z</updated>
     
@@ -121,15 +172,15 @@
     </summary>
     
     
-      <category term="Application" scheme="https://devyhan93.github.io/categories/Application/"/>
+      <category term="Application" scheme="https://devyhan.github.io/categories/Application/"/>
     
     
   </entry>
   
   <entry>
     <title>GCD</title>
-    <link href="https://devyhan93.github.io/2020/07/02/iOS/ios-GCD/"/>
-    <id>https://devyhan93.github.io/2020/07/02/iOS/ios-GCD/</id>
+    <link href="https://devyhan.github.io/2020/07/02/iOS/ios-GCD/"/>
+    <id>https://devyhan.github.io/2020/07/02/iOS/ios-GCD/</id>
     <published>2020-07-01T15:00:00.000Z</published>
     <updated>2020-07-02T10:36:43.061Z</updated>
     
@@ -149,15 +200,15 @@
     </summary>
     
     
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+      <category term="iOS" scheme="https://devyhan.github.io/categories/iOS/"/>
     
     
   </entry>
   
   <entry>
     <title>dyld: Library not loaded: @rpath/</title>
-    <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200625/"/>
-    <id>https://devyhan93.github.io/2020/06/25/debug/debug-200625/</id>
+    <link href="https://devyhan.github.io/2020/06/25/debug/debug-200625/"/>
+    <id>https://devyhan.github.io/2020/06/25/debug/debug-200625/</id>
     <published>2020-06-24T15:00:00.000Z</published>
     <updated>2020-07-29T01:27:49.333Z</updated>
     
@@ -177,15 +228,15 @@
     </summary>
     
     
-      <category term="Debug" scheme="https://devyhan93.github.io/categories/Debug/"/>
+      <category term="Debug" scheme="https://devyhan.github.io/categories/Debug/"/>
     
     
   </entry>
   
   <entry>
     <title>File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</title>
-    <link href="https://devyhan93.github.io/2020/06/25/debug/debug-200729/"/>
-    <id>https://devyhan93.github.io/2020/06/25/debug/debug-200729/</id>
+    <link href="https://devyhan.github.io/2020/06/25/debug/debug-200729/"/>
+    <id>https://devyhan.github.io/2020/06/25/debug/debug-200729/</id>
     <published>2020-06-24T15:00:00.000Z</published>
     <updated>2020-07-29T01:28:18.184Z</updated>
     
@@ -204,15 +255,15 @@
     </summary>
     
     
-      <category term="Debug" scheme="https://devyhan93.github.io/categories/Debug/"/>
+      <category term="Debug" scheme="https://devyhan.github.io/categories/Debug/"/>
     
     
   </entry>
   
   <entry>
     <title>옵셔널(Optional)</title>
-    <link href="https://devyhan93.github.io/2020/06/15/swift/swift-High-Order%20Function/"/>
-    <id>https://devyhan93.github.io/2020/06/15/swift/swift-High-Order%20Function/</id>
+    <link href="https://devyhan.github.io/2020/06/15/swift/swift-High-Order%20Function/"/>
+    <id>https://devyhan.github.io/2020/06/15/swift/swift-High-Order%20Function/</id>
     <published>2020-06-14T15:00:00.000Z</published>
     <updated>2020-06-15T09:52:24.666Z</updated>
     
@@ -231,15 +282,15 @@
     </summary>
     
     
-      <category term="Swift" scheme="https://devyhan93.github.io/categories/Swift/"/>
+      <category term="Swift" scheme="https://devyhan.github.io/categories/Swift/"/>
     
     
   </entry>
   
   <entry>
     <title>UITableView</title>
-    <link href="https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/"/>
-    <id>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</id>
+    <link href="https://devyhan.github.io/2020/05/27/iOS/ios-UITabelView/"/>
+    <id>https://devyhan.github.io/2020/05/27/iOS/ios-UITabelView/</id>
     <published>2020-05-26T15:00:00.000Z</published>
     <updated>2020-05-28T15:19:40.815Z</updated>
     
@@ -259,15 +310,15 @@
     </summary>
     
     
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+      <category term="iOS" scheme="https://devyhan.github.io/categories/iOS/"/>
     
     
   </entry>
   
   <entry>
     <title>계산기</title>
-    <link href="https://devyhan93.github.io/2020/05/23/Practice/practice-Calculator/"/>
-    <id>https://devyhan93.github.io/2020/05/23/Practice/practice-Calculator/</id>
+    <link href="https://devyhan.github.io/2020/05/23/Practice/practice-Calculator/"/>
+    <id>https://devyhan.github.io/2020/05/23/Practice/practice-Calculator/</id>
     <published>2020-05-22T15:00:00.000Z</published>
     <updated>2020-05-26T02:28:45.843Z</updated>
     
@@ -286,15 +337,42 @@
     </summary>
     
     
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+      <category term="Practice" scheme="https://devyhan.github.io/categories/Practice/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Xcode Build Configuration</title>
+    <link href="https://devyhan.github.io/2020/05/22/Xcode/xcode-BuildConfiguration/"/>
+    <id>https://devyhan.github.io/2020/05/22/Xcode/xcode-BuildConfiguration/</id>
+    <published>2020-05-21T15:00:00.000Z</published>
+    <updated>2021-01-05T07:55:39.867Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;XcodeBuildConfiguration&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;G&lt;/span&gt;
+&lt;h1&gt;1.Xcode Build
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Xcode" scheme="https://devyhan.github.io/categories/Xcode/"/>
     
     
   </entry>
   
   <entry>
     <title>Xcode Git 연동</title>
-    <link href="https://devyhan93.github.io/2020/05/22/Xcode/xcode-Git/"/>
-    <id>https://devyhan93.github.io/2020/05/22/Xcode/xcode-Git/</id>
+    <link href="https://devyhan.github.io/2020/05/22/Xcode/xcode-Git/"/>
+    <id>https://devyhan.github.io/2020/05/22/Xcode/xcode-Git/</id>
     <published>2020-05-21T15:00:00.000Z</published>
     <updated>2020-05-23T06:12:42.874Z</updated>
     
@@ -314,15 +392,15 @@
     </summary>
     
     
-      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+      <category term="Xcode" scheme="https://devyhan.github.io/categories/Xcode/"/>
     
     
   </entry>
   
   <entry>
     <title>Iphone</title>
-    <link href="https://devyhan93.github.io/2020/05/22/Xcode/xcode-Iphone/"/>
-    <id>https://devyhan93.github.io/2020/05/22/Xcode/xcode-Iphone/</id>
+    <link href="https://devyhan.github.io/2020/05/22/Xcode/xcode-Iphone/"/>
+    <id>https://devyhan.github.io/2020/05/22/Xcode/xcode-Iphone/</id>
     <published>2020-05-21T15:00:00.000Z</published>
     <updated>2020-06-02T15:04:30.982Z</updated>
     
@@ -340,15 +418,15 @@
     </summary>
     
     
-      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+      <category term="Xcode" scheme="https://devyhan.github.io/categories/Xcode/"/>
     
     
   </entry>
   
   <entry>
     <title>Xcode 코드 스니펫(Code Snippet)</title>
-    <link href="https://devyhan93.github.io/2020/05/16/Xcode/xcode-CodeSnippet/"/>
-    <id>https://devyhan93.github.io/2020/05/16/Xcode/xcode-CodeSnippet/</id>
+    <link href="https://devyhan.github.io/2020/05/16/Xcode/xcode-CodeSnippet/"/>
+    <id>https://devyhan.github.io/2020/05/16/Xcode/xcode-CodeSnippet/</id>
     <published>2020-05-15T15:00:00.000Z</published>
     <updated>2020-05-25T02:18:50.735Z</updated>
     
@@ -367,15 +445,15 @@
     </summary>
     
     
-      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
+      <category term="Xcode" scheme="https://devyhan.github.io/categories/Xcode/"/>
     
     
   </entry>
   
   <entry>
     <title>커밋 메시지 컨벤션(Commit message convention)</title>
-    <link href="https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/"/>
-    <id>https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/</id>
+    <link href="https://devyhan.github.io/2020/05/14/git/git-CommitMessage/"/>
+    <id>https://devyhan.github.io/2020/05/14/git/git-CommitMessage/</id>
     <published>2020-05-13T15:00:00.000Z</published>
     <updated>2020-05-25T16:06:03.443Z</updated>
     
@@ -394,15 +472,15 @@
     </summary>
     
     
-      <category term="Git" scheme="https://devyhan93.github.io/categories/Git/"/>
+      <category term="Git" scheme="https://devyhan.github.io/categories/Git/"/>
     
     
   </entry>
   
   <entry>
     <title>값(Value) 타입 참조(Reference) 타입</title>
-    <link href="https://devyhan93.github.io/2020/05/12/Using-Swift/using-ValRef/"/>
-    <id>https://devyhan93.github.io/2020/05/12/Using-Swift/using-ValRef/</id>
+    <link href="https://devyhan.github.io/2020/05/12/Using-Swift/using-ValRef/"/>
+    <id>https://devyhan.github.io/2020/05/12/Using-Swift/using-ValRef/</id>
     <published>2020-05-11T15:00:00.000Z</published>
     <updated>2020-05-13T08:25:29.198Z</updated>
     
@@ -421,15 +499,15 @@
     </summary>
     
     
-      <category term="Using Swift" scheme="https://devyhan93.github.io/categories/Using-Swift/"/>
+      <category term="Using Swift" scheme="https://devyhan.github.io/categories/Using-Swift/"/>
     
     
   </entry>
   
   <entry>
     <title>UINavigationController</title>
-    <link href="https://devyhan93.github.io/2020/05/08/iOS/ios-UINavigationController/"/>
-    <id>https://devyhan93.github.io/2020/05/08/iOS/ios-UINavigationController/</id>
+    <link href="https://devyhan.github.io/2020/05/08/iOS/ios-UINavigationController/"/>
+    <id>https://devyhan.github.io/2020/05/08/iOS/ios-UINavigationController/</id>
     <published>2020-05-07T15:00:00.000Z</published>
     <updated>2020-05-31T01:25:48.394Z</updated>
     
@@ -447,15 +525,15 @@
     </summary>
     
     
-      <category term="iOS" scheme="https://devyhan93.github.io/categories/iOS/"/>
+      <category term="iOS" scheme="https://devyhan.github.io/categories/iOS/"/>
     
     
   </entry>
   
   <entry>
     <title>객체지향 프로그래밍(Object Oriented Programing)</title>
-    <link href="https://devyhan93.github.io/2020/05/06/Foundation/Foundation-OOP/"/>
-    <id>https://devyhan93.github.io/2020/05/06/Foundation/Foundation-OOP/</id>
+    <link href="https://devyhan.github.io/2020/05/06/Foundation/Foundation-OOP/"/>
+    <id>https://devyhan.github.io/2020/05/06/Foundation/Foundation-OOP/</id>
     <published>2020-05-05T15:00:00.000Z</published>
     <updated>2020-05-16T07:37:54.702Z</updated>
     
@@ -474,90 +552,7 @@
     </summary>
     
     
-      <category term="Foundation" scheme="https://devyhan93.github.io/categories/Foundation/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Xcode 단축키 모음</title>
-    <link href="https://devyhan93.github.io/2020/05/04/Xcode/xcode-XcodeHotkey/"/>
-    <id>https://devyhan93.github.io/2020/05/04/Xcode/xcode-XcodeHotkey/</id>
-    <published>2020-05-03T15:00:00.000Z</published>
-    <updated>2020-05-16T07:38:15.792Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Xcode&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;Hotkey&lt;/span&gt;
-&lt;h1&gt;1.Xcode 단축키 모음&lt;/h1&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>코드베이스 초기 프로젝트 설정</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-06-02T15:41:36.631Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Xcode&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;Swift&lt;/span&gt;
-&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Xcode" scheme="https://devyhan93.github.io/categories/Xcode/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>메뉴 주문리스트</title>
-    <link href="https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/"/>
-    <id>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</id>
-    <published>2020-04-30T15:00:00.000Z</published>
-    <updated>2020-05-16T07:18:31.816Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Practice&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Practice" scheme="https://devyhan93.github.io/categories/Practice/"/>
+      <category term="Foundation" scheme="https://devyhan.github.io/categories/Foundation/"/>
     
     
   </entry>

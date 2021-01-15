@@ -2,21 +2,45 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://devyhan93.github.io</loc>
+        <loc>https://devyhan.github.io</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/10/26/RxSwift/RxSwift-Start/</loc>
-        <lastmod>2020-10-26T07:36:59.856Z</lastmod>
+        <loc>https://devyhan.github.io/2021/01/15/SwiftUI/SwiftUI-#210115/</loc>
+        <lastmod>2021-01-15T01:18:12.084Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/10/19/swift/swift-Initializer/</loc>
+        <loc>https://devyhan.github.io/2020/05/22/Xcode/xcode-BuildConfiguration/</loc>
+        <lastmod>2021-01-05T07:55:39.867Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan.github.io/2021/01/05/Combine/Combine-Start/</loc>
+        <lastmod>2021-01-05T07:53:48.603Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan.github.io/2021/01/05/SwiftUI/SwiftUI-Start/</loc>
+        <lastmod>2021-01-05T07:53:04.892Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://devyhan.github.io/2020/10/19/swift/swift-Initializer/</loc>
         <lastmod>2020-10-22T01:37:30.083Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -24,7 +48,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/10/19/swift/swift-SuperClassInitializer/</loc>
+        <loc>https://devyhan.github.io/2020/10/19/swift/swift-SuperClassInitializer/</loc>
         <lastmod>2020-10-20T04:01:51.558Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -32,7 +56,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/09/02/Application/TripDo/</loc>
+        <loc>https://devyhan.github.io/2020/09/02/Application/TripDo/</loc>
         <lastmod>2020-09-02T03:23:38.609Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -40,7 +64,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/06/25/debug/debug-200729/</loc>
+        <loc>https://devyhan.github.io/2020/06/25/debug/debug-200729/</loc>
         <lastmod>2020-07-29T01:28:18.184Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -48,7 +72,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/06/25/debug/debug-200625/</loc>
+        <loc>https://devyhan.github.io/2020/06/25/debug/debug-200625/</loc>
         <lastmod>2020-07-29T01:27:49.333Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -56,7 +80,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/07/02/iOS/ios-GCD/</loc>
+        <loc>https://devyhan.github.io/2020/07/02/iOS/ios-GCD/</loc>
         <lastmod>2020-07-02T10:36:43.061Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -64,7 +88,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/06/15/swift/swift-High-Order%20Function/</loc>
+        <loc>https://devyhan.github.io/2020/06/15/swift/swift-High-Order%20Function/</loc>
         <lastmod>2020-06-15T09:52:24.666Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -72,7 +96,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</loc>
+        <loc>https://devyhan.github.io/2020/05/01/Xcode/xcode-CodeProjectSetting/</loc>
         <lastmod>2020-06-02T15:41:36.631Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -80,7 +104,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/22/Xcode/xcode-Iphone/</loc>
+        <loc>https://devyhan.github.io/2020/05/22/Xcode/xcode-Iphone/</loc>
         <lastmod>2020-06-02T15:04:30.982Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -88,7 +112,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/08/iOS/ios-UINavigationController/</loc>
+        <loc>https://devyhan.github.io/2020/05/08/iOS/ios-UINavigationController/</loc>
         <lastmod>2020-05-31T01:25:48.394Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -96,7 +120,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/27/iOS/ios-UITabelView/</loc>
+        <loc>https://devyhan.github.io/2020/05/27/iOS/ios-UITabelView/</loc>
         <lastmod>2020-05-28T15:19:40.815Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -104,7 +128,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</loc>
+        <loc>https://devyhan.github.io/2020/04/28/iOS/ios-AutolayoutAnchors/</loc>
         <lastmod>2020-05-28T15:06:25.421Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -112,7 +136,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/27/iOS/ios-Autolayout/</loc>
+        <loc>https://devyhan.github.io/2020/04/27/iOS/ios-Autolayout/</loc>
         <lastmod>2020-05-28T14:57:17.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -120,7 +144,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/28/iOS/ios-FrameBounds/</loc>
+        <loc>https://devyhan.github.io/2020/04/28/iOS/ios-FrameBounds/</loc>
         <lastmod>2020-05-26T13:55:55.659Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -128,7 +152,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/23/Practice/practice-Calculator/</loc>
+        <loc>https://devyhan.github.io/2020/05/23/Practice/practice-Calculator/</loc>
         <lastmod>2020-05-26T02:28:45.843Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -136,7 +160,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/20/swift/swift-Closure/</loc>
+        <loc>https://devyhan.github.io/2020/04/20/swift/swift-Closure/</loc>
         <lastmod>2020-05-25T16:10:38.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -144,7 +168,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/14/git/git-CommitMessage/</loc>
+        <loc>https://devyhan.github.io/2020/05/14/git/git-CommitMessage/</loc>
         <lastmod>2020-05-25T16:06:03.443Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -152,7 +176,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/16/Xcode/xcode-CodeSnippet/</loc>
+        <loc>https://devyhan.github.io/2020/05/16/Xcode/xcode-CodeSnippet/</loc>
         <lastmod>2020-05-25T02:18:50.735Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -160,7 +184,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/22/Xcode/xcode-Git/</loc>
+        <loc>https://devyhan.github.io/2020/05/22/Xcode/xcode-Git/</loc>
         <lastmod>2020-05-23T06:12:42.874Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -168,7 +192,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/27/iOS/ios-UIViewController/</loc>
+        <loc>https://devyhan.github.io/2020/04/27/iOS/ios-UIViewController/</loc>
         <lastmod>2020-05-21T01:11:50.340Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -176,7 +200,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/04/Xcode/xcode-XcodeHotkey/</loc>
+        <loc>https://devyhan.github.io/2020/05/04/Xcode/xcode-XcodeHotkey/</loc>
         <lastmod>2020-05-16T07:38:15.792Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -184,7 +208,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/06/Foundation/Foundation-OOP/</loc>
+        <loc>https://devyhan.github.io/2020/05/06/Foundation/Foundation-OOP/</loc>
         <lastmod>2020-05-16T07:37:54.702Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -192,7 +216,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/01/Practice/practice-OrderList/</loc>
+        <loc>https://devyhan.github.io/2020/05/01/Practice/practice-OrderList/</loc>
         <lastmod>2020-05-16T07:18:31.816Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -200,7 +224,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/15/swift/swift-Optaional/</loc>
+        <loc>https://devyhan.github.io/2020/04/15/swift/swift-Optaional/</loc>
         <lastmod>2020-05-13T15:35:25.146Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -208,7 +232,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/05/12/Using-Swift/using-ValRef/</loc>
+        <loc>https://devyhan.github.io/2020/05/12/Using-Swift/using-ValRef/</loc>
         <lastmod>2020-05-13T08:25:29.198Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -216,7 +240,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/08/utility/utility-googlesearch/</loc>
+        <loc>https://devyhan.github.io/2020/04/08/utility/utility-googlesearch/</loc>
         <lastmod>2020-05-11T03:47:50.021Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -224,7 +248,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/10/blog/blog-update200410/</loc>
+        <loc>https://devyhan.github.io/2020/04/10/blog/blog-update200410/</loc>
         <lastmod>2020-05-08T02:20:01.946Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -232,7 +256,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/10/blog/blog-update200411/</loc>
+        <loc>https://devyhan.github.io/2020/04/10/blog/blog-update200411/</loc>
         <lastmod>2020-05-08T02:19:58.042Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -240,7 +264,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/28/iOS/ios-iOSLifeCycle%20copy/</loc>
+        <loc>https://devyhan.github.io/2020/04/28/iOS/ios-iOSLifeCycle%20copy/</loc>
         <lastmod>2020-05-08T01:26:23.335Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -248,7 +272,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/29/Practice/practice-GridLayout/</loc>
+        <loc>https://devyhan.github.io/2020/04/29/Practice/practice-GridLayout/</loc>
         <lastmod>2020-05-03T03:32:21.907Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -256,7 +280,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/29/iOS/ios-RandomColor/</loc>
+        <loc>https://devyhan.github.io/2020/04/29/iOS/ios-RandomColor/</loc>
         <lastmod>2020-04-30T02:45:15.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -264,7 +288,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/28/Using-Swift/using-GuardLet/</loc>
+        <loc>https://devyhan.github.io/2020/04/28/Using-Swift/using-GuardLet/</loc>
         <lastmod>2020-04-27T21:43:01.980Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -272,7 +296,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/17/swift/swift-Function/</loc>
+        <loc>https://devyhan.github.io/2020/04/17/swift/swift-Function/</loc>
         <lastmod>2020-04-24T18:43:43.539Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -280,7 +304,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/21/swift/swift-AccessControl/</loc>
+        <loc>https://devyhan.github.io/2020/04/21/swift/swift-AccessControl/</loc>
         <lastmod>2020-04-22T12:27:22.409Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -288,7 +312,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/11/swift/swift-DataType/</loc>
+        <loc>https://devyhan.github.io/2020/04/11/swift/swift-DataType/</loc>
         <lastmod>2020-04-22T12:27:17.184Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -296,7 +320,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/11/swift/swift-DataType2/</loc>
+        <loc>https://devyhan.github.io/2020/04/11/swift/swift-DataType2/</loc>
         <lastmod>2020-04-22T12:27:14.014Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -304,7 +328,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/12/swift/swift-DataType3/</loc>
+        <loc>https://devyhan.github.io/2020/04/12/swift/swift-DataType3/</loc>
         <lastmod>2020-04-22T12:27:09.629Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -312,7 +336,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/12/swift/swift-DataType4/</loc>
+        <loc>https://devyhan.github.io/2020/04/12/swift/swift-DataType4/</loc>
         <lastmod>2020-04-22T12:27:06.305Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -320,7 +344,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/13/swift/swift-FlowControll/</loc>
+        <loc>https://devyhan.github.io/2020/04/13/swift/swift-FlowControll/</loc>
         <lastmod>2020-04-22T12:27:02.490Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -328,7 +352,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/13/swift/swift-FlowControll2/</loc>
+        <loc>https://devyhan.github.io/2020/04/13/swift/swift-FlowControll2/</loc>
         <lastmod>2020-04-22T12:26:59.731Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -336,7 +360,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/10/swift/swift-varlet/</loc>
+        <loc>https://devyhan.github.io/2020/04/10/swift/swift-varlet/</loc>
         <lastmod>2020-04-22T12:26:41.117Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -344,7 +368,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-Markdown/</loc>
+        <loc>https://devyhan.github.io/2020/04/22/Foundation/Foundation-Markdown/</loc>
         <lastmod>2020-04-22T07:35:22.798Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -352,7 +376,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/22/Foundation/Foundation-DateControl/</loc>
+        <loc>https://devyhan.github.io/2020/04/22/Foundation/Foundation-DateControl/</loc>
         <lastmod>2020-04-22T05:03:00.371Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -360,7 +384,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/17/Algorithm/Algorithm-Q2739/</loc>
+        <loc>https://devyhan.github.io/2020/04/17/Algorithm/Algorithm-Q2739/</loc>
         <lastmod>2020-04-16T15:25:06.427Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -368,7 +392,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q14681/</loc>
+        <loc>https://devyhan.github.io/2020/04/15/Algorithm/Algorithm-Q14681/</loc>
         <lastmod>2020-04-16T02:14:50.478Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -376,7 +400,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2753/</loc>
+        <loc>https://devyhan.github.io/2020/04/15/Algorithm/Algorithm-Q2753/</loc>
         <lastmod>2020-04-16T02:14:25.357Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -384,7 +408,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q2884/</loc>
+        <loc>https://devyhan.github.io/2020/04/15/Algorithm/Algorithm-Q2884/</loc>
         <lastmod>2020-04-15T03:19:35.880Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -392,7 +416,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q9498/</loc>
+        <loc>https://devyhan.github.io/2020/04/15/Algorithm/Algorithm-Q9498/</loc>
         <lastmod>2020-04-15T03:15:01.912Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -400,7 +424,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/15/Algorithm/Algorithm-Q1330/</loc>
+        <loc>https://devyhan.github.io/2020/04/15/Algorithm/Algorithm-Q1330/</loc>
         <lastmod>2020-04-15T03:13:26.871Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -408,7 +432,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/14/Algorithm/Algorithm-Q10869/</loc>
+        <loc>https://devyhan.github.io/2020/04/14/Algorithm/Algorithm-Q10869/</loc>
         <lastmod>2020-04-15T03:12:02.548Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -416,7 +440,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/14/Algorithm/Algorithm-Q2588/</loc>
+        <loc>https://devyhan.github.io/2020/04/14/Algorithm/Algorithm-Q2588/</loc>
         <lastmod>2020-04-14T03:56:25.655Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -424,7 +448,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/14/Algorithm/Algorithm-Q1430/</loc>
+        <loc>https://devyhan.github.io/2020/04/14/Algorithm/Algorithm-Q1430/</loc>
         <lastmod>2020-04-14T03:23:36.729Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -432,7 +456,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/13/Algorithm/Algorithm-Q10998/</loc>
+        <loc>https://devyhan.github.io/2020/04/13/Algorithm/Algorithm-Q10998/</loc>
         <lastmod>2020-04-13T01:03:28.276Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -440,7 +464,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/11/Algorithm/Algorithm-Q10718/</loc>
+        <loc>https://devyhan.github.io/2020/04/11/Algorithm/Algorithm-Q10718/</loc>
         <lastmod>2020-04-13T01:03:24.392Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -448,7 +472,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/12/Algorithm/Algorithm-Q10172/</loc>
+        <loc>https://devyhan.github.io/2020/04/12/Algorithm/Algorithm-Q10172/</loc>
         <lastmod>2020-04-13T01:03:21.229Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -456,7 +480,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/12/Algorithm/Algorithm-Q10171/</loc>
+        <loc>https://devyhan.github.io/2020/04/12/Algorithm/Algorithm-Q10171/</loc>
         <lastmod>2020-04-13T01:03:17.680Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -464,7 +488,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/10/Algorithm/Algorithm-Q2557/</loc>
+        <loc>https://devyhan.github.io/2020/04/10/Algorithm/Algorithm-Q2557/</loc>
         <lastmod>2020-04-13T01:03:13.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -472,7 +496,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/13/Algorithm/Algorithm-Q1008/</loc>
+        <loc>https://devyhan.github.io/2020/04/13/Algorithm/Algorithm-Q1008/</loc>
         <lastmod>2020-04-13T01:03:09.506Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -480,7 +504,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/13/Algorithm/Algorithm-Q1001/</loc>
+        <loc>https://devyhan.github.io/2020/04/13/Algorithm/Algorithm-Q1001/</loc>
         <lastmod>2020-04-13T01:03:05.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -488,7 +512,7 @@
     </url>
 
     <url>
-        <loc>https://devyhan93.github.io/2020/04/13/Algorithm/Algorithm-Q1000/</loc>
+        <loc>https://devyhan.github.io/2020/04/13/Algorithm/Algorithm-Q1000/</loc>
         <lastmod>2020-04-13T01:03:01.050Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
