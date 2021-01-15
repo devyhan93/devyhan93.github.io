@@ -206,6 +206,33 @@
   </entry>
   
   <entry>
+    <title>File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</title>
+    <link href="https://devyhan.github.io/2020/06/25/debug/debug-200729/"/>
+    <id>https://devyhan.github.io/2020/06/25/debug/debug-200729/</id>
+    <published>2020-06-24T15:00:00.000Z</published>
+    <updated>2020-07-29T01:28:18.184Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;debug&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Debug" scheme="https://devyhan.github.io/categories/Debug/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>dyld: Library not loaded: @rpath/</title>
     <link href="https://devyhan.github.io/2020/06/25/debug/debug-200625/"/>
     <id>https://devyhan.github.io/2020/06/25/debug/debug-200625/</id>
@@ -222,33 +249,6 @@
 &lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
 &lt;span class=&quot;label label-info&quot;&gt;Xcode&lt;/span&gt;
 &lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Debug" scheme="https://devyhan.github.io/categories/Debug/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>File &#39;ViewController.swift&#39; is part of module &#39;_&#39;; ignoring import</title>
-    <link href="https://devyhan.github.io/2020/06/25/debug/debug-200729/"/>
-    <id>https://devyhan.github.io/2020/06/25/debug/debug-200729/</id>
-    <published>2020-06-24T15:00:00.000Z</published>
-    <updated>2020-07-29T01:28:18.184Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;debug&lt;/span&gt;
-&lt;span class=&quot;label label-info&quot;&gt;iOS&lt;/span&gt;
-&lt;span class=&quot;label
         
       
     
@@ -370,6 +370,32 @@
   </entry>
   
   <entry>
+    <title>Iphone</title>
+    <link href="https://devyhan.github.io/2020/05/22/Xcode/xcode-Iphone/"/>
+    <id>https://devyhan.github.io/2020/05/22/Xcode/xcode-Iphone/</id>
+    <published>2020-05-21T15:00:00.000Z</published>
+    <updated>2020-06-02T15:04:30.982Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;span class=&quot;label label-primary&quot;&gt;Xcode&lt;/span&gt;
+&lt;span class=&quot;label
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Xcode" scheme="https://devyhan.github.io/categories/Xcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Xcode Git 연동</title>
     <link href="https://devyhan.github.io/2020/05/22/Xcode/xcode-Git/"/>
     <id>https://devyhan.github.io/2020/05/22/Xcode/xcode-Git/</id>
@@ -386,32 +412,6 @@
 &lt;span class=&quot;label label-info&quot;&gt;G&lt;/span&gt;
 &lt;h1&gt;1.Xcode Git 연동&lt;/h1&gt;
 &lt;p&gt;Xcode에서 git을 사용하기 위한 설정하는
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Xcode" scheme="https://devyhan.github.io/categories/Xcode/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Iphone</title>
-    <link href="https://devyhan.github.io/2020/05/22/Xcode/xcode-Iphone/"/>
-    <id>https://devyhan.github.io/2020/05/22/Xcode/xcode-Iphone/</id>
-    <published>2020-05-21T15:00:00.000Z</published>
-    <updated>2020-06-02T15:04:30.982Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;span class=&quot;label label-primary&quot;&gt;Xcode&lt;/span&gt;
-&lt;span class=&quot;label
         
       
     
